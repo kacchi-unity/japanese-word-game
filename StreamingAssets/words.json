@@ -1,0 +1,4652 @@
+{
+    "words": [
+        {
+            "id": 1,
+            "kanji": "会う",
+            "meaning": "만나다",
+            "reading": "あう",
+            "jlpt": 5
+        },
+        {
+            "id": 2,
+            "kanji": "青い",
+            "meaning": "푸른",
+            "reading": "あおい",
+            "jlpt": 5
+        },
+        {
+            "id": 3,
+            "kanji": "赤い",
+            "meaning": "빨간",
+            "reading": "あかい",
+            "jlpt": 5
+        },
+        {
+            "id": 4,
+            "kanji": "明い",
+            "meaning": "선명한",
+            "reading": "あかるい",
+            "jlpt": 5
+        },
+        {
+            "id": 5,
+            "kanji": "秋",
+            "meaning": "가을",
+            "reading": "あき",
+            "jlpt": 5
+        },
+        {
+            "id": 6,
+            "kanji": "開く",
+            "meaning": "열리다",
+            "reading": "あく",
+            "jlpt": 5
+        },
+        {
+            "id": 7,
+            "kanji": "開ける",
+            "meaning": "열기",
+            "reading": "あける",
+            "jlpt": 5
+        },
+        {
+            "id": 8,
+            "kanji": "上げる",
+            "meaning": "주다",
+            "reading": "あげる",
+            "jlpt": 5
+        },
+        {
+            "id": 9,
+            "kanji": "朝",
+            "meaning": "아침",
+            "reading": "あさ",
+            "jlpt": 5
+        },
+        {
+            "id": 10,
+            "kanji": "朝御飯",
+            "meaning": "아침밥",
+            "reading": "あさごはん",
+            "jlpt": 5
+        },
+        {
+            "id": 11,
+            "kanji": "あさって",
+            "meaning": "모레",
+            "reading": "あさって",
+            "jlpt": 5
+        },
+        {
+            "id": 12,
+            "kanji": "足",
+            "meaning": "다리",
+            "reading": "あし",
+            "jlpt": 5
+        },
+        {
+            "id": 13,
+            "kanji": "明日",
+            "meaning": "내일",
+            "reading": "あした",
+            "jlpt": 5
+        },
+        {
+            "id": 14,
+            "kanji": "あそこ",
+            "meaning": "저기",
+            "reading": "あそこ",
+            "jlpt": 5
+        },
+        {
+            "id": 15,
+            "kanji": "遊ぶ",
+            "meaning": "놀다",
+            "reading": "あそぶ",
+            "jlpt": 5
+        },
+        {
+            "id": 16,
+            "kanji": "暖かい",
+            "meaning": "따뜻한",
+            "reading": "あたたかい",
+            "jlpt": 5
+        },
+        {
+            "id": 17,
+            "kanji": "頭",
+            "meaning": "머리",
+            "reading": "あたま",
+            "jlpt": 5
+        },
+        {
+            "id": 18,
+            "kanji": "新しい",
+            "meaning": "새로운",
+            "reading": "あたらしい",
+            "jlpt": 5
+        },
+        {
+            "id": 19,
+            "kanji": "あちら",
+            "meaning": "저쪽",
+            "reading": "あちら",
+            "jlpt": 5
+        },
+        {
+            "id": 20,
+            "kanji": "暑い",
+            "meaning": "덥다",
+            "reading": "あつい",
+            "jlpt": 5
+        },
+        {
+            "id": 21,
+            "kanji": "熱い",
+            "meaning": "뜨거다",
+            "reading": "あつい",
+            "jlpt": 5
+        },
+        {
+            "id": 22,
+            "kanji": "厚い",
+            "meaning": "두꺼다",
+            "reading": "あつい",
+            "jlpt": 5
+        },
+        {
+            "id": 23,
+            "kanji": "あっち",
+            "meaning": "저기",
+            "reading": "あっち",
+            "jlpt": 5
+        },
+        {
+            "id": 24,
+            "kanji": "後",
+            "meaning": "나중에",
+            "reading": "あと",
+            "jlpt": 5
+        },
+        {
+            "id": 25,
+            "kanji": "あなた",
+            "meaning": "당신",
+            "reading": "あなた",
+            "jlpt": 5
+        },
+        {
+            "id": 26,
+            "kanji": "兄",
+            "meaning": "형",
+            "reading": "あに",
+            "jlpt": 5
+        },
+        {
+            "id": 27,
+            "kanji": "姉",
+            "meaning": "언니",
+            "reading": "あね",
+            "jlpt": 5
+        },
+        {
+            "id": 28,
+            "kanji": "あの",
+            "meaning": "그",
+            "reading": "あの",
+            "jlpt": 5
+        },
+        {
+            "id": 29,
+            "kanji": "あの",
+            "meaning": "음 ...",
+            "reading": "あの",
+            "jlpt": 5
+        },
+        {
+            "id": 30,
+            "kanji": "アパート",
+            "meaning": "아파트",
+            "reading": "アパート",
+            "jlpt": 5
+        },
+        {
+            "id": 31,
+            "kanji": "あびる",
+            "meaning": "목욕하다",
+            "reading": "あびる",
+            "jlpt": 5
+        },
+        {
+            "id": 32,
+            "kanji": "危ない",
+            "meaning": "위험하다",
+            "reading": "あぶない",
+            "jlpt": 5
+        },
+        {
+            "id": 33,
+            "kanji": "甘い",
+            "meaning": "달콤한",
+            "reading": "あまい",
+            "jlpt": 5
+        },
+        {
+            "id": 34,
+            "kanji": "あまり",
+            "meaning": "별로",
+            "reading": "あまり",
+            "jlpt": 5
+        },
+        {
+            "id": 35,
+            "kanji": "雨",
+            "meaning": "비",
+            "reading": "あめ",
+            "jlpt": 5
+        },
+        {
+            "id": 36,
+            "kanji": "飴",
+            "meaning": "사탕",
+            "reading": "あめ",
+            "jlpt": 5
+        },
+        {
+            "id": 37,
+            "kanji": "洗う",
+            "meaning": "씻다",
+            "reading": "あらう",
+            "jlpt": 5
+        },
+        {
+            "id": 38,
+            "kanji": "ある",
+            "meaning": "있다",
+            "reading": "ある",
+            "jlpt": 5
+        },
+        {
+            "id": 39,
+            "kanji": "歩く",
+            "meaning": "걷다",
+            "reading": "あるく",
+            "jlpt": 5
+        },
+        {
+            "id": 40,
+            "kanji": "あれ",
+            "meaning": "그것",
+            "reading": "あれ",
+            "jlpt": 5
+        },
+        {
+            "id": 41,
+            "kanji": "いい",
+            "meaning": "좋은",
+            "reading": "いい",
+            "jlpt": 5
+        },
+        {
+            "id": 42,
+            "kanji": "いいえ",
+            "meaning": "아니오",
+            "reading": "いいえ",
+            "jlpt": 5
+        },
+        {
+            "id": 43,
+            "kanji": "言う",
+            "meaning": "말",
+            "reading": "いう",
+            "jlpt": 5
+        },
+        {
+            "id": 44,
+            "kanji": "家",
+            "meaning": "집",
+            "reading": "いえ",
+            "jlpt": 5
+        },
+        {
+            "id": 45,
+            "kanji": "いかが",
+            "meaning": "어떻게",
+            "reading": "いかが",
+            "jlpt": 5
+        },
+        {
+            "id": 46,
+            "kanji": "行く",
+            "meaning": "가다",
+            "reading": "いく",
+            "jlpt": 5
+        },
+        {
+            "id": 47,
+            "kanji": "いくつ",
+            "meaning": "몇",
+            "reading": "いくつ",
+            "jlpt": 5
+        },
+        {
+            "id": 48,
+            "kanji": "いくら",
+            "meaning": "얼마",
+            "reading": "いくら",
+            "jlpt": 5
+        },
+        {
+            "id": 49,
+            "kanji": "池",
+            "meaning": "연못",
+            "reading": "いけ",
+            "jlpt": 5
+        },
+        {
+            "id": 50,
+            "kanji": "医者",
+            "meaning": "의사",
+            "reading": "いしゃ",
+            "jlpt": 5
+        },
+        {
+            "id": 51,
+            "kanji": "いす",
+            "meaning": "의자",
+            "reading": "いす",
+            "jlpt": 5
+        },
+        {
+            "id": 52,
+            "kanji": "忙しい",
+            "meaning": "바쁘다",
+            "reading": "いそがしい",
+            "jlpt": 5
+        },
+        {
+            "id": 53,
+            "kanji": "痛い",
+            "meaning": "아프다",
+            "reading": "いたい",
+            "jlpt": 5
+        },
+        {
+            "id": 54,
+            "kanji": "一",
+            "meaning": "일",
+            "reading": "いち",
+            "jlpt": 5
+        },
+        {
+            "id": 55,
+            "kanji": "一日",
+            "meaning": "일일",
+            "reading": "いちにち",
+            "jlpt": 5
+        },
+        {
+            "id": 56,
+            "kanji": "いちばん",
+            "meaning": "가장",
+            "reading": "いちばん",
+            "jlpt": 5
+        },
+        {
+            "id": 57,
+            "kanji": "いつ",
+            "meaning": "언제",
+            "reading": "いつ",
+            "jlpt": 5
+        },
+        {
+            "id": 58,
+            "kanji": "五日",
+            "meaning": "5 일",
+            "reading": "いつか",
+            "jlpt": 5
+        },
+        {
+            "id": 59,
+            "kanji": "一緒",
+            "meaning": "함께",
+            "reading": "いっしょ",
+            "jlpt": 5
+        },
+        {
+            "id": 60,
+            "kanji": "五つ",
+            "meaning": "다섯",
+            "reading": "いつつ",
+            "jlpt": 5
+        },
+        {
+            "id": 61,
+            "kanji": "いつも",
+            "meaning": "항상",
+            "reading": "いつも",
+            "jlpt": 5
+        },
+        {
+            "id": 62,
+            "kanji": "犬",
+            "meaning": "개",
+            "reading": "いぬ",
+            "jlpt": 5
+        },
+        {
+            "id": 63,
+            "kanji": "今",
+            "meaning": "지금",
+            "reading": "いま",
+            "jlpt": 5
+        },
+        {
+            "id": 64,
+            "kanji": "意味",
+            "meaning": "의미",
+            "reading": "いみ",
+            "jlpt": 5
+        },
+        {
+            "id": 65,
+            "kanji": "妹",
+            "meaning": "여동생",
+            "reading": "いもうと",
+            "jlpt": 5
+        },
+        {
+            "id": 66,
+            "kanji": "嫌",
+            "meaning": "싫음",
+            "reading": "いや",
+            "jlpt": 5
+        },
+        {
+            "id": 67,
+            "kanji": "入口",
+            "meaning": "입구",
+            "reading": "いりぐち",
+            "jlpt": 5
+        },
+        {
+            "id": 68,
+            "kanji": "居る",
+            "meaning": "있다",
+            "reading": "いる",
+            "jlpt": 5
+        },
+        {
+            "id": 69,
+            "kanji": "要る",
+            "meaning": "필요하다",
+            "reading": "いる",
+            "jlpt": 5
+        },
+        {
+            "id": 70,
+            "kanji": "入れる",
+            "meaning": "넣다",
+            "reading": "いれる",
+            "jlpt": 5
+        },
+        {
+            "id": 71,
+            "kanji": "色",
+            "meaning": "색",
+            "reading": "いろ",
+            "jlpt": 5
+        },
+        {
+            "id": 72,
+            "kanji": "いろいろ",
+            "meaning": "여러가지",
+            "reading": "いろいろ",
+            "jlpt": 5
+        },
+        {
+            "id": 73,
+            "kanji": "上",
+            "meaning": "위",
+            "reading": "うえ",
+            "jlpt": 5
+        },
+        {
+            "id": 74,
+            "kanji": "後ろ",
+            "meaning": "뒤에",
+            "reading": "うしろ",
+            "jlpt": 5
+        },
+        {
+            "id": 75,
+            "kanji": "薄い",
+            "meaning": "얇다",
+            "reading": "うすい",
+            "jlpt": 5
+        },
+        {
+            "id": 76,
+            "kanji": "歌",
+            "meaning": "노래",
+            "reading": "うた",
+            "jlpt": 5
+        },
+        {
+            "id": 77,
+            "kanji": "歌う",
+            "meaning": "노래하다",
+            "reading": "うたう",
+            "jlpt": 5
+        },
+        {
+            "id": 78,
+            "kanji": "生まれる",
+            "meaning": " 태어나다",
+            "reading": "うまれる",
+            "jlpt": 5
+        },
+        {
+            "id": 79,
+            "kanji": "海",
+            "meaning": "바다",
+            "reading": "うみ",
+            "jlpt": 5
+        },
+        {
+            "id": 80,
+            "kanji": "売る",
+            "meaning": "팔다",
+            "reading": "うる",
+            "jlpt": 5
+        },
+        {
+            "id": 81,
+            "kanji": "煩い",
+            "meaning": "시끄럽다",
+            "reading": "うるさい",
+            "jlpt": 5
+        },
+        {
+            "id": 82,
+            "kanji": "上着",
+            "meaning": "겉옷",
+            "reading": "うわぎ",
+            "jlpt": 5
+        },
+        {
+            "id": 83,
+            "kanji": "絵",
+            "meaning": "그림",
+            "reading": "え",
+            "jlpt": 5
+        },
+        {
+            "id": 84,
+            "kanji": "映画",
+            "meaning": "영화",
+            "reading": "えいが",
+            "jlpt": 5
+        },
+        {
+            "id": 85,
+            "kanji": "映画館",
+            "meaning": "영화관",
+            "reading": "えいがかん",
+            "jlpt": 5
+        },
+        {
+            "id": 86,
+            "kanji": "英語",
+            "meaning": "영어",
+            "reading": "えいご",
+            "jlpt": 5
+        },
+        {
+            "id": 87,
+            "kanji": "ええ",
+            "meaning": "예",
+            "reading": "ええ",
+            "jlpt": 5
+        },
+        {
+            "id": 88,
+            "kanji": "駅",
+            "meaning": "역",
+            "reading": "えき",
+            "jlpt": 5
+        },
+        {
+            "id": 89,
+            "kanji": "エレベーター",
+            "meaning": "엘리베이터",
+            "reading": "エレベーター",
+            "jlpt": 5
+        },
+        {
+            "id": 90,
+            "kanji": "鉛筆",
+            "meaning": "연필",
+            "reading": "えんぴつ",
+            "jlpt": 5
+        },
+        {
+            "id": 91,
+            "kanji": "おいしい",
+            "meaning": "맛있는",
+            "reading": "おいしい",
+            "jlpt": 5
+        },
+        {
+            "id": 92,
+            "kanji": "多い",
+            "meaning": "많은",
+            "reading": "おおい",
+            "jlpt": 5
+        },
+        {
+            "id": 93,
+            "kanji": "大きい",
+            "meaning": "큰",
+            "reading": "おおきい",
+            "jlpt": 5
+        },
+        {
+            "id": 94,
+            "kanji": "大きな",
+            "meaning": "큰",
+            "reading": "おおきな",
+            "jlpt": 5
+        },
+        {
+            "id": 95,
+            "kanji": "大勢",
+            "meaning": "대세",
+            "reading": "おおぜい",
+            "jlpt": 5
+        },
+        {
+            "id": 96,
+            "kanji": "お母さん",
+            "meaning": "엄마",
+            "reading": "おかあさん",
+            "jlpt": 5
+        },
+        {
+            "id": 97,
+            "kanji": "お菓子",
+            "meaning": "과자",
+            "reading": "おかし",
+            "jlpt": 5
+        },
+        {
+            "id": 98,
+            "kanji": "お金",
+            "meaning": "돈",
+            "reading": "おかね",
+            "jlpt": 5
+        },
+        {
+            "id": 99,
+            "kanji": "起きる",
+            "meaning": "일어나다",
+            "reading": "おきる",
+            "jlpt": 5
+        },
+        {
+            "id": 100,
+            "kanji": "置く",
+            "meaning": "두다",
+            "reading": "おく",
+            "jlpt": 5
+        },
+        {
+            "id": 101,
+            "kanji": "奥さん",
+            "meaning": "부인",
+            "reading": "おくさん",
+            "jlpt": 5
+        },
+        {
+            "id": 102,
+            "kanji": "お酒",
+            "meaning": "술",
+            "reading": "おさけ",
+            "jlpt": 5
+        },
+        {
+            "id": 103,
+            "kanji": "お皿",
+            "meaning": "접시",
+            "reading": "おさら",
+            "jlpt": 5
+        },
+        {
+            "id": 104,
+            "kanji": "伯父さん",
+            "meaning": "할아버지",
+            "reading": "おじいさん",
+            "jlpt": 5
+        },
+        {
+            "id": 105,
+            "kanji": "教える",
+            "meaning": "가르치다",
+            "reading": "おしえる",
+            "jlpt": 5
+        },
+        {
+            "id": 106,
+            "kanji": "伯父さん",
+            "meaning": "아저씨",
+            "reading": "おじさん",
+            "jlpt": 5
+        },
+        {
+            "id": 107,
+            "kanji": "押す",
+            "meaning": "밀다",
+            "reading": "おす",
+            "jlpt": 5
+        },
+        {
+            "id": 108,
+            "kanji": "遅い",
+            "meaning": "늦다",
+            "reading": "おそい",
+            "jlpt": 5
+        },
+        {
+            "id": 109,
+            "kanji": "お茶",
+            "meaning": "차",
+            "reading": "おちゃ",
+            "jlpt": 5
+        },
+        {
+            "id": 110,
+            "kanji": "お手洗い",
+            "meaning": "화장실",
+            "reading": "おてあらい",
+            "jlpt": 5
+        },
+        {
+            "id": 111,
+            "kanji": "お父さん",
+            "meaning": "아버지",
+            "reading": "おとうさん",
+            "jlpt": 5
+        },
+        {
+            "id": 112,
+            "kanji": "弟",
+            "meaning": "동생",
+            "reading": "おとうと",
+            "jlpt": 5
+        },
+        {
+            "id": 113,
+            "kanji": "男",
+            "meaning": "남자",
+            "reading": "おとこ",
+            "jlpt": 5
+        },
+        {
+            "id": 114,
+            "kanji": "男の子",
+            "meaning": "소년",
+            "reading": "おとこのこ",
+            "jlpt": 5
+        },
+        {
+            "id": 115,
+            "kanji": "一昨日",
+            "meaning": "그저께",
+            "reading": "おととい",
+            "jlpt": 5
+        },
+        {
+            "id": 116,
+            "kanji": "一昨年",
+            "meaning": "지난해",
+            "reading": "おととし",
+            "jlpt": 5
+        },
+        {
+            "id": 117,
+            "kanji": "大人",
+            "meaning": "성인",
+            "reading": "おとな",
+            "jlpt": 5
+        },
+        {
+            "id": 118,
+            "kanji": "おなか",
+            "meaning": "배",
+            "reading": "おなか",
+            "jlpt": 5
+        },
+        {
+            "id": 119,
+            "kanji": "同じ",
+            "meaning": "같은",
+            "reading": "おなじ",
+            "jlpt": 5
+        },
+        {
+            "id": 120,
+            "kanji": "お兄さん",
+            "meaning": "형",
+            "reading": "おにいさん",
+            "jlpt": 5
+        },
+        {
+            "id": 121,
+            "kanji": "お姉さん",
+            "meaning": "언니",
+            "reading": "おねえさん",
+            "jlpt": 5
+        },
+        {
+            "id": 122,
+            "kanji": "おばあさん",
+            "meaning": "할머니",
+            "reading": "おばあさん",
+            "jlpt": 5
+        },
+        {
+            "id": 123,
+            "kanji": "伯母さん",
+            "meaning": "아주머니",
+            "reading": "おばさん",
+            "jlpt": 5
+        },
+        {
+            "id": 124,
+            "kanji": "お風呂",
+            "meaning": "목욕",
+            "reading": "おふろ",
+            "jlpt": 5
+        },
+        {
+            "id": 125,
+            "kanji": "お弁当",
+            "meaning": "도시락",
+            "reading": "おべんとう",
+            "jlpt": 5
+        },
+        {
+            "id": 126,
+            "kanji": "覚える",
+            "meaning": "기억하다",
+            "reading": "おぼえる",
+            "jlpt": 5
+        },
+        {
+            "id": 127,
+            "kanji": "おまわりさん",
+            "meaning": "경찰",
+            "reading": "おまわりさん",
+            "jlpt": 5
+        },
+        {
+            "id": 128,
+            "kanji": "重い",
+            "meaning": "무거운",
+            "reading": "おもい",
+            "jlpt": 5
+        },
+        {
+            "id": 129,
+            "kanji": "おもしろい",
+            "meaning": "재미",
+            "reading": "おもしろい",
+            "jlpt": 5
+        },
+        {
+            "id": 130,
+            "kanji": "泳ぐ",
+            "meaning": "수영",
+            "reading": "およぐ",
+            "jlpt": 5
+        },
+        {
+            "id": 131,
+            "kanji": "降りる",
+            "meaning": "내리다",
+            "reading": "おりる",
+            "jlpt": 5
+        },
+        {
+            "id": 132,
+            "kanji": "終る",
+            "meaning": "끝나다",
+            "reading": "おわる",
+            "jlpt": 5
+        },
+        {
+            "id": 133,
+            "kanji": "音楽",
+            "meaning": "음악",
+            "reading": "おんがく",
+            "jlpt": 5
+        },
+        {
+            "id": 134,
+            "kanji": "女",
+            "meaning": "여자",
+            "reading": "おんな",
+            "jlpt": 5
+        },
+        {
+            "id": 135,
+            "kanji": "女の子",
+            "meaning": "소녀",
+            "reading": "おんなのこ",
+            "jlpt": 5
+        },
+        {
+            "id": 136,
+            "kanji": "外国",
+            "meaning": "외국",
+            "reading": "がいこく",
+            "jlpt": 5
+        },
+        {
+            "id": 137,
+            "kanji": "外国人",
+            "meaning": "외국인",
+            "reading": "がいこくじん",
+            "jlpt": 5
+        },
+        {
+            "id": 138,
+            "kanji": "会社",
+            "meaning": "회사",
+            "reading": "かいしゃ",
+            "jlpt": 5
+        },
+        {
+            "id": 139,
+            "kanji": "階段",
+            "meaning": "계단",
+            "reading": "かいだん",
+            "jlpt": 5
+        },
+        {
+            "id": 140,
+            "kanji": "買い物",
+            "meaning": "쇼핑",
+            "reading": "かいもの",
+            "jlpt": 5
+        },
+        {
+            "id": 141,
+            "kanji": "買う",
+            "meaning": "구매",
+            "reading": "かう",
+            "jlpt": 5
+        },
+        {
+            "id": 142,
+            "kanji": "返す",
+            "meaning": "반환하다",
+            "reading": "かえす",
+            "jlpt": 5
+        },
+        {
+            "id": 143,
+            "kanji": "帰る",
+            "meaning": "돌아",
+            "reading": "かえる",
+            "jlpt": 5
+        },
+        {
+            "id": 144,
+            "kanji": "かかる",
+            "meaning": "걸리다",
+            "reading": "かかる",
+            "jlpt": 5
+        },
+        {
+            "id": 145,
+            "kanji": "かぎ",
+            "meaning": "열쇠",
+            "reading": "かぎ",
+            "jlpt": 5
+        },
+        {
+            "id": 146,
+            "kanji": "書く",
+            "meaning": "쓰기",
+            "reading": "かく",
+            "jlpt": 5
+        },
+        {
+            "id": 147,
+            "kanji": "学生",
+            "meaning": "학생",
+            "reading": "がくせい",
+            "jlpt": 5
+        },
+        {
+            "id": 148,
+            "kanji": "かける",
+            "meaning": "걸다",
+            "reading": "かける",
+            "jlpt": 5
+        },
+        {
+            "id": 149,
+            "kanji": "傘",
+            "meaning": "우산",
+            "reading": "かさ",
+            "jlpt": 5
+        },
+        {
+            "id": 150,
+            "kanji": "貸す",
+            "meaning": "빌려",
+            "reading": "かす",
+            "jlpt": 5
+        },
+        {
+            "id": 151,
+            "kanji": "風",
+            "meaning": "바람",
+            "reading": "かぜ",
+            "jlpt": 5
+        },
+        {
+            "id": 152,
+            "kanji": "風邪",
+            "meaning": "감기",
+            "reading": "かぜ",
+            "jlpt": 5
+        },
+        {
+            "id": 153,
+            "kanji": "家族",
+            "meaning": "가족",
+            "reading": "かぞく",
+            "jlpt": 5
+        },
+        {
+            "id": 154,
+            "kanji": "方",
+            "meaning": "방법",
+            "reading": "かた",
+            "jlpt": 5
+        },
+        {
+            "id": 155,
+            "kanji": "学校",
+            "meaning": "학교",
+            "reading": "がっこう",
+            "jlpt": 5
+        },
+        {
+            "id": 156,
+            "kanji": "カップ",
+            "meaning": "컵",
+            "reading": "カップ",
+            "jlpt": 5
+        },
+        {
+            "id": 157,
+            "kanji": "家庭",
+            "meaning": "가정",
+            "reading": "かてい",
+            "jlpt": 5
+        },
+        {
+            "id": 158,
+            "kanji": "角",
+            "meaning": "모서리",
+            "reading": "かど",
+            "jlpt": 5
+        },
+        {
+            "id": 159,
+            "kanji": "かばん",
+            "meaning": "가방",
+            "reading": "かばん",
+            "jlpt": 5
+        },
+        {
+            "id": 160,
+            "kanji": "花瓶",
+            "meaning": "꽃병",
+            "reading": "かびん",
+            "jlpt": 5
+        },
+        {
+            "id": 161,
+            "kanji": "紙",
+            "meaning": "종이",
+            "reading": "かみ",
+            "jlpt": 5
+        },
+        {
+            "id": 162,
+            "kanji": "カメラ",
+            "meaning": "카메라",
+            "reading": "カメラ",
+            "jlpt": 5
+        },
+        {
+            "id": 163,
+            "kanji": "火曜日",
+            "meaning": "화요일",
+            "reading": "かようび",
+            "jlpt": 5
+        },
+        {
+            "id": 164,
+            "kanji": "辛い",
+            "meaning": "맵다",
+            "reading": "からい",
+            "jlpt": 5
+        },
+        {
+            "id": 165,
+            "kanji": "体",
+            "meaning": "몸",
+            "reading": "からだ",
+            "jlpt": 5
+        },
+        {
+            "id": 166,
+            "kanji": "借りる",
+            "meaning": "빌리다",
+            "reading": "かりる",
+            "jlpt": 5
+        },
+        {
+            "id": 167,
+            "kanji": "軽い",
+            "meaning": "가볍다",
+            "reading": "かるい",
+            "jlpt": 5
+        },
+        {
+            "id": 168,
+            "kanji": "カレー",
+            "meaning": "카레",
+            "reading": "カレー",
+            "jlpt": 5
+        },
+        {
+            "id": 169,
+            "kanji": "カレンダー",
+            "meaning": "달력",
+            "reading": "カレンダー",
+            "jlpt": 5
+        },
+        {
+            "id": 170,
+            "kanji": "川",
+            "meaning": "강",
+            "reading": "かわ",
+            "jlpt": 5
+        },
+        {
+            "id": 171,
+            "kanji": "かわいい",
+            "meaning": "귀엽다",
+            "reading": "かわいい",
+            "jlpt": 5
+        },
+        {
+            "id": 172,
+            "kanji": "漢字",
+            "meaning": "한자",
+            "reading": "かんじ",
+            "jlpt": 5
+        },
+        {
+            "id": 173,
+            "kanji": "木",
+            "meaning": "나무",
+            "reading": "き",
+            "jlpt": 5
+        },
+        {
+            "id": 174,
+            "kanji": "黄色い",
+            "meaning": "노랗다",
+            "reading": "きいろい",
+            "jlpt": 5
+        },
+        {
+            "id": 175,
+            "kanji": "消える",
+            "meaning": "사라",
+            "reading": "きえる",
+            "jlpt": 5
+        },
+        {
+            "id": 176,
+            "kanji": "聞く",
+            "meaning": "듣다",
+            "reading": "きく",
+            "jlpt": 5
+        },
+        {
+            "id": 177,
+            "kanji": "北",
+            "meaning": "북",
+            "reading": "きた",
+            "jlpt": 5
+        },
+        {
+            "id": 178,
+            "kanji": "ギター",
+            "meaning": "기타",
+            "reading": "ギター",
+            "jlpt": 5
+        },
+        {
+            "id": 179,
+            "kanji": "汚い",
+            "meaning": "더러운",
+            "reading": "きたない",
+            "jlpt": 5
+        },
+        {
+            "id": 180,
+            "kanji": "喫茶店",
+            "meaning": "커피숖",
+            "reading": "きっさてん",
+            "jlpt": 5
+        },
+        {
+            "id": 181,
+            "kanji": "切手",
+            "meaning": "우표",
+            "reading": "きって",
+            "jlpt": 5
+        },
+        {
+            "id": 182,
+            "kanji": "切符",
+            "meaning": "티켓",
+            "reading": "きっぷ",
+            "jlpt": 5
+        },
+        {
+            "id": 183,
+            "kanji": "昨日",
+            "meaning": "어제",
+            "reading": "きのう",
+            "jlpt": 5
+        },
+        {
+            "id": 184,
+            "kanji": "九",
+            "meaning": "아홉",
+            "reading": "きゅう",
+            "jlpt": 5
+        },
+        {
+            "id": 185,
+            "kanji": "牛肉",
+            "meaning": "쇠고기",
+            "reading": "ぎゅうにく",
+            "jlpt": 5
+        },
+        {
+            "id": 186,
+            "kanji": "牛乳",
+            "meaning": "우유",
+            "reading": "ぎゅうにゅう",
+            "jlpt": 5
+        },
+        {
+            "id": 187,
+            "kanji": "今日",
+            "meaning": "오늘",
+            "reading": "きょう",
+            "jlpt": 5
+        },
+        {
+            "id": 188,
+            "kanji": "教室",
+            "meaning": "교실",
+            "reading": "きょうしつ",
+            "jlpt": 5
+        },
+        {
+            "id": 189,
+            "kanji": "兄弟",
+            "meaning": "형제",
+            "reading": "きょうだい",
+            "jlpt": 5
+        },
+        {
+            "id": 190,
+            "kanji": "去年",
+            "meaning": "작년",
+            "reading": "きょねん",
+            "jlpt": 5
+        },
+        {
+            "id": 191,
+            "kanji": "嫌い",
+            "meaning": "싫음",
+            "reading": "きらい",
+            "jlpt": 5
+        },
+        {
+            "id": 192,
+            "kanji": "切る",
+            "meaning": "자르다",
+            "reading": "きる",
+            "jlpt": 5
+        },
+        {
+            "id": 193,
+            "kanji": "着る",
+            "meaning": "옷을 입다",
+            "reading": "きる",
+            "jlpt": 5
+        },
+        {
+            "id": 194,
+            "kanji": "きれい",
+            "meaning": "예쁨",
+            "reading": "きれい",
+            "jlpt": 5
+        },
+        {
+            "id": 195,
+            "kanji": "キロ",
+            "meaning": "킬로그램",
+            "reading": "キロ",
+            "jlpt": 5
+        },
+        {
+            "id": 196,
+            "kanji": "キロ",
+            "meaning": "킬로미터",
+            "reading": "キロ",
+            "jlpt": 5
+        },
+        {
+            "id": 197,
+            "kanji": "銀行",
+            "meaning": "은행",
+            "reading": "ぎんこう",
+            "jlpt": 5
+        },
+        {
+            "id": 198,
+            "kanji": "金曜日",
+            "meaning": "금요일",
+            "reading": "きんようび",
+            "jlpt": 5
+        },
+        {
+            "id": 199,
+            "kanji": "薬",
+            "meaning": "약",
+            "reading": "くすり",
+            "jlpt": 5
+        },
+        {
+            "id": 200,
+            "kanji": "ください",
+            "meaning": "~해 주세요",
+            "reading": "ください",
+            "jlpt": 5
+        },
+        {
+            "id": 201,
+            "kanji": "果物",
+            "meaning": "과일",
+            "reading": "くだもの",
+            "jlpt": 5
+        },
+        {
+            "id": 202,
+            "kanji": "口",
+            "meaning": "입",
+            "reading": "くち",
+            "jlpt": 5
+        },
+        {
+            "id": 203,
+            "kanji": "靴",
+            "meaning": "신발",
+            "reading": "くつ",
+            "jlpt": 5
+        },
+        {
+            "id": 204,
+            "kanji": "靴下",
+            "meaning": "양말",
+            "reading": "くつした",
+            "jlpt": 5
+        },
+        {
+            "id": 205,
+            "kanji": "国",
+            "meaning": "국가",
+            "reading": "くに",
+            "jlpt": 5
+        },
+        {
+            "id": 206,
+            "kanji": "曇り",
+            "meaning": "흐림",
+            "reading": "くもり",
+            "jlpt": 5
+        },
+        {
+            "id": 207,
+            "kanji": "曇る",
+            "meaning": "흐리다",
+            "reading": "くもる",
+            "jlpt": 5
+        },
+        {
+            "id": 208,
+            "kanji": "暗い",
+            "meaning": "어둡다",
+            "reading": "くらい",
+            "jlpt": 5
+        },
+        {
+            "id": 209,
+            "kanji": "クラス",
+            "meaning": "클래스",
+            "reading": "クラス",
+            "jlpt": 5
+        },
+        {
+            "id": 210,
+            "kanji": "グラム",
+            "meaning": "그램",
+            "reading": "グラム",
+            "jlpt": 5
+        },
+        {
+            "id": 211,
+            "kanji": "来る",
+            "meaning": "오다",
+            "reading": "くる",
+            "jlpt": 5
+        },
+        {
+            "id": 212,
+            "kanji": "車",
+            "meaning": "자동차",
+            "reading": "くるま",
+            "jlpt": 5
+        },
+        {
+            "id": 213,
+            "kanji": "黒",
+            "meaning": "검정",
+            "reading": "くろ",
+            "jlpt": 5
+        },
+        {
+            "id": 214,
+            "kanji": "黒い",
+            "meaning": "검은",
+            "reading": "くろい",
+            "jlpt": 5
+        },
+        {
+            "id": 215,
+            "kanji": "警官",
+            "meaning": "경찰",
+            "reading": "けいかん",
+            "jlpt": 5
+        },
+        {
+            "id": 216,
+            "kanji": "今朝",
+            "meaning": "오늘 아침",
+            "reading": "けさ",
+            "jlpt": 5
+        },
+        {
+            "id": 217,
+            "kanji": "消す",
+            "meaning": "지우",
+            "reading": "けす",
+            "jlpt": 5
+        },
+        {
+            "id": 218,
+            "kanji": "結構",
+            "meaning": "훌륭함",
+            "reading": "けっこう",
+            "jlpt": 5
+        },
+        {
+            "id": 219,
+            "kanji": "結婚",
+            "meaning": "결혼",
+            "reading": "けっこん",
+            "jlpt": 5
+        },
+        {
+            "id": 220,
+            "kanji": "月曜日",
+            "meaning": "월요일",
+            "reading": "げつようび",
+            "jlpt": 5
+        },
+        {
+            "id": 221,
+            "kanji": "玄関",
+            "meaning": "현관",
+            "reading": "げんかん",
+            "jlpt": 5
+        },
+        {
+            "id": 222,
+            "kanji": "元気",
+            "meaning": "건강",
+            "reading": "げんき",
+            "jlpt": 5
+        },
+        {
+            "id": 223,
+            "kanji": "五",
+            "meaning": "다섯",
+            "reading": "ご",
+            "jlpt": 5
+        },
+        {
+            "id": 224,
+            "kanji": "公園",
+            "meaning": "공원",
+            "reading": "こうえん",
+            "jlpt": 5
+        },
+        {
+            "id": 225,
+            "kanji": "交差点",
+            "meaning": "교차로",
+            "reading": "こうさてん",
+            "jlpt": 5
+        },
+        {
+            "id": 226,
+            "kanji": "紅茶",
+            "meaning": "차",
+            "reading": "こうちゃ",
+            "jlpt": 5
+        },
+        {
+            "id": 227,
+            "kanji": "交番",
+            "meaning": "파출소",
+            "reading": "こうばん",
+            "jlpt": 5
+        },
+        {
+            "id": 228,
+            "kanji": "声",
+            "meaning": "목소리",
+            "reading": "こえ",
+            "jlpt": 5
+        },
+        {
+            "id": 229,
+            "kanji": "コート",
+            "meaning": "코트",
+            "reading": "コート",
+            "jlpt": 5
+        },
+        {
+            "id": 230,
+            "kanji": "コーヒー",
+            "meaning": "커피",
+            "reading": "コーヒー",
+            "jlpt": 5
+        },
+        {
+            "id": 231,
+            "kanji": "ここ",
+            "meaning": "여기",
+            "reading": "ここ",
+            "jlpt": 5
+        },
+        {
+            "id": 232,
+            "kanji": "午後",
+            "meaning": "오후",
+            "reading": "ごご",
+            "jlpt": 5
+        },
+        {
+            "id": 233,
+            "kanji": "九日",
+            "meaning": "9일",
+            "reading": "ここのか",
+            "jlpt": 5
+        },
+        {
+            "id": 234,
+            "kanji": "九つ",
+            "meaning": "아홉",
+            "reading": "ここのつ",
+            "jlpt": 5
+        },
+        {
+            "id": 235,
+            "kanji": "午前",
+            "meaning": "오전",
+            "reading": "ごぜん",
+            "jlpt": 5
+        },
+        {
+            "id": 236,
+            "kanji": "答える",
+            "meaning": "대답하다",
+            "reading": "こたえる",
+            "jlpt": 5
+        },
+        {
+            "id": 237,
+            "kanji": "こちら",
+            "meaning": "이쪽",
+            "reading": "こちら",
+            "jlpt": 5
+        },
+        {
+            "id": 238,
+            "kanji": "こっち",
+            "meaning": "여기",
+            "reading": "こっち",
+            "jlpt": 5
+        },
+        {
+            "id": 239,
+            "kanji": "コップ",
+            "meaning": "컵",
+            "reading": "コップ",
+            "jlpt": 5
+        },
+        {
+            "id": 240,
+            "kanji": "今年",
+            "meaning": "올해",
+            "reading": "ことし",
+            "jlpt": 5
+        },
+        {
+            "id": 241,
+            "kanji": "言葉",
+            "meaning": "말",
+            "reading": "ことば",
+            "jlpt": 5
+        },
+        {
+            "id": 242,
+            "kanji": "子供",
+            "meaning": "아이",
+            "reading": "こども",
+            "jlpt": 5
+        },
+        {
+            "id": 243,
+            "kanji": "この",
+            "meaning": "이",
+            "reading": "この",
+            "jlpt": 5
+        },
+        {
+            "id": 244,
+            "kanji": "御飯",
+            "meaning": "밥",
+            "reading": "ごはん",
+            "jlpt": 5
+        },
+        {
+            "id": 245,
+            "kanji": "コピーする",
+            "meaning": "복사",
+            "reading": "コピーする",
+            "jlpt": 5
+        },
+        {
+            "id": 246,
+            "kanji": "困る",
+            "meaning": "곤란하다",
+            "reading": "こまる",
+            "jlpt": 5
+        },
+        {
+            "id": 247,
+            "kanji": "これ",
+            "meaning": "이것",
+            "reading": "これ",
+            "jlpt": 5
+        },
+        {
+            "id": 248,
+            "kanji": "今月",
+            "meaning": "금월",
+            "reading": "こんげつ",
+            "jlpt": 5
+        },
+        {
+            "id": 249,
+            "kanji": "今週",
+            "meaning": "이번 주",
+            "reading": "こんしゅう",
+            "jlpt": 5
+        },
+        {
+            "id": 250,
+            "kanji": "こんな",
+            "meaning": "이러한",
+            "reading": "こんな",
+            "jlpt": 5
+        },
+        {
+            "id": 251,
+            "kanji": "今晩",
+            "meaning": "오늘 밤",
+            "reading": "こんばん",
+            "jlpt": 5
+        },
+        {
+            "id": 252,
+            "kanji": "さあ",
+            "meaning": "잘…",
+            "reading": "さあ",
+            "jlpt": 5
+        },
+        {
+            "id": 253,
+            "kanji": "財布",
+            "meaning": "지갑",
+            "reading": "さいふ",
+            "jlpt": 5
+        },
+        {
+            "id": 254,
+            "kanji": "魚",
+            "meaning": "물고기",
+            "reading": "さかな",
+            "jlpt": 5
+        },
+        {
+            "id": 255,
+            "kanji": "先",
+            "meaning": "앞",
+            "reading": "さき",
+            "jlpt": 5
+        },
+        {
+            "id": 256,
+            "kanji": "咲く",
+            "meaning": "피다",
+            "reading": "さく",
+            "jlpt": 5
+        },
+        {
+            "id": 257,
+            "kanji": "作文",
+            "meaning": "작문",
+            "reading": "さくぶん",
+            "jlpt": 5
+        },
+        {
+            "id": 258,
+            "kanji": "差す",
+            "meaning": "가리다",
+            "reading": "さす",
+            "jlpt": 5
+        },
+        {
+            "id": 259,
+            "kanji": "雑誌",
+            "meaning": "잡지",
+            "reading": "ざっし",
+            "jlpt": 5
+        },
+        {
+            "id": 260,
+            "kanji": "砂糖",
+            "meaning": "설탕",
+            "reading": "さとう",
+            "jlpt": 5
+        },
+        {
+            "id": 261,
+            "kanji": "寒い",
+            "meaning": "춥다",
+            "reading": "さむい",
+            "jlpt": 5
+        },
+        {
+            "id": 262,
+            "kanji": "さ来年",
+            "meaning": "다음 해",
+            "reading": "さらいねん",
+            "jlpt": 5
+        },
+        {
+            "id": 263,
+            "kanji": "三",
+            "meaning": "셋",
+            "reading": "さん",
+            "jlpt": 5
+        },
+        {
+            "id": 264,
+            "kanji": "散歩する",
+            "meaning": "산책",
+            "reading": "さんぽする",
+            "jlpt": 5
+        },
+        {
+            "id": 265,
+            "kanji": "四",
+            "meaning": "넷",
+            "reading": "し",
+            "jlpt": 5
+        },
+        {
+            "id": 266,
+            "kanji": "塩",
+            "meaning": "소금",
+            "reading": "しお",
+            "jlpt": 5
+        },
+        {
+            "id": 267,
+            "kanji": "しかし",
+            "meaning": "그러나",
+            "reading": "しかし",
+            "jlpt": 5
+        },
+        {
+            "id": 268,
+            "kanji": "時間",
+            "meaning": "시간",
+            "reading": "じかん",
+            "jlpt": 5
+        },
+        {
+            "id": 269,
+            "kanji": "仕事",
+            "meaning": "일",
+            "reading": "しごと",
+            "jlpt": 5
+        },
+        {
+            "id": 270,
+            "kanji": "辞書",
+            "meaning": "사전",
+            "reading": "じしょ",
+            "jlpt": 5
+        },
+        {
+            "id": 271,
+            "kanji": "静か",
+            "meaning": "조용",
+            "reading": "しずか",
+            "jlpt": 5
+        },
+        {
+            "id": 272,
+            "kanji": "下",
+            "meaning": "아래",
+            "reading": "した",
+            "jlpt": 5
+        },
+        {
+            "id": 273,
+            "kanji": "七",
+            "meaning": "칠",
+            "reading": "しち",
+            "jlpt": 5
+        },
+        {
+            "id": 274,
+            "kanji": "質問",
+            "meaning": "질문",
+            "reading": "しつもん",
+            "jlpt": 5
+        },
+        {
+            "id": 275,
+            "kanji": "自転車",
+            "meaning": "자전거",
+            "reading": "じてんしゃ",
+            "jlpt": 5
+        },
+        {
+            "id": 276,
+            "kanji": "自動車",
+            "meaning": "자동차",
+            "reading": "じどうしゃ",
+            "jlpt": 5
+        },
+        {
+            "id": 277,
+            "kanji": "死ぬ",
+            "meaning": "죽다",
+            "reading": "しぬ",
+            "jlpt": 5
+        },
+        {
+            "id": 278,
+            "kanji": "字引",
+            "meaning": "사전",
+            "reading": "じびき",
+            "jlpt": 5
+        },
+        {
+            "id": 279,
+            "kanji": "自分",
+            "meaning": "자신",
+            "reading": "じぶん",
+            "jlpt": 5
+        },
+        {
+            "id": 280,
+            "kanji": "閉まる",
+            "meaning": "꼭 닫히다",
+            "reading": "しまる",
+            "jlpt": 5
+        },
+        {
+            "id": 281,
+            "kanji": "閉める",
+            "meaning": "닫다",
+            "reading": "しめる",
+            "jlpt": 5
+        },
+        {
+            "id": 282,
+            "kanji": "締める",
+            "meaning": "닫다",
+            "reading": "しめる",
+            "jlpt": 5
+        },
+        {
+            "id": 283,
+            "kanji": "じゃ",
+            "meaning": "그럼",
+            "reading": "じゃ",
+            "jlpt": 5
+        },
+        {
+            "id": 284,
+            "kanji": "写真",
+            "meaning": "사진",
+            "reading": "しゃしん",
+            "jlpt": 5
+        },
+        {
+            "id": 285,
+            "kanji": "シャツ",
+            "meaning": "셔츠",
+            "reading": "シャツ",
+            "jlpt": 5
+        },
+        {
+            "id": 286,
+            "kanji": "シャワー",
+            "meaning": "샤워",
+            "reading": "シャワー",
+            "jlpt": 5
+        },
+        {
+            "id": 287,
+            "kanji": "十",
+            "meaning": "십",
+            "reading": "じゅう",
+            "jlpt": 5
+        },
+        {
+            "id": 288,
+            "kanji": "授業",
+            "meaning": "수업",
+            "reading": "じゅぎょう",
+            "jlpt": 5
+        },
+        {
+            "id": 289,
+            "kanji": "宿題",
+            "meaning": "숙제",
+            "reading": "しゅくだい",
+            "jlpt": 5
+        },
+        {
+            "id": 290,
+            "kanji": "上手",
+            "meaning": "잘",
+            "reading": "じょうず",
+            "jlpt": 5
+        },
+        {
+            "id": 291,
+            "kanji": "丈夫",
+            "meaning": "건강함",
+            "reading": "じょうぶ",
+            "jlpt": 5
+        },
+        {
+            "id": 292,
+            "kanji": "しょうゆ",
+            "meaning": "간장",
+            "reading": "しょうゆ",
+            "jlpt": 5
+        },
+        {
+            "id": 293,
+            "kanji": "食堂",
+            "meaning": "식당",
+            "reading": "しょくどう",
+            "jlpt": 5
+        },
+        {
+            "id": 294,
+            "kanji": "知る",
+            "meaning": "알",
+            "reading": "しる",
+            "jlpt": 5
+        },
+        {
+            "id": 295,
+            "kanji": "白い",
+            "meaning": "하얀",
+            "reading": "しろい",
+            "jlpt": 5
+        },
+        {
+            "id": 296,
+            "kanji": "新聞",
+            "meaning": "신문",
+            "reading": "しんぶん",
+            "jlpt": 5
+        },
+        {
+            "id": 297,
+            "kanji": "水曜日",
+            "meaning": "수요일",
+            "reading": "すいようび",
+            "jlpt": 5
+        },
+        {
+            "id": 298,
+            "kanji": "吸う",
+            "meaning": "들이마시다",
+            "reading": "すう",
+            "jlpt": 5
+        },
+        {
+            "id": 299,
+            "kanji": "スカート",
+            "meaning": "스커트",
+            "reading": "スカート",
+            "jlpt": 5
+        },
+        {
+            "id": 300,
+            "kanji": "好き",
+            "meaning": "좋아함",
+            "reading": "すき",
+            "jlpt": 5
+        },
+        {
+            "id": 301,
+            "kanji": "少ない",
+            "meaning": "적다",
+            "reading": "すくない",
+            "jlpt": 5
+        },
+        {
+            "id": 302,
+            "kanji": "すぐに",
+            "meaning": "즉시",
+            "reading": "すぐに",
+            "jlpt": 5
+        },
+        {
+            "id": 303,
+            "kanji": "少し",
+            "meaning": "조금",
+            "reading": "すこし",
+            "jlpt": 5
+        },
+        {
+            "id": 304,
+            "kanji": "涼しい",
+            "meaning": "차가운",
+            "reading": "すずしい",
+            "jlpt": 5
+        },
+        {
+            "id": 305,
+            "kanji": "ストーブ",
+            "meaning": "스토브",
+            "reading": "ストーブ",
+            "jlpt": 5
+        },
+        {
+            "id": 306,
+            "kanji": "スプーン",
+            "meaning": "숟가락",
+            "reading": "スプーン",
+            "jlpt": 5
+        },
+        {
+            "id": 307,
+            "kanji": "スポーツ",
+            "meaning": "스포츠",
+            "reading": "スポーツ",
+            "jlpt": 5
+        },
+        {
+            "id": 308,
+            "kanji": "ズボン",
+            "meaning": "바지",
+            "reading": "ズボン",
+            "jlpt": 5
+        },
+        {
+            "id": 309,
+            "kanji": "住む",
+            "meaning": "살다",
+            "reading": "すむ",
+            "jlpt": 5
+        },
+        {
+            "id": 310,
+            "kanji": "スリッパ",
+            "meaning": "슬리퍼",
+            "reading": "スリッパ",
+            "jlpt": 5
+        },
+        {
+            "id": 311,
+            "kanji": "する",
+            "meaning": "하다",
+            "reading": "する",
+            "jlpt": 5
+        },
+        {
+            "id": 312,
+            "kanji": "座る",
+            "meaning": "앉다",
+            "reading": "すわる",
+            "jlpt": 5
+        },
+        {
+            "id": 313,
+            "kanji": "背",
+            "meaning": "키",
+            "reading": "せ",
+            "jlpt": 5
+        },
+        {
+            "id": 314,
+            "kanji": "生徒",
+            "meaning": "학생",
+            "reading": "せいと",
+            "jlpt": 5
+        },
+        {
+            "id": 315,
+            "kanji": "セーター",
+            "meaning": "스웨터",
+            "reading": "セーター",
+            "jlpt": 5
+        },
+        {
+            "id": 316,
+            "kanji": "せっけん",
+            "meaning": "경제",
+            "reading": "せっけん",
+            "jlpt": 5
+        },
+        {
+            "id": 317,
+            "kanji": "背広",
+            "meaning": "정장",
+            "reading": "せびろ",
+            "jlpt": 5
+        },
+        {
+            "id": 318,
+            "kanji": "狭い",
+            "meaning": "좁다",
+            "reading": "せまい",
+            "jlpt": 5
+        },
+        {
+            "id": 319,
+            "kanji": "ゼロ",
+            "meaning": "제로",
+            "reading": "ゼロ",
+            "jlpt": 5
+        },
+        {
+            "id": 320,
+            "kanji": "千",
+            "meaning": "천",
+            "reading": "せん",
+            "jlpt": 5
+        },
+        {
+            "id": 321,
+            "kanji": "先月",
+            "meaning": "지난 달",
+            "reading": "せんげつ",
+            "jlpt": 5
+        },
+        {
+            "id": 322,
+            "kanji": "先週",
+            "meaning": "지난",
+            "reading": "せんしゅう",
+            "jlpt": 5
+        },
+        {
+            "id": 323,
+            "kanji": "先生",
+            "meaning": "선생님",
+            "reading": "せんせい",
+            "jlpt": 5
+        },
+        {
+            "id": 324,
+            "kanji": "洗濯",
+            "meaning": "세탁",
+            "reading": "せんたく",
+            "jlpt": 5
+        },
+        {
+            "id": 325,
+            "kanji": "全部",
+            "meaning": "전체",
+            "reading": "ぜんぶ",
+            "jlpt": 5
+        },
+        {
+            "id": 326,
+            "kanji": "掃除する",
+            "meaning": "청소하다",
+            "reading": "そうじする",
+            "jlpt": 5
+        },
+        {
+            "id": 327,
+            "kanji": "そうして",
+            "meaning": "그리고",
+            "reading": "そうして",
+            "jlpt": 5
+        },
+        {
+            "id": 328,
+            "kanji": "そこ",
+            "meaning": "거기",
+            "reading": "そこ",
+            "jlpt": 5
+        },
+        {
+            "id": 329,
+            "kanji": "そちら",
+            "meaning": "그 쪽",
+            "reading": "そちら",
+            "jlpt": 5
+        },
+        {
+            "id": 330,
+            "kanji": "そっち",
+            "meaning": "그쪽",
+            "reading": "そっち",
+            "jlpt": 5
+        },
+        {
+            "id": 331,
+            "kanji": "外",
+            "meaning": "외부",
+            "reading": "そと",
+            "jlpt": 5
+        },
+        {
+            "id": 332,
+            "kanji": "その",
+            "meaning": "그",
+            "reading": "その",
+            "jlpt": 5
+        },
+        {
+            "id": 333,
+            "kanji": "そば",
+            "meaning": "옆",
+            "reading": "そば",
+            "jlpt": 5
+        },
+        {
+            "id": 334,
+            "kanji": "空",
+            "meaning": "하늘",
+            "reading": "そら",
+            "jlpt": 5
+        },
+        {
+            "id": 335,
+            "kanji": "それ",
+            "meaning": "그것",
+            "reading": "それ",
+            "jlpt": 5
+        },
+        {
+            "id": 336,
+            "kanji": "それから",
+            "meaning": "그 다음에",
+            "reading": "それから",
+            "jlpt": 5
+        },
+        {
+            "id": 337,
+            "kanji": "それでは",
+            "meaning": "그러면",
+            "reading": "それでは",
+            "jlpt": 5
+        },
+        {
+            "id": 338,
+            "kanji": "大学",
+            "meaning": "대학",
+            "reading": "だいがく",
+            "jlpt": 5
+        },
+        {
+            "id": 339,
+            "kanji": "大使館",
+            "meaning": "대사관",
+            "reading": "たいしかん",
+            "jlpt": 5
+        },
+        {
+            "id": 340,
+            "kanji": "大丈夫",
+            "meaning": "괜찮아",
+            "reading": "だいじょうぶ",
+            "jlpt": 5
+        },
+        {
+            "id": 341,
+            "kanji": "大好き",
+            "meaning": "매우 좋음",
+            "reading": "だいすき",
+            "jlpt": 5
+        },
+        {
+            "id": 342,
+            "kanji": "大切",
+            "meaning": "중요",
+            "reading": "たいせつ",
+            "jlpt": 5
+        },
+        {
+            "id": 343,
+            "kanji": "台所",
+            "meaning": "부엌",
+            "reading": "だいどころ",
+            "jlpt": 5
+        },
+        {
+            "id": 344,
+            "kanji": "たいへん",
+            "meaning": "몹시",
+            "reading": "たいへん",
+            "jlpt": 5
+        },
+        {
+            "id": 345,
+            "kanji": "たいへん",
+            "meaning": "큰일",
+            "reading": "たいへん",
+            "jlpt": 5
+        },
+        {
+            "id": 346,
+            "kanji": "高い",
+            "meaning": "높다",
+            "reading": "たかい",
+            "jlpt": 5
+        },
+        {
+            "id": 347,
+            "kanji": "たくさん",
+            "meaning": "많음",
+            "reading": "たくさん",
+            "jlpt": 5
+        },
+        {
+            "id": 348,
+            "kanji": "タクシー",
+            "meaning": "택시",
+            "reading": "タクシー",
+            "jlpt": 5
+        },
+        {
+            "id": 349,
+            "kanji": "出す",
+            "meaning": "내다",
+            "reading": "だす",
+            "jlpt": 5
+        },
+        {
+            "id": 350,
+            "kanji": "立つ",
+            "meaning": "일어서다",
+            "reading": "たつ",
+            "jlpt": 5
+        },
+        {
+            "id": 351,
+            "kanji": "たて",
+            "meaning": "세로",
+            "reading": "たて",
+            "jlpt": 5
+        },
+        {
+            "id": 352,
+            "kanji": "建物",
+            "meaning": "건물",
+            "reading": "たてもの",
+            "jlpt": 5
+        },
+        {
+            "id": 353,
+            "kanji": "楽しい",
+            "meaning": "재미",
+            "reading": "たのしい",
+            "jlpt": 5
+        },
+        {
+            "id": 354,
+            "kanji": "頼む",
+            "meaning": "부탁하다",
+            "reading": "たのむ",
+            "jlpt": 5
+        },
+        {
+            "id": 355,
+            "kanji": "たばこ",
+            "meaning": "담배",
+            "reading": "たばこ",
+            "jlpt": 5
+        },
+        {
+            "id": 356,
+            "kanji": "たぶん",
+            "meaning": "아마",
+            "reading": "たぶん",
+            "jlpt": 5
+        },
+        {
+            "id": 357,
+            "kanji": "食べ物",
+            "meaning": "음식",
+            "reading": "たべもの",
+            "jlpt": 5
+        },
+        {
+            "id": 358,
+            "kanji": "食べる",
+            "meaning": "먹다",
+            "reading": "たべる",
+            "jlpt": 5
+        },
+        {
+            "id": 359,
+            "kanji": "卵",
+            "meaning": "계란",
+            "reading": "たまご",
+            "jlpt": 5
+        },
+        {
+            "id": 360,
+            "kanji": "誰",
+            "meaning": "누구",
+            "reading": "だれ",
+            "jlpt": 5
+        },
+        {
+            "id": 361,
+            "kanji": "誰か",
+            "meaning": "누군가",
+            "reading": "だれか",
+            "jlpt": 5
+        },
+        {
+            "id": 362,
+            "kanji": "誕生日",
+            "meaning": "생일",
+            "reading": "たんじょうび",
+            "jlpt": 5
+        },
+        {
+            "id": 363,
+            "kanji": "だんだん",
+            "meaning": "차차",
+            "reading": "だんだん",
+            "jlpt": 5
+        },
+        {
+            "id": 364,
+            "kanji": "小さい",
+            "meaning": "작은",
+            "reading": "ちいさい",
+            "jlpt": 5
+        },
+        {
+            "id": 365,
+            "kanji": "小さな",
+            "meaning": "작은",
+            "reading": "ちいさな",
+            "jlpt": 5
+        },
+        {
+            "id": 366,
+            "kanji": "近い",
+            "meaning": "가깝다",
+            "reading": "ちかい",
+            "jlpt": 5
+        },
+        {
+            "id": 367,
+            "kanji": "違う",
+            "meaning": "다른",
+            "reading": "ちがう",
+            "jlpt": 5
+        },
+        {
+            "id": 368,
+            "kanji": "近く",
+            "meaning": "근처",
+            "reading": "ちかく",
+            "jlpt": 5
+        },
+        {
+            "id": 369,
+            "kanji": "地下鉄",
+            "meaning": "지하철",
+            "reading": "ちかてつ",
+            "jlpt": 5
+        },
+        {
+            "id": 370,
+            "kanji": "地図",
+            "meaning": "지도",
+            "reading": "ちず",
+            "jlpt": 5
+        },
+        {
+            "id": 371,
+            "kanji": "茶色",
+            "meaning": "갈색",
+            "reading": "ちゃいろ",
+            "jlpt": 5
+        },
+        {
+            "id": 372,
+            "kanji": "ちゃわん",
+            "meaning": "그릇",
+            "reading": "ちゃわん",
+            "jlpt": 5
+        },
+        {
+            "id": 373,
+            "kanji": "ちょうど",
+            "meaning": "꼭",
+            "reading": "ちょうど",
+            "jlpt": 5
+        },
+        {
+            "id": 374,
+            "kanji": "ちょっと",
+            "meaning": "조금",
+            "reading": "ちょっと",
+            "jlpt": 5
+        },
+        {
+            "id": 375,
+            "kanji": "一日",
+            "meaning": "초하루",
+            "reading": "ついたち",
+            "jlpt": 5
+        },
+        {
+            "id": 376,
+            "kanji": "使う",
+            "meaning": "쓰다",
+            "reading": "つかう",
+            "jlpt": 5
+        },
+        {
+            "id": 377,
+            "kanji": "疲れる",
+            "meaning": "피곤",
+            "reading": "つかれる",
+            "jlpt": 5
+        },
+        {
+            "id": 378,
+            "kanji": "次",
+            "meaning": "다음",
+            "reading": "つぎ",
+            "jlpt": 5
+        },
+        {
+            "id": 379,
+            "kanji": "着く",
+            "meaning": "도착",
+            "reading": "つく",
+            "jlpt": 5
+        },
+        {
+            "id": 380,
+            "kanji": "机",
+            "meaning": "책상",
+            "reading": "つくえ",
+            "jlpt": 5
+        },
+        {
+            "id": 381,
+            "kanji": "作る",
+            "meaning": "만들다",
+            "reading": "つくる",
+            "jlpt": 5
+        },
+        {
+            "id": 382,
+            "kanji": "つける",
+            "meaning": "붙이다",
+            "reading": "つける",
+            "jlpt": 5
+        },
+        {
+            "id": 383,
+            "kanji": "勤める",
+            "meaning": "근무하다",
+            "reading": "つとめる",
+            "jlpt": 5
+        },
+        {
+            "id": 384,
+            "kanji": "つまらない",
+            "meaning": "시시하다",
+            "reading": "つまらない",
+            "jlpt": 5
+        },
+        {
+            "id": 385,
+            "kanji": "冷たい",
+            "meaning": "차갑다",
+            "reading": "つめたい",
+            "jlpt": 5
+        },
+        {
+            "id": 386,
+            "kanji": "強い",
+            "meaning": "강한",
+            "reading": "つよい",
+            "jlpt": 5
+        },
+        {
+            "id": 387,
+            "kanji": "手",
+            "meaning": "손",
+            "reading": "て",
+            "jlpt": 5
+        },
+        {
+            "id": 388,
+            "kanji": "テープ",
+            "meaning": "테이프",
+            "reading": "テープ",
+            "jlpt": 5
+        },
+        {
+            "id": 389,
+            "kanji": "テーブル",
+            "meaning": "테이블",
+            "reading": "テーブル",
+            "jlpt": 5
+        },
+        {
+            "id": 390,
+            "kanji": "テープレコーダー",
+            "meaning": "테이프 레코더",
+            "reading": "テープレコーダー",
+            "jlpt": 5
+        },
+        {
+            "id": 391,
+            "kanji": "出かける",
+            "meaning": "외출",
+            "reading": "でかける",
+            "jlpt": 5
+        },
+        {
+            "id": 392,
+            "kanji": "手紙",
+            "meaning": "편지",
+            "reading": "てがみ",
+            "jlpt": 5
+        },
+        {
+            "id": 393,
+            "kanji": "できる",
+            "meaning": "할 수 있다",
+            "reading": "できる",
+            "jlpt": 5
+        },
+        {
+            "id": 394,
+            "kanji": "出口",
+            "meaning": "출구",
+            "reading": "でぐち",
+            "jlpt": 5
+        },
+        {
+            "id": 395,
+            "kanji": "テスト",
+            "meaning": "테스트",
+            "reading": "テスト",
+            "jlpt": 5
+        },
+        {
+            "id": 396,
+            "kanji": "では",
+            "meaning": "그러면",
+            "reading": "では",
+            "jlpt": 5
+        },
+        {
+            "id": 397,
+            "kanji": "デパート",
+            "meaning": "백화점",
+            "reading": "デパート",
+            "jlpt": 5
+        },
+        {
+            "id": 398,
+            "kanji": "でも",
+            "meaning": "그러나",
+            "reading": "でも",
+            "jlpt": 5
+        },
+        {
+            "id": 399,
+            "kanji": "出る",
+            "meaning": "나가다",
+            "reading": "でる",
+            "jlpt": 5
+        },
+        {
+            "id": 400,
+            "kanji": "テレビ",
+            "meaning": "텔레비전",
+            "reading": "テレビ",
+            "jlpt": 5
+        },
+        {
+            "id": 401,
+            "kanji": "天気",
+            "meaning": "날씨",
+            "reading": "てんき",
+            "jlpt": 5
+        },
+        {
+            "id": 402,
+            "kanji": "電気",
+            "meaning": "전기",
+            "reading": "でんき",
+            "jlpt": 5
+        },
+        {
+            "id": 403,
+            "kanji": "電車",
+            "meaning": "전차",
+            "reading": "でんしゃ",
+            "jlpt": 5
+        },
+        {
+            "id": 404,
+            "kanji": "電話",
+            "meaning": "전화",
+            "reading": "でんわ",
+            "jlpt": 5
+        },
+        {
+            "id": 405,
+            "kanji": "戸",
+            "meaning": "문",
+            "reading": "と",
+            "jlpt": 5
+        },
+        {
+            "id": 406,
+            "kanji": "ドア",
+            "meaning": "문",
+            "reading": "ドア",
+            "jlpt": 5
+        },
+        {
+            "id": 407,
+            "kanji": "トイレ",
+            "meaning": "화장실",
+            "reading": "トイレ",
+            "jlpt": 5
+        },
+        {
+            "id": 408,
+            "kanji": "どう",
+            "meaning": "어떻게",
+            "reading": "どう",
+            "jlpt": 5
+        },
+        {
+            "id": 409,
+            "kanji": "どうして",
+            "meaning": "어떻게",
+            "reading": "どうして",
+            "jlpt": 5
+        },
+        {
+            "id": 410,
+            "kanji": "どうぞ",
+            "meaning": "아무쪼록",
+            "reading": "どうぞ",
+            "jlpt": 5
+        },
+        {
+            "id": 411,
+            "kanji": "動物",
+            "meaning": "동물",
+            "reading": "どうぶつ",
+            "jlpt": 5
+        },
+        {
+            "id": 412,
+            "kanji": "どうも",
+            "meaning": "감사합니다",
+            "reading": "どうも",
+            "jlpt": 5
+        },
+        {
+            "id": 413,
+            "kanji": "遠い",
+            "meaning": "멀다",
+            "reading": "とおい",
+            "jlpt": 5
+        },
+        {
+            "id": 414,
+            "kanji": "十日",
+            "meaning": "열흘",
+            "reading": "とおか",
+            "jlpt": 5
+        },
+        {
+            "id": 415,
+            "kanji": "時々",
+            "meaning": "때때로",
+            "reading": "ときどき",
+            "jlpt": 5
+        },
+        {
+            "id": 416,
+            "kanji": "時計",
+            "meaning": "시계",
+            "reading": "とけい",
+            "jlpt": 5
+        },
+        {
+            "id": 417,
+            "kanji": "どこ",
+            "meaning": "어디",
+            "reading": "どこ",
+            "jlpt": 5
+        },
+        {
+            "id": 418,
+            "kanji": "所",
+            "meaning": "곳",
+            "reading": "ところ",
+            "jlpt": 5
+        },
+        {
+            "id": 419,
+            "kanji": "年",
+            "meaning": "년",
+            "reading": "とし",
+            "jlpt": 5
+        },
+        {
+            "id": 420,
+            "kanji": "図書館",
+            "meaning": "도서관",
+            "reading": "としょかん",
+            "jlpt": 5
+        },
+        {
+            "id": 421,
+            "kanji": "どちら",
+            "meaning": "어느 쪽",
+            "reading": "どちら",
+            "jlpt": 5
+        },
+        {
+            "id": 422,
+            "kanji": "どっち",
+            "meaning": "어느 쪽",
+            "reading": "どっち",
+            "jlpt": 5
+        },
+        {
+            "id": 423,
+            "kanji": "とても",
+            "meaning": "아무리 해도",
+            "reading": "とても",
+            "jlpt": 5
+        },
+        {
+            "id": 424,
+            "kanji": "どなた",
+            "meaning": "누구",
+            "reading": "どなた",
+            "jlpt": 5
+        },
+        {
+            "id": 425,
+            "kanji": "隣",
+            "meaning": "이웃",
+            "reading": "となり",
+            "jlpt": 5
+        },
+        {
+            "id": 426,
+            "kanji": "どの",
+            "meaning": "어느",
+            "reading": "どの",
+            "jlpt": 5
+        },
+        {
+            "id": 427,
+            "kanji": "飛ぶ",
+            "meaning": "날다",
+            "reading": "とぶ",
+            "jlpt": 5
+        },
+        {
+            "id": 428,
+            "kanji": "止まる",
+            "meaning": "멈추다",
+            "reading": "とまる",
+            "jlpt": 5
+        },
+        {
+            "id": 429,
+            "kanji": "友達",
+            "meaning": "친구",
+            "reading": "ともだち",
+            "jlpt": 5
+        },
+        {
+            "id": 430,
+            "kanji": "土曜日",
+            "meaning": "토요일",
+            "reading": "どようび",
+            "jlpt": 5
+        },
+        {
+            "id": 431,
+            "kanji": "鳥",
+            "meaning": "새",
+            "reading": "とり",
+            "jlpt": 5
+        },
+        {
+            "id": 432,
+            "kanji": "とり肉",
+            "meaning": "닭고기",
+            "reading": "とりにく",
+            "jlpt": 5
+        },
+        {
+            "id": 433,
+            "kanji": "取る",
+            "meaning": "가지고",
+            "reading": "とる",
+            "jlpt": 5
+        },
+        {
+            "id": 434,
+            "kanji": "撮る",
+            "meaning": "찍다",
+            "reading": "とる",
+            "jlpt": 5
+        },
+        {
+            "id": 435,
+            "kanji": "どれ",
+            "meaning": "어느",
+            "reading": "どれ",
+            "jlpt": 5
+        },
+        {
+            "id": 436,
+            "kanji": "ナイフ",
+            "meaning": "칼",
+            "reading": "ナイフ",
+            "jlpt": 5
+        },
+        {
+            "id": 437,
+            "kanji": "中",
+            "meaning": "가운데",
+            "reading": "なか",
+            "jlpt": 5
+        },
+        {
+            "id": 438,
+            "kanji": "長い",
+            "meaning": "긴",
+            "reading": "ながい",
+            "jlpt": 5
+        },
+        {
+            "id": 439,
+            "kanji": "鳴く",
+            "meaning": "울다",
+            "reading": "なく",
+            "jlpt": 5
+        },
+        {
+            "id": 440,
+            "kanji": "無くす",
+            "meaning": "없애다",
+            "reading": "なくす",
+            "jlpt": 5
+        },
+        {
+            "id": 441,
+            "kanji": "なぜ",
+            "meaning": "왜",
+            "reading": "なぜ",
+            "jlpt": 5
+        },
+        {
+            "id": 442,
+            "kanji": "夏",
+            "meaning": "여름",
+            "reading": "なつ",
+            "jlpt": 5
+        },
+        {
+            "id": 443,
+            "kanji": "夏休み",
+            "meaning": "여름 방학",
+            "reading": "なつやすみ",
+            "jlpt": 5
+        },
+        {
+            "id": 444,
+            "kanji": "など",
+            "meaning": "등",
+            "reading": "など",
+            "jlpt": 5
+        },
+        {
+            "id": 445,
+            "kanji": "七つ",
+            "meaning": "일곱",
+            "reading": "ななつ",
+            "jlpt": 5
+        },
+        {
+            "id": 446,
+            "kanji": "七日",
+            "meaning": "일곱째 날",
+            "reading": "なのか",
+            "jlpt": 5
+        },
+        {
+            "id": 447,
+            "kanji": "名前",
+            "meaning": "이름",
+            "reading": "なまえ",
+            "jlpt": 5
+        },
+        {
+            "id": 448,
+            "kanji": "習う",
+            "meaning": "배우",
+            "reading": "ならう",
+            "jlpt": 5
+        },
+        {
+            "id": 449,
+            "kanji": "並ぶ",
+            "meaning": "늘어선",
+            "reading": "ならぶ",
+            "jlpt": 5
+        },
+        {
+            "id": 450,
+            "kanji": "並べる",
+            "meaning": "나란히",
+            "reading": "ならべる",
+            "jlpt": 5
+        },
+        {
+            "id": 451,
+            "kanji": "なる",
+            "meaning": "되다",
+            "reading": "なる",
+            "jlpt": 5
+        },
+        {
+            "id": 452,
+            "kanji": "何",
+            "meaning": "무엇",
+            "reading": "なん",
+            "jlpt": 5
+        },
+        {
+            "id": 453,
+            "kanji": "二",
+            "meaning": "둘",
+            "reading": "に",
+            "jlpt": 5
+        },
+        {
+            "id": 454,
+            "kanji": "賑やか",
+            "meaning": "분주",
+            "reading": "にぎやか",
+            "jlpt": 5
+        },
+        {
+            "id": 455,
+            "kanji": "肉",
+            "meaning": "고기",
+            "reading": "にく",
+            "jlpt": 5
+        },
+        {
+            "id": 456,
+            "kanji": "西",
+            "meaning": "서쪽",
+            "reading": "にし",
+            "jlpt": 5
+        },
+        {
+            "id": 457,
+            "kanji": "日曜日",
+            "meaning": "일요일",
+            "reading": "にちようび",
+            "jlpt": 5
+        },
+        {
+            "id": 458,
+            "kanji": "荷物",
+            "meaning": "짐",
+            "reading": "にもつ",
+            "jlpt": 5
+        },
+        {
+            "id": 459,
+            "kanji": "ニュース",
+            "meaning": "뉴스",
+            "reading": "ニュース",
+            "jlpt": 5
+        },
+        {
+            "id": 460,
+            "kanji": "庭",
+            "meaning": "정원",
+            "reading": "にわ",
+            "jlpt": 5
+        },
+        {
+            "id": 461,
+            "kanji": "脱ぐ",
+            "meaning": "옷을 벗다",
+            "reading": "ぬぐ",
+            "jlpt": 5
+        },
+        {
+            "id": 462,
+            "kanji": "温い",
+            "meaning": "미지근한",
+            "reading": "ぬるい",
+            "jlpt": 5
+        },
+        {
+            "id": 463,
+            "kanji": "ネクタイ",
+            "meaning": "넥타이",
+            "reading": "ネクタイ",
+            "jlpt": 5
+        },
+        {
+            "id": 464,
+            "kanji": "猫",
+            "meaning": "고양이",
+            "reading": "ねこ",
+            "jlpt": 5
+        },
+        {
+            "id": 465,
+            "kanji": "寝る",
+            "meaning": "자다",
+            "reading": "ねる",
+            "jlpt": 5
+        },
+        {
+            "id": 466,
+            "kanji": "ノート",
+            "meaning": "노트",
+            "reading": "ノート",
+            "jlpt": 5
+        },
+        {
+            "id": 467,
+            "kanji": "登る",
+            "meaning": "등반",
+            "reading": "のぼる",
+            "jlpt": 5
+        },
+        {
+            "id": 468,
+            "kanji": "飲み物",
+            "meaning": "음료",
+            "reading": "のみもの",
+            "jlpt": 5
+        },
+        {
+            "id": 469,
+            "kanji": "飲む",
+            "meaning": "마시다",
+            "reading": "のむ",
+            "jlpt": 5
+        },
+        {
+            "id": 470,
+            "kanji": "乗る",
+            "meaning": "타다",
+            "reading": "のる",
+            "jlpt": 5
+        },
+        {
+            "id": 471,
+            "kanji": "歯",
+            "meaning": "치아",
+            "reading": "は",
+            "jlpt": 5
+        },
+        {
+            "id": 472,
+            "kanji": "パーティー",
+            "meaning": "파티",
+            "reading": "パーティー",
+            "jlpt": 5
+        },
+        {
+            "id": 473,
+            "kanji": "はい",
+            "meaning": "예",
+            "reading": "はい",
+            "jlpt": 5
+        },
+        {
+            "id": 474,
+            "kanji": "灰皿",
+            "meaning": "재떨이",
+            "reading": "はいざら",
+            "jlpt": 5
+        },
+        {
+            "id": 475,
+            "kanji": "入る",
+            "meaning": "들어가다",
+            "reading": "はいる",
+            "jlpt": 5
+        },
+        {
+            "id": 476,
+            "kanji": "葉書",
+            "meaning": "엽서",
+            "reading": "はがき",
+            "jlpt": 5
+        },
+        {
+            "id": 477,
+            "kanji": "はく",
+            "meaning": "입다",
+            "reading": "はく",
+            "jlpt": 5
+        },
+        {
+            "id": 478,
+            "kanji": "箱",
+            "meaning": "상자",
+            "reading": "はこ",
+            "jlpt": 5
+        },
+        {
+            "id": 479,
+            "kanji": "橋",
+            "meaning": "다리",
+            "reading": "はし",
+            "jlpt": 5
+        },
+        {
+            "id": 480,
+            "kanji": "はし",
+            "meaning": "젓가락",
+            "reading": "はし",
+            "jlpt": 5
+        },
+        {
+            "id": 481,
+            "kanji": "始まる",
+            "meaning": "시작",
+            "reading": "はじまる",
+            "jlpt": 5
+        },
+        {
+            "id": 482,
+            "kanji": "初め",
+            "meaning": "처음",
+            "reading": "はじめ",
+            "jlpt": 5
+        },
+        {
+            "id": 483,
+            "kanji": "初めて",
+            "meaning": "처음",
+            "reading": "はじめて",
+            "jlpt": 5
+        },
+        {
+            "id": 484,
+            "kanji": "走る",
+            "meaning": "달리다",
+            "reading": "はしる",
+            "jlpt": 5
+        },
+        {
+            "id": 485,
+            "kanji": "バス",
+            "meaning": "버스",
+            "reading": "バス",
+            "jlpt": 5
+        },
+        {
+            "id": 486,
+            "kanji": "バター",
+            "meaning": "버터",
+            "reading": "バター",
+            "jlpt": 5
+        },
+        {
+            "id": 487,
+            "kanji": "二十歳",
+            "meaning": "스무 살",
+            "reading": "はたち",
+            "jlpt": 5
+        },
+        {
+            "id": 488,
+            "kanji": "働く",
+            "meaning": "일하다",
+            "reading": "はたらく",
+            "jlpt": 5
+        },
+        {
+            "id": 489,
+            "kanji": "八",
+            "meaning": "여덟",
+            "reading": "はち",
+            "jlpt": 5
+        },
+        {
+            "id": 490,
+            "kanji": "二十日",
+            "meaning": "20일",
+            "reading": "はつか",
+            "jlpt": 5
+        },
+        {
+            "id": 491,
+            "kanji": "花",
+            "meaning": "꽃",
+            "reading": "はな",
+            "jlpt": 5
+        },
+        {
+            "id": 492,
+            "kanji": "鼻",
+            "meaning": "코",
+            "reading": "はな",
+            "jlpt": 5
+        },
+        {
+            "id": 493,
+            "kanji": "話",
+            "meaning": "이야기",
+            "reading": "はなし",
+            "jlpt": 5
+        },
+        {
+            "id": 494,
+            "kanji": "話す",
+            "meaning": "이야기하다",
+            "reading": "はなす",
+            "jlpt": 5
+        },
+        {
+            "id": 495,
+            "kanji": "早い",
+            "meaning": "이르다",
+            "reading": "はやい",
+            "jlpt": 5
+        },
+        {
+            "id": 496,
+            "kanji": "速い",
+            "meaning": "빠르다",
+            "reading": "はやい",
+            "jlpt": 5
+        },
+        {
+            "id": 497,
+            "kanji": "春",
+            "meaning": "봄",
+            "reading": "はる",
+            "jlpt": 5
+        },
+        {
+            "id": 498,
+            "kanji": "貼る",
+            "meaning": "붙이다",
+            "reading": "はる",
+            "jlpt": 5
+        },
+        {
+            "id": 499,
+            "kanji": "晴れ",
+            "meaning": "맑음",
+            "reading": "はれ",
+            "jlpt": 5
+        },
+        {
+            "id": 500,
+            "kanji": "晴れる",
+            "meaning": "맑은",
+            "reading": "はれる",
+            "jlpt": 5
+        },
+        {
+            "id": 501,
+            "kanji": "半",
+            "meaning": "반",
+            "reading": "はん",
+            "jlpt": 5
+        },
+        {
+            "id": 502,
+            "kanji": "晩",
+            "meaning": "저녁",
+            "reading": "ばん",
+            "jlpt": 5
+        },
+        {
+            "id": 503,
+            "kanji": "パン",
+            "meaning": "빵",
+            "reading": "パン",
+            "jlpt": 5
+        },
+        {
+            "id": 504,
+            "kanji": "ハンカチ",
+            "meaning": "손수건",
+            "reading": "ハンカチ",
+            "jlpt": 5
+        },
+        {
+            "id": 505,
+            "kanji": "番号",
+            "meaning": "번호",
+            "reading": "ばんごう",
+            "jlpt": 5
+        },
+        {
+            "id": 506,
+            "kanji": "晩御飯",
+            "meaning": "저녁 식사",
+            "reading": "ばんごはん",
+            "jlpt": 5
+        },
+        {
+            "id": 507,
+            "kanji": "半分",
+            "meaning": "반",
+            "reading": "はんぶん",
+            "jlpt": 5
+        },
+        {
+            "id": 508,
+            "kanji": "東",
+            "meaning": "동쪽",
+            "reading": "ひがし",
+            "jlpt": 5
+        },
+        {
+            "id": 509,
+            "kanji": "引く",
+            "meaning": "끌다",
+            "reading": "ひく",
+            "jlpt": 5
+        },
+        {
+            "id": 510,
+            "kanji": "弾く",
+            "meaning": "연주하다",
+            "reading": "ひく",
+            "jlpt": 5
+        },
+        {
+            "id": 511,
+            "kanji": "低い",
+            "meaning": "낮다",
+            "reading": "ひくい",
+            "jlpt": 5
+        },
+        {
+            "id": 512,
+            "kanji": "飛行機",
+            "meaning": "비행기",
+            "reading": "ひこうき",
+            "jlpt": 5
+        },
+        {
+            "id": 513,
+            "kanji": "左",
+            "meaning": "왼쪽",
+            "reading": "ひだり",
+            "jlpt": 5
+        },
+        {
+            "id": 514,
+            "kanji": "人",
+            "meaning": "사람",
+            "reading": "ひと",
+            "jlpt": 5
+        },
+        {
+            "id": 515,
+            "kanji": "一つ",
+            "meaning": "하나",
+            "reading": "ひとつ",
+            "jlpt": 5
+        },
+        {
+            "id": 516,
+            "kanji": "一月",
+            "meaning": "한달",
+            "reading": "ひとつき",
+            "jlpt": 5
+        },
+        {
+            "id": 517,
+            "kanji": "一人",
+            "meaning": "한 사람",
+            "reading": "ひとり",
+            "jlpt": 5
+        },
+        {
+            "id": 518,
+            "kanji": "暇",
+            "meaning": "자유 시간",
+            "reading": "ひま",
+            "jlpt": 5
+        },
+        {
+            "id": 519,
+            "kanji": "百",
+            "meaning": "백",
+            "reading": "ひゃく",
+            "jlpt": 5
+        },
+        {
+            "id": 520,
+            "kanji": "病院",
+            "meaning": "병원",
+            "reading": "びょういん",
+            "jlpt": 5
+        },
+        {
+            "id": 521,
+            "kanji": "病気",
+            "meaning": "질병",
+            "reading": "びょうき",
+            "jlpt": 5
+        },
+        {
+            "id": 522,
+            "kanji": "昼",
+            "meaning": "낮",
+            "reading": "ひる",
+            "jlpt": 5
+        },
+        {
+            "id": 523,
+            "kanji": "昼御飯",
+            "meaning": "점심",
+            "reading": "ひるごはん",
+            "jlpt": 5
+        },
+        {
+            "id": 524,
+            "kanji": "広い",
+            "meaning": "넓은",
+            "reading": "ひろい",
+            "jlpt": 5
+        },
+        {
+            "id": 525,
+            "kanji": "フィルム",
+            "meaning": "필름",
+            "reading": "フィルム",
+            "jlpt": 5
+        },
+        {
+            "id": 526,
+            "kanji": "封筒",
+            "meaning": "봉투",
+            "reading": "ふうとう",
+            "jlpt": 5
+        },
+        {
+            "id": 527,
+            "kanji": "プール",
+            "meaning": "수영장",
+            "reading": "プール",
+            "jlpt": 5
+        },
+        {
+            "id": 528,
+            "kanji": "フォーク",
+            "meaning": "포크",
+            "reading": "フォーク",
+            "jlpt": 5
+        },
+        {
+            "id": 529,
+            "kanji": "吹く",
+            "meaning": "불다",
+            "reading": "ふく",
+            "jlpt": 5
+        },
+        {
+            "id": 530,
+            "kanji": "服",
+            "meaning": "옷",
+            "reading": "ふく",
+            "jlpt": 5
+        },
+        {
+            "id": 531,
+            "kanji": "二つ",
+            "meaning": "둘",
+            "reading": "ふたつ",
+            "jlpt": 5
+        },
+        {
+            "id": 532,
+            "kanji": "豚肉",
+            "meaning": "돼지 고기",
+            "reading": "ぶたにく",
+            "jlpt": 5
+        },
+        {
+            "id": 533,
+            "kanji": "二人",
+            "meaning": "두 사람",
+            "reading": "ふたり",
+            "jlpt": 5
+        },
+        {
+            "id": 534,
+            "kanji": "二日",
+            "meaning": "이틀",
+            "reading": "ふつか",
+            "jlpt": 5
+        },
+        {
+            "id": 535,
+            "kanji": "太い",
+            "meaning": "굵다",
+            "reading": "ふとい",
+            "jlpt": 5
+        },
+        {
+            "id": 536,
+            "kanji": "冬",
+            "meaning": "겨울",
+            "reading": "ふゆ",
+            "jlpt": 5
+        },
+        {
+            "id": 537,
+            "kanji": "降る",
+            "meaning": "내리다",
+            "reading": "ふる",
+            "jlpt": 5
+        },
+        {
+            "id": 538,
+            "kanji": "古い",
+            "meaning": "오래되다",
+            "reading": "ふるい",
+            "jlpt": 5
+        },
+        {
+            "id": 539,
+            "kanji": "ふろ",
+            "meaning": "욕조",
+            "reading": "ふろ",
+            "jlpt": 5
+        },
+        {
+            "id": 540,
+            "kanji": "文章",
+            "meaning": "문장",
+            "reading": "ぶんしょう",
+            "jlpt": 5
+        },
+        {
+            "id": 541,
+            "kanji": "ページ",
+            "meaning": "페이지",
+            "reading": "ページ",
+            "jlpt": 5
+        },
+        {
+            "id": 542,
+            "kanji": "下手",
+            "meaning": "어설픔",
+            "reading": "へた",
+            "jlpt": 5
+        },
+        {
+            "id": 543,
+            "kanji": "ベッド",
+            "meaning": "침대",
+            "reading": "ベッド",
+            "jlpt": 5
+        },
+        {
+            "id": 544,
+            "kanji": "ペット",
+            "meaning": "애완 동물",
+            "reading": "ペット",
+            "jlpt": 5
+        },
+        {
+            "id": 545,
+            "kanji": "部屋",
+            "meaning": "방",
+            "reading": "へや",
+            "jlpt": 5
+        },
+        {
+            "id": 546,
+            "kanji": "辺",
+            "meaning": "지역",
+            "reading": "へん",
+            "jlpt": 5
+        },
+        {
+            "id": 547,
+            "kanji": "ペン",
+            "meaning": "펜",
+            "reading": "ペン",
+            "jlpt": 5
+        },
+        {
+            "id": 548,
+            "kanji": "勉強する",
+            "meaning": "공부",
+            "reading": "べんきょうする",
+            "jlpt": 5
+        },
+        {
+            "id": 549,
+            "kanji": "便利",
+            "meaning": "편리",
+            "reading": "べんり",
+            "jlpt": 5
+        },
+        {
+            "id": 550,
+            "kanji": "帽子",
+            "meaning": "모자",
+            "reading": "ぼうし",
+            "jlpt": 5
+        },
+        {
+            "id": 551,
+            "kanji": "ボールペン",
+            "meaning": "볼펜",
+            "reading": "ボールペン",
+            "jlpt": 5
+        },
+        {
+            "id": 552,
+            "kanji": "ほか",
+            "meaning": "다른 것",
+            "reading": "ほか",
+            "jlpt": 5
+        },
+        {
+            "id": 553,
+            "kanji": "ポケット",
+            "meaning": "포켓",
+            "reading": "ポケット",
+            "jlpt": 5
+        },
+        {
+            "id": 554,
+            "kanji": "欲しい",
+            "meaning": "바라다",
+            "reading": "ほしい",
+            "jlpt": 5
+        },
+        {
+            "id": 555,
+            "kanji": "ポスト",
+            "meaning": "우편",
+            "reading": "ポスト",
+            "jlpt": 5
+        },
+        {
+            "id": 556,
+            "kanji": "細い",
+            "meaning": "얇은",
+            "reading": "ほそい",
+            "jlpt": 5
+        },
+        {
+            "id": 557,
+            "kanji": "ボタン",
+            "meaning": "버튼",
+            "reading": "ボタン",
+            "jlpt": 5
+        },
+        {
+            "id": 558,
+            "kanji": "ホテル",
+            "meaning": "호텔",
+            "reading": "ホテル",
+            "jlpt": 5
+        },
+        {
+            "id": 559,
+            "kanji": "本",
+            "meaning": "책",
+            "reading": "ほん",
+            "jlpt": 5
+        },
+        {
+            "id": 560,
+            "kanji": "本棚",
+            "meaning": "책장",
+            "reading": "ほんだな",
+            "jlpt": 5
+        },
+        {
+            "id": 561,
+            "kanji": "ほんとう",
+            "meaning": "진실",
+            "reading": "ほんとう",
+            "jlpt": 5
+        },
+        {
+            "id": 562,
+            "kanji": "毎朝",
+            "meaning": "매일 아침",
+            "reading": "まいあさ",
+            "jlpt": 5
+        },
+        {
+            "id": 563,
+            "kanji": "毎月",
+            "meaning": "매월",
+            "reading": "まいげつ",
+            "jlpt": 5
+        },
+        {
+            "id": 564,
+            "kanji": "毎週",
+            "meaning": "매주",
+            "reading": "まいしゅう",
+            "jlpt": 5
+        },
+        {
+            "id": 565,
+            "kanji": "毎日",
+            "meaning": "매일",
+            "reading": "まいにち",
+            "jlpt": 5
+        },
+        {
+            "id": 566,
+            "kanji": "毎年",
+            "meaning": "매년",
+            "reading": "まいねん",
+            "jlpt": 5
+        },
+        {
+            "id": 567,
+            "kanji": "毎晩",
+            "meaning": "매일 밤",
+            "reading": "まいばん",
+            "jlpt": 5
+        },
+        {
+            "id": 568,
+            "kanji": "前",
+            "meaning": "전",
+            "reading": "まえ",
+            "jlpt": 5
+        },
+        {
+            "id": 569,
+            "kanji": "曲る",
+            "meaning": "구부리",
+            "reading": "まがる",
+            "jlpt": 5
+        },
+        {
+            "id": 570,
+            "kanji": "まずい",
+            "meaning": "맛이 없다",
+            "reading": "まずい",
+            "jlpt": 5
+        },
+        {
+            "id": 571,
+            "kanji": "また",
+            "meaning": "다른 때",
+            "reading": "また",
+            "jlpt": 5
+        },
+        {
+            "id": 572,
+            "kanji": "まだ",
+            "meaning": "아직",
+            "reading": "まだ",
+            "jlpt": 5
+        },
+        {
+            "id": 573,
+            "kanji": "町",
+            "meaning": "마을",
+            "reading": "まち",
+            "jlpt": 5
+        },
+        {
+            "id": 574,
+            "kanji": "待つ",
+            "meaning": "기다리다",
+            "reading": "まつ",
+            "jlpt": 5
+        },
+        {
+            "id": 575,
+            "kanji": "まっすぐ",
+            "meaning": "똑바로",
+            "reading": "まっすぐ",
+            "jlpt": 5
+        },
+        {
+            "id": 576,
+            "kanji": "マッチ",
+            "meaning": "경기",
+            "reading": "マッチ",
+            "jlpt": 5
+        },
+        {
+            "id": 577,
+            "kanji": "窓",
+            "meaning": "창문",
+            "reading": "まど",
+            "jlpt": 5
+        },
+        {
+            "id": 578,
+            "kanji": "丸い",
+            "meaning": "둥글다",
+            "reading": "まるい",
+            "jlpt": 5
+        },
+        {
+            "id": 579,
+            "kanji": "万",
+            "meaning": "만",
+            "reading": "まん",
+            "jlpt": 5
+        },
+        {
+            "id": 580,
+            "kanji": "万年筆",
+            "meaning": "만년필",
+            "reading": "まんねんひつ",
+            "jlpt": 5
+        },
+        {
+            "id": 581,
+            "kanji": "磨く",
+            "meaning": "연마",
+            "reading": "みがく",
+            "jlpt": 5
+        },
+        {
+            "id": 582,
+            "kanji": "右",
+            "meaning": "오른쪽",
+            "reading": "みぎ",
+            "jlpt": 5
+        },
+        {
+            "id": 583,
+            "kanji": "短い",
+            "meaning": "짧다",
+            "reading": "みじかい",
+            "jlpt": 5
+        },
+        {
+            "id": 584,
+            "kanji": "水",
+            "meaning": "물",
+            "reading": "みず",
+            "jlpt": 5
+        },
+        {
+            "id": 585,
+            "kanji": "店",
+            "meaning": "가게",
+            "reading": "みせ",
+            "jlpt": 5
+        },
+        {
+            "id": 586,
+            "kanji": "見せる",
+            "meaning": "보이다",
+            "reading": "みせる",
+            "jlpt": 5
+        },
+        {
+            "id": 587,
+            "kanji": "道",
+            "meaning": "길",
+            "reading": "みち",
+            "jlpt": 5
+        },
+        {
+            "id": 588,
+            "kanji": "三日",
+            "meaning": "삼일",
+            "reading": "みっか",
+            "jlpt": 5
+        },
+        {
+            "id": 589,
+            "kanji": "三つ",
+            "meaning": "세",
+            "reading": "みっつ",
+            "jlpt": 5
+        },
+        {
+            "id": 590,
+            "kanji": "緑",
+            "meaning": "녹색",
+            "reading": "みどり",
+            "jlpt": 5
+        },
+        {
+            "id": 591,
+            "kanji": "皆さん",
+            "meaning": "여러분",
+            "reading": "みなさん",
+            "jlpt": 5
+        },
+        {
+            "id": 592,
+            "kanji": "南",
+            "meaning": "남",
+            "reading": "みなみ",
+            "jlpt": 5
+        },
+        {
+            "id": 593,
+            "kanji": "耳",
+            "meaning": "귀",
+            "reading": "みみ",
+            "jlpt": 5
+        },
+        {
+            "id": 594,
+            "kanji": "見る",
+            "meaning": "보다",
+            "reading": "みる",
+            "jlpt": 5
+        },
+        {
+            "id": 595,
+            "kanji": "みんな",
+            "meaning": "모두",
+            "reading": "みんな",
+            "jlpt": 5
+        },
+        {
+            "id": 596,
+            "kanji": "六日",
+            "meaning": "6일",
+            "reading": "むいか",
+            "jlpt": 5
+        },
+        {
+            "id": 597,
+            "kanji": "向こう",
+            "meaning": "저쪽",
+            "reading": "むこう",
+            "jlpt": 5
+        },
+        {
+            "id": 598,
+            "kanji": "難しい",
+            "meaning": "어렵다",
+            "reading": "むずかしい",
+            "jlpt": 5
+        },
+        {
+            "id": 599,
+            "kanji": "六つ",
+            "meaning": "여섯",
+            "reading": "むっつ",
+            "jlpt": 5
+        },
+        {
+            "id": 600,
+            "kanji": "村",
+            "meaning": "마을",
+            "reading": "むら",
+            "jlpt": 5
+        },
+        {
+            "id": 601,
+            "kanji": "目",
+            "meaning": "눈",
+            "reading": "め",
+            "jlpt": 5
+        },
+        {
+            "id": 602,
+            "kanji": "メートル",
+            "meaning": "미터",
+            "reading": "メートル",
+            "jlpt": 5
+        },
+        {
+            "id": 603,
+            "kanji": "眼鏡",
+            "meaning": "안경",
+            "reading": "めがね",
+            "jlpt": 5
+        },
+        {
+            "id": 604,
+            "kanji": "もう",
+            "meaning": "벌써",
+            "reading": "もう",
+            "jlpt": 5
+        },
+        {
+            "id": 605,
+            "kanji": "もう一度",
+            "meaning": "다시",
+            "reading": "もういちど",
+            "jlpt": 5
+        },
+        {
+            "id": 606,
+            "kanji": "木曜日",
+            "meaning": "목요일",
+            "reading": "もくようび",
+            "jlpt": 5
+        },
+        {
+            "id": 607,
+            "kanji": "持つ",
+            "meaning": "쥐다",
+            "reading": "もつ",
+            "jlpt": 5
+        },
+        {
+            "id": 608,
+            "kanji": "もっと",
+            "meaning": "더",
+            "reading": "もっと",
+            "jlpt": 5
+        },
+        {
+            "id": 609,
+            "kanji": "物",
+            "meaning": "물건",
+            "reading": "もの",
+            "jlpt": 5
+        },
+        {
+            "id": 610,
+            "kanji": "門",
+            "meaning": "문",
+            "reading": "もん",
+            "jlpt": 5
+        },
+        {
+            "id": 611,
+            "kanji": "問題",
+            "meaning": "문제",
+            "reading": "もんだい",
+            "jlpt": 5
+        },
+        {
+            "id": 612,
+            "kanji": "八百屋",
+            "meaning": "청과물",
+            "reading": "やおや",
+            "jlpt": 5
+        },
+        {
+            "id": 613,
+            "kanji": "野菜",
+            "meaning": "야채",
+            "reading": "やさい",
+            "jlpt": 5
+        },
+        {
+            "id": 614,
+            "kanji": "易しい",
+            "meaning": "쉽다",
+            "reading": "やさしい",
+            "jlpt": 5
+        },
+        {
+            "id": 615,
+            "kanji": "安い",
+            "meaning": "싸다",
+            "reading": "やすい",
+            "jlpt": 5
+        },
+        {
+            "id": 616,
+            "kanji": "休み",
+            "meaning": "휴가",
+            "reading": "やすみ",
+            "jlpt": 5
+        },
+        {
+            "id": 617,
+            "kanji": "休む",
+            "meaning": "쉬다",
+            "reading": "やすむ",
+            "jlpt": 5
+        },
+        {
+            "id": 618,
+            "kanji": "八つ",
+            "meaning": "여덟",
+            "reading": "やっつ",
+            "jlpt": 5
+        },
+        {
+            "id": 619,
+            "kanji": "山",
+            "meaning": "산",
+            "reading": "やま",
+            "jlpt": 5
+        },
+        {
+            "id": 620,
+            "kanji": "やる",
+            "meaning": "하다",
+            "reading": "やる",
+            "jlpt": 5
+        },
+        {
+            "id": 621,
+            "kanji": "夕方",
+            "meaning": "저녁",
+            "reading": "ゆうがた",
+            "jlpt": 5
+        },
+        {
+            "id": 622,
+            "kanji": "夕飯",
+            "meaning": "저녁밥",
+            "reading": "ゆうはん",
+            "jlpt": 5
+        },
+        {
+            "id": 623,
+            "kanji": "郵便局",
+            "meaning": "우체국",
+            "reading": "ゆうびんきょく",
+            "jlpt": 5
+        },
+        {
+            "id": 624,
+            "kanji": "昨夜",
+            "meaning": "지난 밤",
+            "reading": "ゆうべ",
+            "jlpt": 5
+        },
+        {
+            "id": 625,
+            "kanji": "有名",
+            "meaning": "유명",
+            "reading": "ゆうめい",
+            "jlpt": 5
+        },
+        {
+            "id": 626,
+            "kanji": "雪",
+            "meaning": "눈",
+            "reading": "ゆき",
+            "jlpt": 5
+        },
+        {
+            "id": 627,
+            "kanji": "行く",
+            "meaning": "가다",
+            "reading": "ゆく",
+            "jlpt": 5
+        },
+        {
+            "id": 628,
+            "kanji": "ゆっくりと",
+            "meaning": "천천히",
+            "reading": "ゆっくりと",
+            "jlpt": 5
+        },
+        {
+            "id": 629,
+            "kanji": "八日",
+            "meaning": "8일",
+            "reading": "ようか",
+            "jlpt": 5
+        },
+        {
+            "id": 630,
+            "kanji": "洋服",
+            "meaning": "옷",
+            "reading": "ようふく",
+            "jlpt": 5
+        },
+        {
+            "id": 631,
+            "kanji": "よく",
+            "meaning": "잘",
+            "reading": "よく",
+            "jlpt": 5
+        },
+        {
+            "id": 632,
+            "kanji": "横",
+            "meaning": "옆",
+            "reading": "よこ",
+            "jlpt": 5
+        },
+        {
+            "id": 633,
+            "kanji": "四日",
+            "meaning": "4일",
+            "reading": "よっか",
+            "jlpt": 5
+        },
+        {
+            "id": 634,
+            "kanji": "四つ",
+            "meaning": "넷",
+            "reading": "よっつ",
+            "jlpt": 5
+        },
+        {
+            "id": 635,
+            "kanji": "呼ぶ",
+            "meaning": "부르다",
+            "reading": "よぶ",
+            "jlpt": 5
+        },
+        {
+            "id": 636,
+            "kanji": "読む",
+            "meaning": "읽다",
+            "reading": "よむ",
+            "jlpt": 5
+        },
+        {
+            "id": 637,
+            "kanji": "夜",
+            "meaning": "밤",
+            "reading": "よる",
+            "jlpt": 5
+        },
+        {
+            "id": 638,
+            "kanji": "弱い",
+            "meaning": "약한",
+            "reading": "よわい",
+            "jlpt": 5
+        },
+        {
+            "id": 639,
+            "kanji": "来月",
+            "meaning": "다음달",
+            "reading": "らいげつ",
+            "jlpt": 5
+        },
+        {
+            "id": 640,
+            "kanji": "来週",
+            "meaning": "다음주",
+            "reading": "らいしゅう",
+            "jlpt": 5
+        },
+        {
+            "id": 641,
+            "kanji": "来年",
+            "meaning": "내년",
+            "reading": "らいねん",
+            "jlpt": 5
+        },
+        {
+            "id": 642,
+            "kanji": "ラジオ",
+            "meaning": "라디오",
+            "reading": "ラジオ",
+            "jlpt": 5
+        },
+        {
+            "id": 643,
+            "kanji": "ラジカセ",
+            "meaning": "카세트",
+            "reading": "ラジカセ",
+            "jlpt": 5
+        },
+        {
+            "id": 644,
+            "kanji": "りっぱ",
+            "meaning": "훌륭함",
+            "reading": "りっぱ",
+            "jlpt": 5
+        },
+        {
+            "id": 645,
+            "kanji": "留学生",
+            "meaning": "유학생",
+            "reading": "りゅうがくせい",
+            "jlpt": 5
+        },
+        {
+            "id": 646,
+            "kanji": "両親",
+            "meaning": "부모",
+            "reading": "りょうしん",
+            "jlpt": 5
+        },
+        {
+            "id": 647,
+            "kanji": "料理",
+            "meaning": "요리",
+            "reading": "りょうり",
+            "jlpt": 5
+        },
+        {
+            "id": 648,
+            "kanji": "旅行",
+            "meaning": "여행",
+            "reading": "りょこう",
+            "jlpt": 5
+        },
+        {
+            "id": 649,
+            "kanji": "零",
+            "meaning": "영",
+            "reading": "れい",
+            "jlpt": 5
+        },
+        {
+            "id": 650,
+            "kanji": "冷蔵庫",
+            "meaning": "냉장고",
+            "reading": "れいぞうこ",
+            "jlpt": 5
+        },
+        {
+            "id": 651,
+            "kanji": "レコード",
+            "meaning": "기록",
+            "reading": "レコード",
+            "jlpt": 5
+        },
+        {
+            "id": 652,
+            "kanji": "レストラン",
+            "meaning": "레스토랑",
+            "reading": "レストラン",
+            "jlpt": 5
+        },
+        {
+            "id": 653,
+            "kanji": "練習する",
+            "meaning": "연습",
+            "reading": "れんしゅうする",
+            "jlpt": 5
+        },
+        {
+            "id": 654,
+            "kanji": "廊下",
+            "meaning": "복도",
+            "reading": "ろうか",
+            "jlpt": 5
+        },
+        {
+            "id": 655,
+            "kanji": "六",
+            "meaning": "육",
+            "reading": "ろく",
+            "jlpt": 5
+        },
+        {
+            "id": 656,
+            "kanji": "ワイシャツ",
+            "meaning": "셔츠",
+            "reading": "ワイシャツ",
+            "jlpt": 5
+        },
+        {
+            "id": 657,
+            "kanji": "若い",
+            "meaning": "젊은",
+            "reading": "わかい",
+            "jlpt": 5
+        },
+        {
+            "id": 658,
+            "kanji": "分かる",
+            "meaning": "알다",
+            "reading": "わかる",
+            "jlpt": 5
+        },
+        {
+            "id": 659,
+            "kanji": "忘れる",
+            "meaning": "잊어 버리다",
+            "reading": "わすれる",
+            "jlpt": 5
+        },
+        {
+            "id": 660,
+            "kanji": "私",
+            "meaning": "나",
+            "reading": "わたくし",
+            "jlpt": 5
+        },
+        {
+            "id": 661,
+            "kanji": "私",
+            "meaning": "나",
+            "reading": "わたし",
+            "jlpt": 5
+        },
+        {
+            "id": 662,
+            "kanji": "渡す",
+            "meaning": "건네주다",
+            "reading": "わたす",
+            "jlpt": 5
+        },
+        {
+            "id": 663,
+            "kanji": "渡る",
+            "meaning": "건너다",
+            "reading": "わたる",
+            "jlpt": 5
+        },
+        {
+            "id": 664,
+            "kanji": "悪い",
+            "meaning": "나쁘다",
+            "reading": "わるい",
+            "jlpt": 5
+        }
+    ]
+}
