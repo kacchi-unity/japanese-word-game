@@ -1,4 +1,3 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI; //for control UI
 
@@ -6,6 +5,7 @@ public class PlayerHpManager : MonoBehaviour
 {
     float maxHp = 100;
     float currentHp = 100;
+    Animator animator;
 
     Image hpGauge;
     GameObject gameOverManager;
@@ -15,14 +15,21 @@ public class PlayerHpManager : MonoBehaviour
         currentHp -= damage;
         if (currentHp <= 0)
         {
+            //send gameover signal
             hpGauge.GetComponent<Image>().fillAmount = 0f;
             gameOverManager.GetComponent<GameOverManager>().GameOverSetting();
+
+            //change lie animation
+            animator.speed = 0.5f;
+            animator.SetTrigger("LieTrigger");
         }
         else
         {
             hpGauge.GetComponent<Image>().fillAmount = currentHp / maxHp;
         }
     }
+
+    
 
     void Start()
     {
@@ -38,6 +45,8 @@ public class PlayerHpManager : MonoBehaviour
         hpGauge.GetComponent <Image>().fillAmount = currentHp/maxHp;
 
         gameOverManager = GameObject.Find("GameOverManager");
+
+        animator = GetComponent<Animator>();
     }
 
     void Update()
