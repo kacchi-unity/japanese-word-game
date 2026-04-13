@@ -1,9 +1,18 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 public class PlayerAttack : MonoBehaviour
 {
-    public GameObject Enemy;
+    public GameObject testTarget; //test
+    private void Update() //test
+    {
+        if (Input.GetKeyDown(KeyCode.Y) && state == PlayerState.Idle)
+        {
+            StartCoroutine(AttackCoroutine(testTarget.transform.position));
+        }
+    }
+
     public PlayerAnimator playerAnimator;
     Vector3 enemyPos;
     Vector3 originalPos;
@@ -14,33 +23,40 @@ public class PlayerAttack : MonoBehaviour
         Attacking
     }
     PlayerState state = PlayerState.Idle;
-    
-    
-    void Start()
+
+
+    private void OnEnable()
     {
-        
+        EnemyListManager.OnAnswerCorrect += Attack;
     }
 
-    void Update()
+    private void OnDisable()
     {
-        if(Input.GetKeyDown(KeyCode.T) && (state == PlayerState.Idle))
+        EnemyListManager.OnAnswerCorrect -= Attack;
+    }
+
+    void Attack(Vector3 pos)
+    {
+        if (state == PlayerState.Idle)
         {
-            enemyPos = Enemy.transform.position;
-            StartCoroutine(Blink());
+            StartCoroutine(AttackCoroutine(pos));
         }
     }
 
-    IEnumerator Blink()
+    IEnumerator AttackCoroutine(Vector3 pos)
     {
+        GetComponent<Collider2D>().enabled = false;
         state = PlayerState.Attacking;
         originalPos = transform.position;
-        transform.position = enemyPos + new Vector3(0f, 0f, 0f);
+        transform.position = pos + new Vector3(-1.5f, 0f, 0f);
         Debug.Log("공격!!");
         playerAnimator.PlayAttack();
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.4f);
         transform.position = originalPos;
+        GetComponent<Collider2D>().enabled = true;
         playerAnimator.PlayIdle();
         state = PlayerState.Idle;
+        
         
     }
 }
