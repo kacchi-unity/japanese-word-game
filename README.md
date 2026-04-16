@@ -1,4 +1,4 @@
-# japanese-word-game
+# Japanese Word Slash Game
 
 ## 프로젝트 소개
 Unity를 이용해 일본어를 최대한 쉽고 재미있게 배울 수 있도록 만든 단어 학습 미니 게임입니다.
