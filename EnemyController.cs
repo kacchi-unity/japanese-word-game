@@ -5,8 +5,13 @@ using System;
 public class EnemyController : MonoBehaviour
 {
     public EnemyData enemyData; //received from generator
-    GameObject enemyListManager, ScoreManager, PlayerObject;
+    public EnemyListSO enemyListSO;
+    GameObject ScoreManager, PlayerObject;
     ScoreManager ScoreManagerScript;
+    TextMeshProUGUI hintText;
+    string meaning;
+
+    public static event Action<string> OnPlayerDamaged;
 
     public bool isKilledbyPlayer = false;
     bool isMove = true;
@@ -42,17 +47,44 @@ public class EnemyController : MonoBehaviour
         {
             isKilledbyPlayer = false;
             //Debug.Log("플레이어 충돌!");
-            enemyListManager.GetComponent<EnemyListManager>().RemoveEnemyData(enemyData);
+            OnPlayerDamaged?.Invoke(this.enemyData.GetKanji());
+            enemyListSO.RemoveEnemyData(enemyData);
             this.Die();
         }
     }
 
+    public void ShowHint()
+    {
+        hintText.gameObject.SetActive(true);
+        
+    }
+
+    public void HideHint()
+    {
+        hintText.gameObject.SetActive(false);
+
+    }
+
     void Start()
     {
-        enemyListManager = GameObject.Find("EnemyListManager");
         ScoreManager = GameObject.Find("ScoreManager");
         ScoreManagerScript = ScoreManager.GetComponent<ScoreManager>();
         PlayerObject = GameObject.Find("Player");
+
+        //Hint text initialization
+        meaning = enemyData.GetMeaning();
+        TextMeshProUGUI[] listUI = GetComponentsInChildren<TextMeshProUGUI>();
+        foreach (TextMeshProUGUI TMProUI in listUI)
+        {
+            if (TMProUI.name.Equals("Hint"))
+            {
+                hintText = TMProUI;
+                hintText.text = meaning;
+                HideHint();
+                break;
+            }
+        }
+        
 
     }
 

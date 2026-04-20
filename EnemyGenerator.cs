@@ -5,8 +5,9 @@ using UnityEngine.InputSystem.Controls;
 
 public class EnemyGenerator : MonoBehaviour
 {
+    public EnemyListSO enemyListSO;
     public GameObject enemyPrefab;
-    GameObject enemyListManager, enemy;
+    GameObject enemy;
     List<Word> selectedWordList;
 
     float spawn = 1.5f;
@@ -36,7 +37,7 @@ public class EnemyGenerator : MonoBehaviour
         string meaning = selectedWordList[randomIndex].meaning;
         enemyData = new EnemyData(enemy, kanji, meaning);
 
-        enemyListManager.GetComponent<EnemyListManager>().AddEnemyData(enemyData);
+        enemyListSO.AddEnemyData(enemyData);
 
         //give enemyData to EnemyController //prefab's component
         EnemyController enemyControlloerScript = enemy.GetComponent<EnemyController>();
@@ -44,10 +45,6 @@ public class EnemyGenerator : MonoBehaviour
         
     }
 
-    void Start()
-    {
-        enemyListManager = GameObject.Find("EnemyListManager");
-    }
 
     void Update()
     {
