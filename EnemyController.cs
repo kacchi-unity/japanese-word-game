@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System;
+using System.Collections;
 
 public class EnemyController : MonoBehaviour
 {
@@ -8,17 +9,25 @@ public class EnemyController : MonoBehaviour
     public EnemyListSO enemyListSO;
     GameObject ScoreManager, PlayerObject;
     ScoreManager ScoreManagerScript;
-    TextMeshProUGUI hintText;
-    string meaning;
+    public TextMeshProUGUI hintText;
 
-    public static event Action<string> OnPlayerDamaged;
+    public static event Action<int> OnPlayerDamaged;
 
     public bool isKilledbyPlayer = false;
     bool isMove = true;
     int scoreAmount = 1;
     float moveSpeed = 0.02f;
     float damageToPlayer = 20f;
-    
+
+    private void OnEnable()
+    {
+        HintManager.OnHintStatusCheck += ApplyHint;
+    }
+
+    private void OnDisable()
+    {
+        HintManager.OnHintStatusCheck -= ApplyHint;
+    }
 
     public void Die()
     {
@@ -47,23 +56,39 @@ public class EnemyController : MonoBehaviour
         {
             isKilledbyPlayer = false;
             //Debug.Log("플레이어 충돌!");
-            OnPlayerDamaged?.Invoke(this.enemyData.GetKanji());
+            int enemyId = this.enemyData.GetId();
+            OnPlayerDamaged?.Invoke(enemyId); //HintManager, etc...
             enemyListSO.RemoveEnemyData(enemyData);
-            this.Die();
+            Die();
         }
     }
 
-    public void ShowHint()
+    public void SetMeaning(string meaning)
     {
-        hintText.gameObject.SetActive(true);
-        
+        //Hint text initialization
+        hintText.text = meaning;
+
+        //Check hint status
+        ApplyHint(enemyData.GetId());
     }
 
-    public void HideHint()
+    private void ApplyHint(int targetId)
     {
-        hintText.gameObject.SetActive(false);
+        if (this.enemyData.GetId() == targetId)
+        {
+            if (HintStatus.isHintActive(targetId)) //bool type
+            {
+                hintText.gameObject.SetActive(true);
+            }
 
+            else
+            {
+                hintText.gameObject.SetActive(false);
+            }
+        }
     }
+
+    
 
     void Start()
     {
@@ -71,20 +96,6 @@ public class EnemyController : MonoBehaviour
         ScoreManagerScript = ScoreManager.GetComponent<ScoreManager>();
         PlayerObject = GameObject.Find("Player");
 
-        //Hint text initialization
-        meaning = enemyData.GetMeaning();
-        TextMeshProUGUI[] listUI = GetComponentsInChildren<TextMeshProUGUI>();
-        foreach (TextMeshProUGUI TMProUI in listUI)
-        {
-            if (TMProUI.name.Equals("Hint"))
-            {
-                hintText = TMProUI;
-                hintText.text = meaning;
-                HideHint();
-                break;
-            }
-        }
-        
 
     }
 
