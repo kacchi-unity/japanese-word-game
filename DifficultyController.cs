@@ -1,55 +1,73 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
+using static UnityEngine.Rendering.DebugUI;
 
 public class DifficultyController : MonoBehaviour
 {
+    public LobbySettingSO lobbySetting;
 
-    public static event Action<SettingValues> OnDifficultyChanged;
+    public static event Action OnDifficultyChanged;
 
     public enum Difficulty { Easy, Normal, Hard }
 
-    public enum Setting { WordCount, PlayerHp, TimeLimit, EnemySpeed, HintActiveTime }
+    Dictionary<SettingList, float> valueDic_Easy, valueDic_Normal, valueDic_Hard;
+    Dictionary<Difficulty, Dictionary<SettingList, float>> difficulty_ValueDic;
 
-    public class SettingValues
+    void Awake()
     {
-        public SettingValues(float wordCount_init, float playerHp_init, float timeLimit_init, float enemySpeed_init, float hintActiveTime_init)
+        valueDic_Easy = new Dictionary<SettingList, float>
         {
-            this.wordCount = wordCount_init;
-            this.playerHp = playerHp_init;
-            this.timeLimit = timeLimit_init;
-            this.enemySpeed = enemySpeed_init; 
-            this.hintActiveTime = hintActiveTime_init;
-        }
+            [SettingList.WordCount] = 1,
+            [SettingList.PlayerHp] = 1,
+            [SettingList.TimeLimit] = 20,
+            [SettingList.EnemySpeed] = 1,
+            [SettingList.HintActiveTime] = 60,
+            [SettingList.EnemySpawnDelay] = 3
+        };
 
-        public float wordCount, playerHp, timeLimit, enemySpeed, hintActiveTime;
-
-        public float GetValue(Setting target) => target switch
+        valueDic_Normal = new Dictionary<SettingList, float>
         {
-            Setting.WordCount => this.wordCount,
-            Setting.PlayerHp => this.playerHp,
-            Setting.TimeLimit => this.timeLimit,
-            Setting.EnemySpeed => this.enemySpeed,
-            Setting.HintActiveTime => this.hintActiveTime,
-            _ => 0f
+            [SettingList.WordCount] = 5,
+            [SettingList.PlayerHp] = 25,
+            [SettingList.TimeLimit] = 175,
+            [SettingList.EnemySpeed] = 5,
+            [SettingList.HintActiveTime] = 30,
+            [SettingList.EnemySpawnDelay] = 2
+        };
+
+        valueDic_Hard = new Dictionary<SettingList, float>
+        {
+            [SettingList.WordCount] = 10,
+            [SettingList.PlayerHp] = 50,
+            [SettingList.TimeLimit] = 300,
+            [SettingList.EnemySpeed] = 10,
+            [SettingList.HintActiveTime] = 0,
+            [SettingList.EnemySpawnDelay] = 1
+        };
+
+        difficulty_ValueDic = new Dictionary<Difficulty, Dictionary<SettingList, float>>()
+        {
+            { Difficulty.Easy, valueDic_Easy },
+            { Difficulty.Normal, valueDic_Normal },
+            { Difficulty.Hard, valueDic_Hard }
         };
     }
-
-    private readonly Dictionary<Difficulty, SettingValues> difSettings = new Dictionary<Difficulty, SettingValues>(3)
-    {
-        { Difficulty.Easy, new SettingValues(1, 1, 20, 1, 60) }, 
-        { Difficulty.Normal, new SettingValues(5, 25, 175, 5, 30) },
-        { Difficulty.Hard, new SettingValues(10, 50, 300, 10, 0) }
-    };
-
-
 
     public void ClickDifficultyButton(int index)
     {
         if (Enum.IsDefined(typeof(Difficulty), index))
         {
             Difficulty difficultyKey = (Difficulty)index;
-            OnDifficultyChanged?.Invoke(this.difSettings[difficultyKey]);
+            Dictionary<SettingList, float> targetDic = difficulty_ValueDic[difficultyKey];
+
+            foreach (SettingList key in targetDic.Keys)
+            {
+                this.lobbySetting.settingValue.SetValue(key, targetDic[key]);
+            }
+            
+            OnDifficultyChanged?.Invoke();
         }
 
         else
