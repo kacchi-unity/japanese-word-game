@@ -1,23 +1,26 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameStartManager : MonoBehaviour
 {
     public static event Action OnStartButtonClick;
+    public string inGameSceneName = "Scene_InGame";
 
     public LobbySettingSO lobbySetting; //test!
 
     public void ClickStartButton()
     {
-        OnStartButtonClick?.Invoke();
+        StartCoroutine(StartProcess());
+        
+    }
 
-        //test!
-        Debug.Log("WordCount: " + lobbySetting.settingValue.GetValue(SettingList.WordCount));
-        Debug.Log("PlayerHp: " + lobbySetting.settingValue.GetValue(SettingList.PlayerHp));
-        Debug.Log("TimeLimit: " + lobbySetting.settingValue.GetValue(SettingList.TimeLimit));
-        Debug.Log("EnemySpeed: " + lobbySetting.settingValue.GetValue(SettingList.EnemySpeed));
-        Debug.Log("HintActiveTime: " + lobbySetting.settingValue.GetValue(SettingList.HintActiveTime));
-        Debug.Log("EnemySpawnDelay: " + lobbySetting.settingValue.GetValue(SettingList.EnemySpawnDelay));
+    IEnumerator StartProcess()
+    {
+        OnStartButtonClick?.Invoke();
+        yield return new WaitForSeconds(0.5f);
+
+        SceneManager.LoadScene(inGameSceneName);
     }
 }
