@@ -12,6 +12,8 @@ public class HintManager : MonoBehaviour
 
     public static event Action<int, HintRenderMode> OnHintStatusCheck;
 
+    public LobbySettingSO lobbySetting;
+
     public enum HintRenderMode
     {
         Blink,
@@ -28,7 +30,12 @@ public class HintManager : MonoBehaviour
         EnemyController.OnPlayerDamaged -= ManagementHint;
     }
 
-    void ManagementHint(int targetId, float fadeInDuration, float fadeOutDuration)
+    void Awake()
+    {
+        this.hintDurationSeconds = this.lobbySetting.settingValue.GetValue(SettingList.HintActiveTime);
+    }
+
+    void ManagementHint(int targetId, float fadeInDuration, float fadeOutDuration, float unused)
     {
         if (!HintStatus.isHintActive(targetId)) //return bool type
         {
@@ -39,12 +46,10 @@ public class HintManager : MonoBehaviour
             StartCoroutine(ShowHintForSeconds(targetId, fadeOutDuration, currentHintRenderMode));
         }
 
-        else { Debug.Log(targetId.ToString() + " 은 이미 힌트 활성화되었습니다."); }
     }
 
     IEnumerator ShowHintForSeconds(int targetId, float fadeOutDuration, HintRenderMode mode)
     {
-        Debug.Log(targetId.ToString()+ " 을 해쉬에 등록합니다");
         HintStatus.Add(targetId);
         OnHintStatusCheck?.Invoke(targetId, mode);
 
@@ -65,8 +70,6 @@ public class HintManager : MonoBehaviour
             HintStatus.Remove(targetId);
             OnHintStatusCheck?.Invoke(targetId, mode);
         }
-        
-        Debug.Log(targetId.ToString() + "의 힌트가 사라집니다.");
     }
 }
 

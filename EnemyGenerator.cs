@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem.Controls;
+using UnityEngine.InputSystem.XR;
 
 public class EnemyGenerator : MonoBehaviour
 {
@@ -9,11 +10,16 @@ public class EnemyGenerator : MonoBehaviour
     public GameObject enemyPrefab;
     GameObject enemy;
     List<Word> selectedWordList;
+    public LobbySettingSO lobbySetting;
 
-    float spawn = 1.5f;
-    float delta = 0;
     public bool isSpawn = true;
+    [SerializeField] float spawnDelay = 0f;
+    float delta = 0;
     
+    float enemyMaxSpeed = 0.06f;
+    float enemyMinSpeed = 0.01f;
+    [SerializeField] float moveSpeed = 0f;
+
     public void SetSelectedWordList(List<Word> selectedWordList)
     {
         this.selectedWordList = selectedWordList;
@@ -21,30 +27,48 @@ public class EnemyGenerator : MonoBehaviour
 
     public void CreateEnemyData()
     {
+        //create using selected word list & send data to enemy list manager script
+        int randomIndex = Random.Range(0, selectedWordList.Count);
+        EnemyData enemyData;
+        string kanji = selectedWordList[randomIndex].kanji;
+        string meaning = selectedWordList[randomIndex].meaning;
+        int id = selectedWordList[randomIndex].id;
+
         //new enemy create with kanji, meaning
         enemy = Instantiate(enemyPrefab);
+        enemyData = new EnemyData(enemy, kanji, meaning, id);
+        
+        EnemyController enemyController = enemy.GetComponent<EnemyController>();
+        enemyController.enemyData = enemyData;
+
+        enemyListSO.AddEnemyData(enemyData);
+
+        //Hint text initialization
+        enemyController.SetMeaning(meaning);
+
+        //enemy speed setting with lobby setting SO
+        enemyController.SetMoveSpeed(this.moveSpeed);
+        
+
+        //Select spawn position
         int randomNum = Random.Range(0, 3);
         float spawnY;
         if (randomNum == 0) { spawnY = -0.52f; }
         else if (randomNum == 1) { spawnY = - 1.65f; }
         else { spawnY = -2.71f; }
         enemy.transform.position = new Vector3(9.7f, spawnY, 0f);
-
-        //create using selected word list & send data to enemy list manager script
-        int randomIndex = Random.Range(0 , selectedWordList.Count);
-        EnemyData enemyData;
-        string kanji = selectedWordList[randomIndex].kanji;
-        string meaning = selectedWordList[randomIndex].meaning;
-        enemyData = new EnemyData(enemy, kanji, meaning);
-
-        enemyListSO.AddEnemyData(enemyData);
-
-        //give enemyData to EnemyController //prefab's component
-        EnemyController enemyControlloerScript = enemy.GetComponent<EnemyController>();
-        enemyControlloerScript.enemyData = enemyData;
         
     }
+    void Awake()
+    {
+        //Set enemy move speed
+        float settingSO_SpeedRate = this.lobbySetting.settingValue.GetValue(SettingList.EnemySpeedRate);
+        this.moveSpeed = settingSO_SpeedRate * (enemyMaxSpeed - enemyMinSpeed) + enemyMinSpeed;
 
+        //setting spawn delay with lobby setting SO
+        this.spawnDelay = this.lobbySetting.settingValue.GetValue(SettingList.EnemySpawnDelay);
+
+    }
 
     void Update()
     {
@@ -52,7 +76,7 @@ public class EnemyGenerator : MonoBehaviour
         if (isSpawn && selectedWordList != null && selectedWordList.Count > 0)
         {
             delta += Time.deltaTime;
-            if (delta > spawn)
+            if (delta > spawnDelay)
             {
                 delta = 0;
                 CreateEnemyData();

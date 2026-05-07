@@ -71,13 +71,34 @@ public class ScrollBarManager : MonoBehaviour
     //Difficulty Button
     public void UpdateSliderValue() //GetValue(SettingList target)
     {
-        this.slider.value = lobbySetting.settingValue.GetValue(this.targetSetting);
+        float value = lobbySetting.settingValue.GetValue(this.targetSetting);
 
+        //If value is rate; rate -> whole number
+        if (this.targetSetting == SettingList.EnemySpeedRate)
+        {
+            float rawValue = (this.slider.maxValue - this.slider.minValue)* value + this.slider.minValue;
+            this.slider.value = Mathf.RoundToInt(rawValue); //Whole Numbers is true
+        }
+        else
+        {
+            this.slider.value = value;
+        }
+        
         this.input.text = this.slider.value.ToString("F1");
     }
 
     public void ApplyValueToSettingSO()
     {
-        lobbySetting.settingValue.SetValue(this.targetSetting, this.slider.value);
+        //Whole number -> rate
+        if (this.targetSetting == SettingList.EnemySpeedRate)
+        {
+            float rate = (this.slider.value - this.slider.minValue) / (this.slider.maxValue - this.slider.minValue);
+            lobbySetting.settingValue.SetValue(this.targetSetting, rate);
+        }
+        else
+        {
+            lobbySetting.settingValue.SetValue(this.targetSetting, this.slider.value);
+        }
+        
     }
 }
