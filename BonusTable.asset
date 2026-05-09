@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d31217f427cbc4c47ab52359f1995646, type: 3}
+  m_Name: BonusTable
+  m_EditorClassIdentifier: Assembly-CSharp::BonusTableSO
+  rewardBonuse:
+    wordCount_Multiplier: 0.2
+    wordCount_Min: 0.02
+    playerHp_Multiplier: 0.1
+    playerHp_Base: 1.1
+    enemySpeedRate_Multiplier: 1.5
+    enemySpeedRate_Min: 0.02
+    enemySpawnDelay_Base: 1.5
+    timeLimit_Multiplier: 0.01
+    timeLimit_Min: 0.02
+    hintActiveTime_Multiplier: 0.15
+    hintActiveTime_Base: 3
