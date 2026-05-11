@@ -2,11 +2,21 @@ using UnityEngine;
 
 public class PlayerAnimator : MonoBehaviour
 {
+    void OnEnable()
+    {
+        PlayerHpManager.OnPlayerHpZero += PlayDeath;
+    }
+
+    void OnDisable()
+    {
+        PlayerHpManager.OnPlayerHpZero -= PlayDeath;
+    }
+
     Animator animator;
 
     float idleSpeed = 1.0f;
     float deathSpeed = 0.5f;
-    float attackSpeed = 1.5f;
+    float attackSpeed = 2.5f;
 
     void Start()
     {

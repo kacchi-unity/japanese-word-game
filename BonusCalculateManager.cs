@@ -10,7 +10,11 @@ public enum Bonus
     EnemySpawnDelay,
     TimeLimit,
     HintActiveTime,
+}
 
+public enum Result
+{ 
+    Score,
     Total,
     Reward
 }
@@ -19,21 +23,28 @@ public class BonusCalculateManager : MonoBehaviour
 {
     public LobbySettingSO lobbySetting;
     public BonusTableSO bonusTable;
-    public static event Action<Dictionary<Bonus, float>> OnCalculationComplete;
+    public GameSessionSO gameSession;
+    public static event Action<Dictionary<Bonus, float>> OnBonusCalculationComplete;
+    public static event Action<Dictionary<Result, float>> OnResultCalculationComplete;
 
     private float totalBonus = 0f;
     private float reward;
-    [SerializeField] private float score = 50;
+    private int playerScore;
     [SerializeField] private float minBonus = 0.02f;
 
     
 
     private Dictionary<Bonus, float> bonusDictionary = new Dictionary<Bonus, float>();
+    private Dictionary<Result, float> resultDictionary = new Dictionary<Result, float>();
 
     public void Start()
     {
+        bonusDictionary.Clear();
+        resultDictionary.Clear();
+
         LobbySettingSO.SettingValue lobbySO = lobbySetting.settingValue;
         BonusTableSO.RewardBonusTable bonusSO = bonusTable.rewardBonuse;
+        this.playerScore = gameSession.GetScore();
 
         //Increase type - Using "Min" value
         bonusDictionary[Bonus.WordCount]
@@ -58,20 +69,24 @@ public class BonusCalculateManager : MonoBehaviour
         tmp = bonusSO.HintActiveTime_Base - lobbySO.GetValue(SettingList.HintActiveTime) * bonusSO.HintActiveTime_Multiplier;
         bonusDictionary[Bonus.HintActiveTime] = Mathf.Clamp(tmp, this.minBonus, bonusSO.HintActiveTime_Base);
 
-        //Final sum
+        //Final Calculation
         this.totalBonus = 0f;
         
         foreach (var targetItem in bonusDictionary)
         {
             this.totalBonus += targetItem.Value;
         }
-        bonusDictionary[Bonus.Total] = this.totalBonus;
+        OnBonusCalculationComplete?.Invoke(this.bonusDictionary);
 
-        this.reward = Mathf.Round(this.score * (1f + this.totalBonus));
+        this.reward = Mathf.Round(this.playerScore * (1f + this.totalBonus));
 
-        bonusDictionary[Bonus.Reward] = this.reward;
+        resultDictionary[Result.Total] = this.totalBonus;
 
-        OnCalculationComplete?.Invoke(this.bonusDictionary);
+        resultDictionary[Result.Score] = this.playerScore;
+
+        resultDictionary[Result.Reward] = this.reward;
+
+        OnResultCalculationComplete?.Invoke(this.resultDictionary);
 
     }
 }

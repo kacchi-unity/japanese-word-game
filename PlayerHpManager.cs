@@ -1,28 +1,37 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI; //for control UI
 
 public class PlayerHpManager : MonoBehaviour
 {
-    float maxHp = 100;
-    float currentHp = 100;
-    Animator animator;
+    public static event Action OnPlayerHpZero;
 
+    public LobbySettingSO lobbySetting;
+
+    float maxHp, currentHp;
+    
     Image hpGauge;
     GameObject gameOverManager;
     public PlayerAnimator playerAnimator;
 
-    public void DecreaseHp(float damage)
+    private void OnEnable()
+    {
+        EnemyController.OnPlayerDamaged += DecreaseHp;
+    }
+
+    private void OnDisable()
+    {
+        EnemyController.OnPlayerDamaged -= DecreaseHp;
+    }
+
+    public void DecreaseHp(int enemyId_unused, float fadeIn_unused, float fadeOut_unused, float damage)
     {
         currentHp -= damage;
         if (currentHp <= 0)
         {
             //send gameover signal
             hpGauge.GetComponent<Image>().fillAmount = 0f;
-            gameOverManager.GetComponent<GameOverManager>().GameOverSetting();
-
-            //change lie animation
-            animator.SetTrigger("LieTrigger");
-            playerAnimator.PlayDeath();
+            OnPlayerHpZero?.Invoke();
         }
         else
         {
@@ -30,10 +39,16 @@ public class PlayerHpManager : MonoBehaviour
         }
     }
 
+    void Awake()
+    {
+        maxHp = lobbySetting.settingValue.GetValue(SettingList.PlayerHp);
+        currentHp = maxHp;
+    }
     
 
     void Start()
     {
+
         Image[] imageUI = gameObject.GetComponentsInChildren<Image>();
         foreach (Image targetImage in imageUI)
         {
@@ -47,11 +62,6 @@ public class PlayerHpManager : MonoBehaviour
 
         gameOverManager = GameObject.Find("GameOverManager");
 
-        animator = GetComponent<Animator>();
     }
 
-    void Update()
-    {
-        
-    }
 }
