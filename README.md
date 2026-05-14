@@ -151,6 +151,13 @@ Unity를 이용해 일본어를 최대한 쉽고 재미있게 배울 수 있도�
 
 - 내부 함수 수정
 
+## 5/12 ~ 5/14
+- 스크립트 내 도감화 기능 설계
+
+- 인 게임 단어 선택: 한번이라도 보지 못한 새로운 단어 먼저 출제되도록 구현
+
+- 추후 도감화 씬 및 UI 구현 예정
+
 ## 트러블 슈팅
 ### 폰트 깨짐 문제
 - TextMeshPro의 Fallback Font 기능을 활용하여 여러 폰트를 사용하고 깨지는 폰트를 다른 폰트가 보충할 수 있도록 해결
@@ -187,6 +194,21 @@ Unity를 이용해 일본어를 최대한 쉽고 재미있게 배울 수 있도�
  Fade In을 포함하고있는 Apply() 메서드에서 Mathf.Abs(targetID)를 사용하여 단어 ID는 의도한 대로 HintStatus와 비교 가능하며 동시에 마이너스 부호로 Fade In이 아닌 Out에 접근할 수 있었음.
 
  동시에 데이터를 손상, 변형시키지 않으면서 Coroutine 내 Fade Out 애니메이션과 HashSet 목록 제거의 순서를 보장하도록 하여 문제를 해결함.
+
+ ### 유니티 엔진 한계: HashSet, Dictionary 직렬화 (Serialize) 한계
+- 어려웠던 점: 유니티 엔진 상 안전한 정보인 List, int, string 등 변수는 Scriptable Object로 잘 저장하고 기억함. 그러나 Hash나 Dictionary는 내부 구조가 복잡하고 순서 보장이 어려워 유니티에서 직렬화하지 못함.
+
+  도감화 할 단어, 미출제 단어를 시간 복잡도 효율을 위해 HashSet<int>을 쓰고, Json 추출 단어 베이스를 Dictionary<int, Word>로 구현해 Hash가 int id만 보고 참조하게 하고 싶었으나 위 문제로 해결할 수 없었음.
+
+  실제로 에디터에서는 잘 돌아가는 것 같다가도, 재시작(Re-import)하거나 첫 빌드 시 데이터가 null이 되거나 비어버림.
+
+- 해결: 유니티에서 기억 가능한 List를 활용함. Hash, Dictinoary를 SO내에서 런타임 용으로 사용하고 실제 기억은 저장용 List로 따로 두었음. Hash나 Dictinary를 쓸땐 Vaildate 메서드를 이용하여 조건문에 Count를 이용.
+
+데이터가 날아갔는지 확인하고 다시 List와 연결하는 작업을 사용. 런타임용 데이터 정보가 바뀔때는 List에 다시 갱신해주는 SyncList 메서드를 이용함.
+
+이렇게 V-S (Validate-Sync) 법칙을 사용하여 SO 내 런타임 용 데이터를 사용할 수 있었고 해시셋과 Dictonary의 성능을 포기하지 않아도 되었음.
+
+* V (Validate): 데이터 복구 로직, S (Sync): 데이터 동기화 로직
 
 ## 난이도 설정별 보너스(리워드) 시스템 설계
 
