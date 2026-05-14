@@ -9,6 +9,7 @@ public class GameOverManager : MonoBehaviour
     public EnemyGenerator enemyGenerator;
     public TMP_InputField inputField;
     public GameSessionSO gameSessionSO;
+    public SwordRecordSO swordRecordSO;
 
     void OnEnable()
     {
@@ -47,6 +48,7 @@ public class GameOverManager : MonoBehaviour
         {
             Destroy(enemy);
         }
+
         yield return new WaitForSeconds(3f);
 
         SceneManager.LoadScene("Scene_Result");

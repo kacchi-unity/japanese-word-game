@@ -1,0 +1,3335 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46b00319167516e4098a9b4fc92cdac0, type: 3}
+  m_Name: WordDataBase
+  m_EditorClassIdentifier: Assembly-CSharp::WordDataBaseSO
+  wordDataBaseList:
+  - id: 1
+    kanji: "\u4F1A\u3046"
+    meaning: "\uB9CC\uB098\uB2E4"
+    reading: "\u3042\u3046"
+    jlpt: 5
+  - id: 2
+    kanji: "\u9752\u3044"
+    meaning: "\uD478\uB978"
+    reading: "\u3042\u304A\u3044"
+    jlpt: 5
+  - id: 3
+    kanji: "\u8D64\u3044"
+    meaning: "\uBE68\uAC04"
+    reading: "\u3042\u304B\u3044"
+    jlpt: 5
+  - id: 4
+    kanji: "\u660E\u3044"
+    meaning: "\uC120\uBA85\uD55C"
+    reading: "\u3042\u304B\u308B\u3044"
+    jlpt: 5
+  - id: 5
+    kanji: "\u79CB"
+    meaning: "\uAC00\uC744"
+    reading: "\u3042\u304D"
+    jlpt: 5
+  - id: 6
+    kanji: "\u958B\u304F"
+    meaning: "\uC5F4\uB9AC\uB2E4"
+    reading: "\u3042\u304F"
+    jlpt: 5
+  - id: 7
+    kanji: "\u958B\u3051\u308B"
+    meaning: "\uC5F4\uAE30"
+    reading: "\u3042\u3051\u308B"
+    jlpt: 5
+  - id: 8
+    kanji: "\u4E0A\u3052\u308B"
+    meaning: "\uC8FC\uB2E4"
+    reading: "\u3042\u3052\u308B"
+    jlpt: 5
+  - id: 9
+    kanji: "\u671D"
+    meaning: "\uC544\uCE68"
+    reading: "\u3042\u3055"
+    jlpt: 5
+  - id: 10
+    kanji: "\u671D\u5FA1\u98EF"
+    meaning: "\uC544\uCE68\uBC25"
+    reading: "\u3042\u3055\u3054\u306F\u3093"
+    jlpt: 5
+  - id: 11
+    kanji: "\u3042\u3055\u3063\u3066"
+    meaning: "\uBAA8\uB808"
+    reading: "\u3042\u3055\u3063\u3066"
+    jlpt: 5
+  - id: 12
+    kanji: "\u8DB3"
+    meaning: "\uB2E4\uB9AC"
+    reading: "\u3042\u3057"
+    jlpt: 5
+  - id: 13
+    kanji: "\u660E\u65E5"
+    meaning: "\uB0B4\uC77C"
+    reading: "\u3042\u3057\u305F"
+    jlpt: 5
+  - id: 14
+    kanji: "\u3042\u305D\u3053"
+    meaning: "\uC800\uAE30"
+    reading: "\u3042\u305D\u3053"
+    jlpt: 5
+  - id: 15
+    kanji: "\u904A\u3076"
+    meaning: "\uB180\uB2E4"
+    reading: "\u3042\u305D\u3076"
+    jlpt: 5
+  - id: 16
+    kanji: "\u6696\u304B\u3044"
+    meaning: "\uB530\uB73B\uD55C"
+    reading: "\u3042\u305F\u305F\u304B\u3044"
+    jlpt: 5
+  - id: 17
+    kanji: "\u982D"
+    meaning: "\uBA38\uB9AC"
+    reading: "\u3042\u305F\u307E"
+    jlpt: 5
+  - id: 18
+    kanji: "\u65B0\u3057\u3044"
+    meaning: "\uC0C8\uB85C\uC6B4"
+    reading: "\u3042\u305F\u3089\u3057\u3044"
+    jlpt: 5
+  - id: 19
+    kanji: "\u3042\u3061\u3089"
+    meaning: "\uC800\uCABD"
+    reading: "\u3042\u3061\u3089"
+    jlpt: 5
+  - id: 20
+    kanji: "\u6691\u3044"
+    meaning: "\uB365\uB2E4"
+    reading: "\u3042\u3064\u3044"
+    jlpt: 5
+  - id: 21
+    kanji: "\u71B1\u3044"
+    meaning: "\uB728\uAC81\uB2E4"
+    reading: "\u3042\u3064\u3044"
+    jlpt: 5
+  - id: 22
+    kanji: "\u539A\u3044"
+    meaning: "\uB450\uAECD\uB2E4"
+    reading: "\u3042\u3064\u3044"
+    jlpt: 5
+  - id: 23
+    kanji: "\u3042\u3063\u3061"
+    meaning: "\uC800\uAE30"
+    reading: "\u3042\u3063\u3061"
+    jlpt: 5
+  - id: 24
+    kanji: "\u5F8C"
+    meaning: "\uB098\uC911\uC5D0"
+    reading: "\u3042\u3068"
+    jlpt: 5
+  - id: 25
+    kanji: "\u3042\u306A\u305F"
+    meaning: "\uB2F9\uC2E0"
+    reading: "\u3042\u306A\u305F"
+    jlpt: 5
+  - id: 26
+    kanji: "\u5144"
+    meaning: "\uD615"
+    reading: "\u3042\u306B"
+    jlpt: 5
+  - id: 27
+    kanji: "\u59C9"
+    meaning: "\uC5B8\uB2C8"
+    reading: "\u3042\u306D"
+    jlpt: 5
+  - id: 28
+    kanji: "\u3042\u306E"
+    meaning: "\uADF8"
+    reading: "\u3042\u306E"
+    jlpt: 5
+  - id: 29
+    kanji: "\u5927\u4EBA"
+    meaning: "\uC5B4\uB978"
+    reading: "\u304A\u3068\u306A"
+    jlpt: 5
+  - id: 30
+    kanji: "\u30A2\u30D1\u30FC\u30C8"
+    meaning: "\uC544\uD30C\uD2B8"
+    reading: "\u30A2\u30D1\u30FC\u30C8"
+    jlpt: 5
+  - id: 31
+    kanji: "\u3042\u3073\u308B"
+    meaning: "\uBAA9\uC695\uD558\uB2E4"
+    reading: "\u3042\u3073\u308B"
+    jlpt: 5
+  - id: 32
+    kanji: "\u5371\u306A\u3044"
+    meaning: "\uC704\uD5D8\uD558\uB2E4"
+    reading: "\u3042\u3076\u306A\u3044"
+    jlpt: 5
+  - id: 33
+    kanji: "\u7518\u3044"
+    meaning: "\uB2EC\uCF64\uD55C"
+    reading: "\u3042\u307E\u3044"
+    jlpt: 5
+  - id: 34
+    kanji: "\u3042\u307E\u308A"
+    meaning: "\uBCC4\uB85C"
+    reading: "\u3042\u307E\u308A"
+    jlpt: 5
+  - id: 35
+    kanji: "\u96E8"
+    meaning: "\uBE44"
+    reading: "\u3042\u3081"
+    jlpt: 5
+  - id: 36
+    kanji: "\u98F4"
+    meaning: "\uC0AC\uD0D5"
+    reading: "\u3042\u3081"
+    jlpt: 5
+  - id: 37
+    kanji: "\u6D17\u3046"
+    meaning: "\uC53B\uB2E4"
+    reading: "\u3042\u3089\u3046"
+    jlpt: 5
+  - id: 38
+    kanji: "\u3042\u308B"
+    meaning: "\uC788\uB2E4"
+    reading: "\u3042\u308B"
+    jlpt: 5
+  - id: 39
+    kanji: "\u6B69\u304F"
+    meaning: "\uAC77\uB2E4"
+    reading: "\u3042\u308B\u304F"
+    jlpt: 5
+  - id: 40
+    kanji: "\u3042\u308C"
+    meaning: "\uADF8\uAC83"
+    reading: "\u3042\u308C"
+    jlpt: 5
+  - id: 41
+    kanji: "\u3044\u3044"
+    meaning: "\uC88B\uC740"
+    reading: "\u3044\u3044"
+    jlpt: 5
+  - id: 42
+    kanji: "\u3044\u3044\u3048"
+    meaning: "\uC544\uB2C8\uC624"
+    reading: "\u3044\u3044\u3048"
+    jlpt: 5
+  - id: 43
+    kanji: "\u8A00\u3046"
+    meaning: "\uB9D0"
+    reading: "\u3044\u3046"
+    jlpt: 5
+  - id: 44
+    kanji: "\u5BB6"
+    meaning: "\uC9D1"
+    reading: "\u3044\u3048"
+    jlpt: 5
+  - id: 45
+    kanji: "\u3044\u304B\u304C"
+    meaning: "\uC5B4\uB5BB\uAC8C"
+    reading: "\u3044\u304B\u304C"
+    jlpt: 5
+  - id: 46
+    kanji: "\u884C\u304F"
+    meaning: "\uAC00\uB2E4"
+    reading: "\u3044\u304F"
+    jlpt: 5
+  - id: 47
+    kanji: "\u3044\u304F\u3064"
+    meaning: "\uBA87"
+    reading: "\u3044\u304F\u3064"
+    jlpt: 5
+  - id: 48
+    kanji: "\u3044\u304F\u3089"
+    meaning: "\uC5BC\uB9C8"
+    reading: "\u3044\u304F\u3089"
+    jlpt: 5
+  - id: 49
+    kanji: "\u6C60"
+    meaning: "\uC5F0\uBABB"
+    reading: "\u3044\u3051"
+    jlpt: 5
+  - id: 50
+    kanji: "\u533B\u8005"
+    meaning: "\uC758\uC0AC"
+    reading: "\u3044\u3057\u3083"
+    jlpt: 5
+  - id: 51
+    kanji: "\u3044\u3059"
+    meaning: "\uC758\uC790"
+    reading: "\u3044\u3059"
+    jlpt: 5
+  - id: 52
+    kanji: "\u5FD9\u3057\u3044"
+    meaning: "\uBC14\uC058\uB2E4"
+    reading: "\u3044\u305D\u304C\u3057\u3044"
+    jlpt: 5
+  - id: 53
+    kanji: "\u75DB\u3044"
+    meaning: "\uC544\uD504\uB2E4"
+    reading: "\u3044\u305F\u3044"
+    jlpt: 5
+  - id: 54
+    kanji: "\u4E00"
+    meaning: "\uC77C"
+    reading: "\u3044\u3061"
+    jlpt: 5
+  - id: 55
+    kanji: "\u4E00\u65E5"
+    meaning: "\uC77C\uC77C"
+    reading: "\u3044\u3061\u306B\u3061"
+    jlpt: 5
+  - id: 56
+    kanji: "\u3044\u3061\u3070\u3093"
+    meaning: "\uAC00\uC7A5"
+    reading: "\u3044\u3061\u3070\u3093"
+    jlpt: 5
+  - id: 57
+    kanji: "\u3044\u3064"
+    meaning: "\uC5B8\uC81C"
+    reading: "\u3044\u3064"
+    jlpt: 5
+  - id: 58
+    kanji: "\u4E94\u65E5"
+    meaning: "5 \uC77C"
+    reading: "\u3044\u3064\u304B"
+    jlpt: 5
+  - id: 59
+    kanji: "\u4E00\u7DD2"
+    meaning: "\uD568\uAED8"
+    reading: "\u3044\u3063\u3057\u3087"
+    jlpt: 5
+  - id: 60
+    kanji: "\u4E94\u3064"
+    meaning: "\uB2E4\uC12F"
+    reading: "\u3044\u3064\u3064"
+    jlpt: 5
+  - id: 61
+    kanji: "\u3044\u3064\u3082"
+    meaning: "\uD56D\uC0C1"
+    reading: "\u3044\u3064\u3082"
+    jlpt: 5
+  - id: 62
+    kanji: "\u72AC"
+    meaning: "\uAC1C"
+    reading: "\u3044\u306C"
+    jlpt: 5
+  - id: 63
+    kanji: "\u4ECA"
+    meaning: "\uC9C0\uAE08"
+    reading: "\u3044\u307E"
+    jlpt: 5
+  - id: 64
+    kanji: "\u610F\u5473"
+    meaning: "\uC758\uBBF8"
+    reading: "\u3044\u307F"
+    jlpt: 5
+  - id: 65
+    kanji: "\u59B9"
+    meaning: "\uC5EC\uB3D9\uC0DD"
+    reading: "\u3044\u3082\u3046\u3068"
+    jlpt: 5
+  - id: 66
+    kanji: "\u5ACC"
+    meaning: "\uC2EB\uC74C"
+    reading: "\u3044\u3084"
+    jlpt: 5
+  - id: 67
+    kanji: "\u5165\u53E3"
+    meaning: "\uC785\uAD6C"
+    reading: "\u3044\u308A\u3050\u3061"
+    jlpt: 5
+  - id: 68
+    kanji: "\u5C45\u308B"
+    meaning: "\uC788\uB2E4"
+    reading: "\u3044\u308B"
+    jlpt: 5
+  - id: 69
+    kanji: "\u8981\u308B"
+    meaning: "\uD544\uC694\uD558\uB2E4"
+    reading: "\u3044\u308B"
+    jlpt: 5
+  - id: 70
+    kanji: "\u5165\u308C\u308B"
+    meaning: "\uB123\uB2E4"
+    reading: "\u3044\u308C\u308B"
+    jlpt: 5
+  - id: 71
+    kanji: "\u8272"
+    meaning: "\uC0C9"
+    reading: "\u3044\u308D"
+    jlpt: 5
+  - id: 72
+    kanji: "\u3044\u308D\u3044\u308D"
+    meaning: "\uC5EC\uB7EC\uAC00\uC9C0"
+    reading: "\u3044\u308D\u3044\u308D"
+    jlpt: 5
+  - id: 73
+    kanji: "\u4E0A"
+    meaning: "\uC704"
+    reading: "\u3046\u3048"
+    jlpt: 5
+  - id: 74
+    kanji: "\u5F8C\u308D"
+    meaning: "\uB4A4\uC5D0"
+    reading: "\u3046\u3057\u308D"
+    jlpt: 5
+  - id: 75
+    kanji: "\u8584\u3044"
+    meaning: "\uC587\uB2E4"
+    reading: "\u3046\u3059\u3044"
+    jlpt: 5
+  - id: 76
+    kanji: "\u6B4C"
+    meaning: "\uB178\uB798"
+    reading: "\u3046\u305F"
+    jlpt: 5
+  - id: 77
+    kanji: "\u6B4C\u3046"
+    meaning: "\uB178\uB798\uD558\uB2E4"
+    reading: "\u3046\u305F\u3046"
+    jlpt: 5
+  - id: 78
+    kanji: "\u751F\u307E\u308C\u308B"
+    meaning: " \uD0DC\uC5B4\uB098\uB2E4"
+    reading: "\u3046\u307E\u308C\u308B"
+    jlpt: 5
+  - id: 79
+    kanji: "\u6D77"
+    meaning: "\uBC14\uB2E4"
+    reading: "\u3046\u307F"
+    jlpt: 5
+  - id: 80
+    kanji: "\u58F2\u308B"
+    meaning: "\uD314\uB2E4"
+    reading: "\u3046\u308B"
+    jlpt: 5
+  - id: 81
+    kanji: "\u7169\u3044"
+    meaning: "\uC2DC\uB044\uB7FD\uB2E4"
+    reading: "\u3046\u308B\u3055\u3044"
+    jlpt: 5
+  - id: 82
+    kanji: "\u4E0A\u7740"
+    meaning: "\uAC89\uC637"
+    reading: "\u3046\u308F\u304E"
+    jlpt: 5
+  - id: 83
+    kanji: "\u7D75"
+    meaning: "\uADF8\uB9BC"
+    reading: "\u3048"
+    jlpt: 5
+  - id: 84
+    kanji: "\u6620\u753B"
+    meaning: "\uC601\uD654"
+    reading: "\u3048\u3044\u304C"
+    jlpt: 5
+  - id: 85
+    kanji: "\u6620\u753B\u9928"
+    meaning: "\uC601\uD654\uAD00"
+    reading: "\u3048\u3044\u304C\u304B\u3093"
+    jlpt: 5
+  - id: 86
+    kanji: "\u82F1\u8A9E"
+    meaning: "\uC601\uC5B4"
+    reading: "\u3048\u3044\u3054"
+    jlpt: 5
+  - id: 87
+    kanji: "\u3048\u3048"
+    meaning: "\uC608"
+    reading: "\u3048\u3048"
+    jlpt: 5
+  - id: 88
+    kanji: "\u99C5"
+    meaning: "\uC5ED"
+    reading: "\u3048\u304D"
+    jlpt: 5
+  - id: 89
+    kanji: "\u30A8\u30EC\u30D9\u30FC\u30BF\u30FC"
+    meaning: "\uC5D8\uB9AC\uBCA0\uC774\uD130"
+    reading: "\u30A8\u30EC\u30D9\u30FC\u30BF\u30FC"
+    jlpt: 5
+  - id: 90
+    kanji: "\u925B\u7B46"
+    meaning: "\uC5F0\uD544"
+    reading: "\u3048\u3093\u3074\u3064"
+    jlpt: 5
+  - id: 91
+    kanji: "\u304A\u3044\u3057\u3044"
+    meaning: "\uB9DB\uC788\uB294"
+    reading: "\u304A\u3044\u3057\u3044"
+    jlpt: 5
+  - id: 92
+    kanji: "\u591A\u3044"
+    meaning: "\uB9CE\uC740"
+    reading: "\u304A\u304A\u3044"
+    jlpt: 5
+  - id: 93
+    kanji: "\u5927\u304D\u3044"
+    meaning: "\uD070"
+    reading: "\u304A\u304A\u304D\u3044"
+    jlpt: 5
+  - id: 94
+    kanji: "\u5927\u304D\u306A"
+    meaning: "\uD070"
+    reading: "\u304A\u304A\u304D\u306A"
+    jlpt: 5
+  - id: 95
+    kanji: "\u5927\u52E2"
+    meaning: "\uB300\uC138"
+    reading: "\u304A\u304A\u305C\u3044"
+    jlpt: 5
+  - id: 96
+    kanji: "\u304A\u6BCD\u3055\u3093"
+    meaning: "\uC5C4\uB9C8"
+    reading: "\u304A\u304B\u3042\u3055\u3093"
+    jlpt: 5
+  - id: 97
+    kanji: "\u304A\u83D3\u5B50"
+    meaning: "\uACFC\uC790"
+    reading: "\u304A\u304B\u3057"
+    jlpt: 5
+  - id: 98
+    kanji: "\u304A\u91D1"
+    meaning: "\uB3C8"
+    reading: "\u304A\u304B\u306D"
+    jlpt: 5
+  - id: 99
+    kanji: "\u8D77\u304D\u308B"
+    meaning: "\uC77C\uC5B4\uB098\uB2E4"
+    reading: "\u304A\u304D\u308B"
+    jlpt: 5
+  - id: 100
+    kanji: "\u7F6E\u304F"
+    meaning: "\uB450\uB2E4"
+    reading: "\u304A\u304F"
+    jlpt: 5
+  - id: 101
+    kanji: "\u5965\u3055\u3093"
+    meaning: "\uBD80\uC778"
+    reading: "\u304A\u304F\u3055\u3093"
+    jlpt: 5
+  - id: 102
+    kanji: "\u304A\u9152"
+    meaning: "\uC220"
+    reading: "\u304A\u3055\u3051"
+    jlpt: 5
+  - id: 103
+    kanji: "\u304A\u76BF"
+    meaning: "\uC811\uC2DC"
+    reading: "\u304A\u3055\u3089"
+    jlpt: 5
+  - id: 104
+    kanji: "\u4F2F\u7236\u3055\u3093"
+    meaning: "\uD560\uC544\uBC84\uC9C0"
+    reading: "\u304A\u3058\u3044\u3055\u3093"
+    jlpt: 5
+  - id: 105
+    kanji: "\u6559\u3048\u308B"
+    meaning: "\uAC00\uB974\uCE58\uB2E4"
+    reading: "\u304A\u3057\u3048\u308B"
+    jlpt: 5
+  - id: 106
+    kanji: "\u4F2F\u7236\u3055\u3093"
+    meaning: "\uC544\uC800\uC528"
+    reading: "\u304A\u3058\u3055\u3093"
+    jlpt: 5
+  - id: 107
+    kanji: "\u62BC\u3059"
+    meaning: "\uBC00\uB2E4"
+    reading: "\u304A\u3059"
+    jlpt: 5
+  - id: 108
+    kanji: "\u9045\u3044"
+    meaning: "\uB2A6\uB2E4"
+    reading: "\u304A\u305D\u3044"
+    jlpt: 5
+  - id: 109
+    kanji: "\u304A\u8336"
+    meaning: "\uCC28"
+    reading: "\u304A\u3061\u3083"
+    jlpt: 5
+  - id: 110
+    kanji: "\u304A\u624B\u6D17\u3044"
+    meaning: "\uD654\uC7A5\uC2E4"
+    reading: "\u304A\u3066\u3042\u3089\u3044"
+    jlpt: 5
+  - id: 111
+    kanji: "\u304A\u7236\u3055\u3093"
+    meaning: "\uC544\uBC84\uC9C0"
+    reading: "\u304A\u3068\u3046\u3055\u3093"
+    jlpt: 5
+  - id: 112
+    kanji: "\u5F1F"
+    meaning: "\uB3D9\uC0DD"
+    reading: "\u304A\u3068\u3046\u3068"
+    jlpt: 5
+  - id: 113
+    kanji: "\u7537"
+    meaning: "\uB0A8\uC790"
+    reading: "\u304A\u3068\u3053"
+    jlpt: 5
+  - id: 114
+    kanji: "\u7537\u306E\u5B50"
+    meaning: "\uC18C\uB144"
+    reading: "\u304A\u3068\u3053\u306E\u3053"
+    jlpt: 5
+  - id: 115
+    kanji: "\u4E00\u6628\u65E5"
+    meaning: "\uADF8\uC800\uAED8"
+    reading: "\u304A\u3068\u3068\u3044"
+    jlpt: 5
+  - id: 116
+    kanji: "\u4E00\u6628\u5E74"
+    meaning: "\uC9C0\uB09C\uD574"
+    reading: "\u304A\u3068\u3068\u3057"
+    jlpt: 5
+  - id: 117
+    kanji: "\u5927\u4EBA"
+    meaning: "\uC131\uC778"
+    reading: "\u304A\u3068\u306A"
+    jlpt: 5
+  - id: 118
+    kanji: "\u304A\u306A\u304B"
+    meaning: "\uBC30"
+    reading: "\u304A\u306A\u304B"
+    jlpt: 5
+  - id: 119
+    kanji: "\u540C\u3058"
+    meaning: "\uAC19\uC740"
+    reading: "\u304A\u306A\u3058"
+    jlpt: 5
+  - id: 120
+    kanji: "\u304A\u5144\u3055\u3093"
+    meaning: "\uD615"
+    reading: "\u304A\u306B\u3044\u3055\u3093"
+    jlpt: 5
+  - id: 121
+    kanji: "\u304A\u59C9\u3055\u3093"
+    meaning: "\uC5B8\uB2C8"
+    reading: "\u304A\u306D\u3048\u3055\u3093"
+    jlpt: 5
+  - id: 122
+    kanji: "\u304A\u3070\u3042\u3055\u3093"
+    meaning: "\uD560\uBA38\uB2C8"
+    reading: "\u304A\u3070\u3042\u3055\u3093"
+    jlpt: 5
+  - id: 123
+    kanji: "\u4F2F\u6BCD\u3055\u3093"
+    meaning: "\uC544\uC8FC\uBA38\uB2C8"
+    reading: "\u304A\u3070\u3055\u3093"
+    jlpt: 5
+  - id: 124
+    kanji: "\u304A\u98A8\u5442"
+    meaning: "\uBAA9\uC695"
+    reading: "\u304A\u3075\u308D"
+    jlpt: 5
+  - id: 125
+    kanji: "\u304A\u5F01\u5F53"
+    meaning: "\uB3C4\uC2DC\uB77D"
+    reading: "\u304A\u3079\u3093\u3068\u3046"
+    jlpt: 5
+  - id: 126
+    kanji: "\u899A\u3048\u308B"
+    meaning: "\uAE30\uC5B5\uD558\uB2E4"
+    reading: "\u304A\u307C\u3048\u308B"
+    jlpt: 5
+  - id: 127
+    kanji: "\u304A\u307E\u308F\u308A\u3055\u3093"
+    meaning: "\uACBD\uCC30"
+    reading: "\u304A\u307E\u308F\u308A\u3055\u3093"
+    jlpt: 5
+  - id: 128
+    kanji: "\u91CD\u3044"
+    meaning: "\uBB34\uAC70\uC6B4"
+    reading: "\u304A\u3082\u3044"
+    jlpt: 5
+  - id: 129
+    kanji: "\u304A\u3082\u3057\u308D\u3044"
+    meaning: "\uC7AC\uBBF8"
+    reading: "\u304A\u3082\u3057\u308D\u3044"
+    jlpt: 5
+  - id: 130
+    kanji: "\u6CF3\u3050"
+    meaning: "\uC218\uC601"
+    reading: "\u304A\u3088\u3050"
+    jlpt: 5
+  - id: 131
+    kanji: "\u964D\u308A\u308B"
+    meaning: "\uB0B4\uB9AC\uB2E4"
+    reading: "\u304A\u308A\u308B"
+    jlpt: 5
+  - id: 132
+    kanji: "\u7D42\u308B"
+    meaning: "\uB05D\uB098\uB2E4"
+    reading: "\u304A\u308F\u308B"
+    jlpt: 5
+  - id: 133
+    kanji: "\u97F3\u697D"
+    meaning: "\uC74C\uC545"
+    reading: "\u304A\u3093\u304C\u304F"
+    jlpt: 5
+  - id: 134
+    kanji: "\u5973"
+    meaning: "\uC5EC\uC790"
+    reading: "\u304A\u3093\u306A"
+    jlpt: 5
+  - id: 135
+    kanji: "\u5973\u306E\u5B50"
+    meaning: "\uC18C\uB140"
+    reading: "\u304A\u3093\u306A\u306E\u3053"
+    jlpt: 5
+  - id: 136
+    kanji: "\u5916\u56FD"
+    meaning: "\uC678\uAD6D"
+    reading: "\u304C\u3044\u3053\u304F"
+    jlpt: 5
+  - id: 137
+    kanji: "\u5916\u56FD\u4EBA"
+    meaning: "\uC678\uAD6D\uC778"
+    reading: "\u304C\u3044\u3053\u304F\u3058\u3093"
+    jlpt: 5
+  - id: 138
+    kanji: "\u4F1A\u793E"
+    meaning: "\uD68C\uC0AC"
+    reading: "\u304B\u3044\u3057\u3083"
+    jlpt: 5
+  - id: 139
+    kanji: "\u968E\u6BB5"
+    meaning: "\uACC4\uB2E8"
+    reading: "\u304B\u3044\u3060\u3093"
+    jlpt: 5
+  - id: 140
+    kanji: "\u8CB7\u3044\u7269"
+    meaning: "\uC1FC\uD551"
+    reading: "\u304B\u3044\u3082\u306E"
+    jlpt: 5
+  - id: 141
+    kanji: "\u8CB7\u3046"
+    meaning: "\uAD6C\uB9E4"
+    reading: "\u304B\u3046"
+    jlpt: 5
+  - id: 142
+    kanji: "\u8FD4\u3059"
+    meaning: "\uBC18\uD658\uD558\uB2E4"
+    reading: "\u304B\u3048\u3059"
+    jlpt: 5
+  - id: 143
+    kanji: "\u5E30\u308B"
+    meaning: "\uB3CC\uC544"
+    reading: "\u304B\u3048\u308B"
+    jlpt: 5
+  - id: 144
+    kanji: "\u304B\u304B\u308B"
+    meaning: "\uAC78\uB9AC\uB2E4"
+    reading: "\u304B\u304B\u308B"
+    jlpt: 5
+  - id: 145
+    kanji: "\u304B\u304E"
+    meaning: "\uC5F4\uC1E0"
+    reading: "\u304B\u304E"
+    jlpt: 5
+  - id: 146
+    kanji: "\u66F8\u304F"
+    meaning: "\uC4F0\uAE30"
+    reading: "\u304B\u304F"
+    jlpt: 5
+  - id: 147
+    kanji: "\u5B66\u751F"
+    meaning: "\uD559\uC0DD"
+    reading: "\u304C\u304F\u305B\u3044"
+    jlpt: 5
+  - id: 148
+    kanji: "\u304B\u3051\u308B"
+    meaning: "\uAC78\uB2E4"
+    reading: "\u304B\u3051\u308B"
+    jlpt: 5
+  - id: 149
+    kanji: "\u5098"
+    meaning: "\uC6B0\uC0B0"
+    reading: "\u304B\u3055"
+    jlpt: 5
+  - id: 150
+    kanji: "\u8CB8\u3059"
+    meaning: "\uBE4C\uB824"
+    reading: "\u304B\u3059"
+    jlpt: 5
+  - id: 151
+    kanji: "\u98A8"
+    meaning: "\uBC14\uB78C"
+    reading: "\u304B\u305C"
+    jlpt: 5
+  - id: 152
+    kanji: "\u98A8\u90AA"
+    meaning: "\uAC10\uAE30"
+    reading: "\u304B\u305C"
+    jlpt: 5
+  - id: 153
+    kanji: "\u5BB6\u65CF"
+    meaning: "\uAC00\uC871"
+    reading: "\u304B\u305E\u304F"
+    jlpt: 5
+  - id: 154
+    kanji: "\u65B9"
+    meaning: "\uBC29\uBC95"
+    reading: "\u304B\u305F"
+    jlpt: 5
+  - id: 155
+    kanji: "\u5B66\u6821"
+    meaning: "\uD559\uAD50"
+    reading: "\u304C\u3063\u3053\u3046"
+    jlpt: 5
+  - id: 156
+    kanji: "\u30AB\u30C3\u30D7"
+    meaning: "\uCEF5"
+    reading: "\u30AB\u30C3\u30D7"
+    jlpt: 5
+  - id: 157
+    kanji: "\u5BB6\u5EAD"
+    meaning: "\uAC00\uC815"
+    reading: "\u304B\u3066\u3044"
+    jlpt: 5
+  - id: 158
+    kanji: "\u89D2"
+    meaning: "\uBAA8\uC11C\uB9AC"
+    reading: "\u304B\u3069"
+    jlpt: 5
+  - id: 159
+    kanji: "\u304B\u3070\u3093"
+    meaning: "\uAC00\uBC29"
+    reading: "\u304B\u3070\u3093"
+    jlpt: 5
+  - id: 160
+    kanji: "\u82B1\u74F6"
+    meaning: "\uAF43\uBCD1"
+    reading: "\u304B\u3073\u3093"
+    jlpt: 5
+  - id: 161
+    kanji: "\u7D19"
+    meaning: "\uC885\uC774"
+    reading: "\u304B\u307F"
+    jlpt: 5
+  - id: 162
+    kanji: "\u30AB\u30E1\u30E9"
+    meaning: "\uCE74\uBA54\uB77C"
+    reading: "\u30AB\u30E1\u30E9"
+    jlpt: 5
+  - id: 163
+    kanji: "\u706B\u66DC\u65E5"
+    meaning: "\uD654\uC694\uC77C"
+    reading: "\u304B\u3088\u3046\u3073"
+    jlpt: 5
+  - id: 164
+    kanji: "\u8F9B\u3044"
+    meaning: "\uB9F5\uB2E4"
+    reading: "\u304B\u3089\u3044"
+    jlpt: 5
+  - id: 165
+    kanji: "\u4F53"
+    meaning: "\uBAB8"
+    reading: "\u304B\u3089\u3060"
+    jlpt: 5
+  - id: 166
+    kanji: "\u501F\u308A\u308B"
+    meaning: "\uBE4C\uB9AC\uB2E4"
+    reading: "\u304B\u308A\u308B"
+    jlpt: 5
+  - id: 167
+    kanji: "\u8EFD\u3044"
+    meaning: "\uAC00\uBCCD\uB2E4"
+    reading: "\u304B\u308B\u3044"
+    jlpt: 5
+  - id: 168
+    kanji: "\u30AB\u30EC\u30FC"
+    meaning: "\uCE74\uB808"
+    reading: "\u30AB\u30EC\u30FC"
+    jlpt: 5
+  - id: 169
+    kanji: "\u30AB\u30EC\u30F3\u30C0\u30FC"
+    meaning: "\uB2EC\uB825"
+    reading: "\u30AB\u30EC\u30F3\u30C0\u30FC"
+    jlpt: 5
+  - id: 170
+    kanji: "\u5DDD"
+    meaning: "\uAC15"
+    reading: "\u304B\u308F"
+    jlpt: 5
+  - id: 171
+    kanji: "\u304B\u308F\u3044\u3044"
+    meaning: "\uADC0\uC5FD\uB2E4"
+    reading: "\u304B\u308F\u3044\u3044"
+    jlpt: 5
+  - id: 172
+    kanji: "\u6F22\u5B57"
+    meaning: "\uD55C\uC790"
+    reading: "\u304B\u3093\u3058"
+    jlpt: 5
+  - id: 173
+    kanji: "\u6728"
+    meaning: "\uB098\uBB34"
+    reading: "\u304D"
+    jlpt: 5
+  - id: 174
+    kanji: "\u9EC4\u8272\u3044"
+    meaning: "\uB178\uB797\uB2E4"
+    reading: "\u304D\u3044\u308D\u3044"
+    jlpt: 5
+  - id: 175
+    kanji: "\u6D88\u3048\u308B"
+    meaning: "\uC0AC\uB77C"
+    reading: "\u304D\u3048\u308B"
+    jlpt: 5
+  - id: 176
+    kanji: "\u805E\u304F"
+    meaning: "\uB4E3\uB2E4"
+    reading: "\u304D\u304F"
+    jlpt: 5
+  - id: 177
+    kanji: "\u5317"
+    meaning: "\uBD81"
+    reading: "\u304D\u305F"
+    jlpt: 5
+  - id: 178
+    kanji: "\u30AE\u30BF\u30FC"
+    meaning: "\uAE30\uD0C0"
+    reading: "\u30AE\u30BF\u30FC"
+    jlpt: 5
+  - id: 179
+    kanji: "\u6C5A\u3044"
+    meaning: "\uB354\uB7EC\uC6B4"
+    reading: "\u304D\u305F\u306A\u3044"
+    jlpt: 5
+  - id: 180
+    kanji: "\u55AB\u8336\u5E97"
+    meaning: "\uCEE4\uD53C\uC216"
+    reading: "\u304D\u3063\u3055\u3066\u3093"
+    jlpt: 5
+  - id: 181
+    kanji: "\u5207\u624B"
+    meaning: "\uC6B0\uD45C"
+    reading: "\u304D\u3063\u3066"
+    jlpt: 5
+  - id: 182
+    kanji: "\u5207\u7B26"
+    meaning: "\uD2F0\uCF13"
+    reading: "\u304D\u3063\u3077"
+    jlpt: 5
+  - id: 183
+    kanji: "\u6628\u65E5"
+    meaning: "\uC5B4\uC81C"
+    reading: "\u304D\u306E\u3046"
+    jlpt: 5
+  - id: 184
+    kanji: "\u4E5D"
+    meaning: "\uC544\uD649"
+    reading: "\u304D\u3085\u3046"
+    jlpt: 5
+  - id: 185
+    kanji: "\u725B\u8089"
+    meaning: "\uC1E0\uACE0\uAE30"
+    reading: "\u304E\u3085\u3046\u306B\u304F"
+    jlpt: 5
+  - id: 186
+    kanji: "\u725B\u4E73"
+    meaning: "\uC6B0\uC720"
+    reading: "\u304E\u3085\u3046\u306B\u3085\u3046"
+    jlpt: 5
+  - id: 187
+    kanji: "\u4ECA\u65E5"
+    meaning: "\uC624\uB298"
+    reading: "\u304D\u3087\u3046"
+    jlpt: 5
+  - id: 188
+    kanji: "\u6559\u5BA4"
+    meaning: "\uAD50\uC2E4"
+    reading: "\u304D\u3087\u3046\u3057\u3064"
+    jlpt: 5
+  - id: 189
+    kanji: "\u5144\u5F1F"
+    meaning: "\uD615\uC81C"
+    reading: "\u304D\u3087\u3046\u3060\u3044"
+    jlpt: 5
+  - id: 190
+    kanji: "\u53BB\u5E74"
+    meaning: "\uC791\uB144"
+    reading: "\u304D\u3087\u306D\u3093"
+    jlpt: 5
+  - id: 191
+    kanji: "\u5ACC\u3044"
+    meaning: "\uC2EB\uC74C"
+    reading: "\u304D\u3089\u3044"
+    jlpt: 5
+  - id: 192
+    kanji: "\u5207\u308B"
+    meaning: "\uC790\uB974\uB2E4"
+    reading: "\u304D\u308B"
+    jlpt: 5
+  - id: 193
+    kanji: "\u7740\u308B"
+    meaning: "\uC637\uC744 \uC785\uB2E4"
+    reading: "\u304D\u308B"
+    jlpt: 5
+  - id: 194
+    kanji: "\u304D\u308C\u3044"
+    meaning: "\uC608\uC068"
+    reading: "\u304D\u308C\u3044"
+    jlpt: 5
+  - id: 195
+    kanji: "\u30AD\u30ED"
+    meaning: "\uD0AC\uB85C\uADF8\uB7A8"
+    reading: "\u30AD\u30ED"
+    jlpt: 5
+  - id: 196
+    kanji: "\u30AD\u30ED"
+    meaning: "\uD0AC\uB85C\uBBF8\uD130"
+    reading: "\u30AD\u30ED"
+    jlpt: 5
+  - id: 197
+    kanji: "\u9280\u884C"
+    meaning: "\uC740\uD589"
+    reading: "\u304E\u3093\u3053\u3046"
+    jlpt: 5
+  - id: 198
+    kanji: "\u91D1\u66DC\u65E5"
+    meaning: "\uAE08\uC694\uC77C"
+    reading: "\u304D\u3093\u3088\u3046\u3073"
+    jlpt: 5
+  - id: 199
+    kanji: "\u85AC"
+    meaning: "\uC57D"
+    reading: "\u304F\u3059\u308A"
+    jlpt: 5
+  - id: 200
+    kanji: "\u304F\u3060\u3055\u3044"
+    meaning: "~\uD574 \uC8FC\uC138\uC694"
+    reading: "\u304F\u3060\u3055\u3044"
+    jlpt: 5
+  - id: 201
+    kanji: "\u679C\u7269"
+    meaning: "\uACFC\uC77C"
+    reading: "\u304F\u3060\u3082\u306E"
+    jlpt: 5
+  - id: 202
+    kanji: "\u53E3"
+    meaning: "\uC785"
+    reading: "\u304F\u3061"
+    jlpt: 5
+  - id: 203
+    kanji: "\u9774"
+    meaning: "\uC2E0\uBC1C"
+    reading: "\u304F\u3064"
+    jlpt: 5
+  - id: 204
+    kanji: "\u9774\u4E0B"
+    meaning: "\uC591\uB9D0"
+    reading: "\u304F\u3064\u3057\u305F"
+    jlpt: 5
+  - id: 205
+    kanji: "\u56FD"
+    meaning: "\uAD6D\uAC00"
+    reading: "\u304F\u306B"
+    jlpt: 5
+  - id: 206
+    kanji: "\u66C7\u308A"
+    meaning: "\uD750\uB9BC"
+    reading: "\u304F\u3082\u308A"
+    jlpt: 5
+  - id: 207
+    kanji: "\u66C7\u308B"
+    meaning: "\uD750\uB9AC\uB2E4"
+    reading: "\u304F\u3082\u308B"
+    jlpt: 5
+  - id: 208
+    kanji: "\u6697\u3044"
+    meaning: "\uC5B4\uB461\uB2E4"
+    reading: "\u304F\u3089\u3044"
+    jlpt: 5
+  - id: 209
+    kanji: "\u30AF\u30E9\u30B9"
+    meaning: "\uD074\uB798\uC2A4"
+    reading: "\u30AF\u30E9\u30B9"
+    jlpt: 5
+  - id: 210
+    kanji: "\u30B0\u30E9\u30E0"
+    meaning: "\uADF8\uB7A8"
+    reading: "\u30B0\u30E9\u30E0"
+    jlpt: 5
+  - id: 211
+    kanji: "\u6765\u308B"
+    meaning: "\uC624\uB2E4"
+    reading: "\u304F\u308B"
+    jlpt: 5
+  - id: 212
+    kanji: "\u8ECA"
+    meaning: "\uC790\uB3D9\uCC28"
+    reading: "\u304F\u308B\u307E"
+    jlpt: 5
+  - id: 213
+    kanji: "\u9ED2"
+    meaning: "\uAC80\uC815"
+    reading: "\u304F\u308D"
+    jlpt: 5
+  - id: 214
+    kanji: "\u9ED2\u3044"
+    meaning: "\uAC80\uC740"
+    reading: "\u304F\u308D\u3044"
+    jlpt: 5
+  - id: 215
+    kanji: "\u8B66\u5B98"
+    meaning: "\uACBD\uCC30"
+    reading: "\u3051\u3044\u304B\u3093"
+    jlpt: 5
+  - id: 216
+    kanji: "\u4ECA\u671D"
+    meaning: "\uC624\uB298 \uC544\uCE68"
+    reading: "\u3051\u3055"
+    jlpt: 5
+  - id: 217
+    kanji: "\u6D88\u3059"
+    meaning: "\uC9C0\uC6B0"
+    reading: "\u3051\u3059"
+    jlpt: 5
+  - id: 218
+    kanji: "\u7D50\u69CB"
+    meaning: "\uD6CC\uB96D\uD568"
+    reading: "\u3051\u3063\u3053\u3046"
+    jlpt: 5
+  - id: 219
+    kanji: "\u7D50\u5A5A"
+    meaning: "\uACB0\uD63C"
+    reading: "\u3051\u3063\u3053\u3093"
+    jlpt: 5
+  - id: 220
+    kanji: "\u6708\u66DC\u65E5"
+    meaning: "\uC6D4\uC694\uC77C"
+    reading: "\u3052\u3064\u3088\u3046\u3073"
+    jlpt: 5
+  - id: 221
+    kanji: "\u7384\u95A2"
+    meaning: "\uD604\uAD00"
+    reading: "\u3052\u3093\u304B\u3093"
+    jlpt: 5
+  - id: 222
+    kanji: "\u5143\u6C17"
+    meaning: "\uAC74\uAC15"
+    reading: "\u3052\u3093\u304D"
+    jlpt: 5
+  - id: 223
+    kanji: "\u4E94"
+    meaning: "\uB2E4\uC12F"
+    reading: "\u3054"
+    jlpt: 5
+  - id: 224
+    kanji: "\u516C\u5712"
+    meaning: "\uACF5\uC6D0"
+    reading: "\u3053\u3046\u3048\u3093"
+    jlpt: 5
+  - id: 225
+    kanji: "\u4EA4\u5DEE\u70B9"
+    meaning: "\uAD50\uCC28\uB85C"
+    reading: "\u3053\u3046\u3055\u3066\u3093"
+    jlpt: 5
+  - id: 226
+    kanji: "\u7D05\u8336"
+    meaning: "\uCC28"
+    reading: "\u3053\u3046\u3061\u3083"
+    jlpt: 5
+  - id: 227
+    kanji: "\u4EA4\u756A"
+    meaning: "\uD30C\uCD9C\uC18C"
+    reading: "\u3053\u3046\u3070\u3093"
+    jlpt: 5
+  - id: 228
+    kanji: "\u58F0"
+    meaning: "\uBAA9\uC18C\uB9AC"
+    reading: "\u3053\u3048"
+    jlpt: 5
+  - id: 229
+    kanji: "\u30B3\u30FC\u30C8"
+    meaning: "\uCF54\uD2B8"
+    reading: "\u30B3\u30FC\u30C8"
+    jlpt: 5
+  - id: 230
+    kanji: "\u30B3\u30FC\u30D2\u30FC"
+    meaning: "\uCEE4\uD53C"
+    reading: "\u30B3\u30FC\u30D2\u30FC"
+    jlpt: 5
+  - id: 231
+    kanji: "\u3053\u3053"
+    meaning: "\uC5EC\uAE30"
+    reading: "\u3053\u3053"
+    jlpt: 5
+  - id: 232
+    kanji: "\u5348\u5F8C"
+    meaning: "\uC624\uD6C4"
+    reading: "\u3054\u3054"
+    jlpt: 5
+  - id: 233
+    kanji: "\u4E5D\u65E5"
+    meaning: "9\uC77C"
+    reading: "\u3053\u3053\u306E\u304B"
+    jlpt: 5
+  - id: 234
+    kanji: "\u4E5D\u3064"
+    meaning: "\uC544\uD649"
+    reading: "\u3053\u3053\u306E\u3064"
+    jlpt: 5
+  - id: 235
+    kanji: "\u5348\u524D"
+    meaning: "\uC624\uC804"
+    reading: "\u3054\u305C\u3093"
+    jlpt: 5
+  - id: 236
+    kanji: "\u7B54\u3048\u308B"
+    meaning: "\uB300\uB2F5\uD558\uB2E4"
+    reading: "\u3053\u305F\u3048\u308B"
+    jlpt: 5
+  - id: 237
+    kanji: "\u3053\u3061\u3089"
+    meaning: "\uC774\uCABD"
+    reading: "\u3053\u3061\u3089"
+    jlpt: 5
+  - id: 238
+    kanji: "\u3053\u3063\u3061"
+    meaning: "\uC5EC\uAE30"
+    reading: "\u3053\u3063\u3061"
+    jlpt: 5
+  - id: 239
+    kanji: "\u30B3\u30C3\u30D7"
+    meaning: "\uCEF5"
+    reading: "\u30B3\u30C3\u30D7"
+    jlpt: 5
+  - id: 240
+    kanji: "\u4ECA\u5E74"
+    meaning: "\uC62C\uD574"
+    reading: "\u3053\u3068\u3057"
+    jlpt: 5
+  - id: 241
+    kanji: "\u8A00\u8449"
+    meaning: "\uB9D0"
+    reading: "\u3053\u3068\u3070"
+    jlpt: 5
+  - id: 242
+    kanji: "\u5B50\u4F9B"
+    meaning: "\uC544\uC774"
+    reading: "\u3053\u3069\u3082"
+    jlpt: 5
+  - id: 243
+    kanji: "\u3053\u306E"
+    meaning: "\uC774"
+    reading: "\u3053\u306E"
+    jlpt: 5
+  - id: 244
+    kanji: "\u5FA1\u98EF"
+    meaning: "\uBC25"
+    reading: "\u3054\u306F\u3093"
+    jlpt: 5
+  - id: 245
+    kanji: "\u30B3\u30D4\u30FC\u3059\u308B"
+    meaning: "\uBCF5\uC0AC"
+    reading: "\u30B3\u30D4\u30FC\u3059\u308B"
+    jlpt: 5
+  - id: 246
+    kanji: "\u56F0\u308B"
+    meaning: "\uACE4\uB780\uD558\uB2E4"
+    reading: "\u3053\u307E\u308B"
+    jlpt: 5
+  - id: 247
+    kanji: "\u3053\u308C"
+    meaning: "\uC774\uAC83"
+    reading: "\u3053\u308C"
+    jlpt: 5
+  - id: 248
+    kanji: "\u4ECA\u6708"
+    meaning: "\uAE08\uC6D4"
+    reading: "\u3053\u3093\u3052\u3064"
+    jlpt: 5
+  - id: 249
+    kanji: "\u4ECA\u9031"
+    meaning: "\uC774\uBC88 \uC8FC"
+    reading: "\u3053\u3093\u3057\u3085\u3046"
+    jlpt: 5
+  - id: 250
+    kanji: "\u3053\u3093\u306A"
+    meaning: "\uC774\uB7EC\uD55C"
+    reading: "\u3053\u3093\u306A"
+    jlpt: 5
+  - id: 251
+    kanji: "\u4ECA\u6669"
+    meaning: "\uC624\uB298 \uBC24"
+    reading: "\u3053\u3093\u3070\u3093"
+    jlpt: 5
+  - id: 252
+    kanji: "\u3055\u3042"
+    meaning: "\uC798\u2026"
+    reading: "\u3055\u3042"
+    jlpt: 5
+  - id: 253
+    kanji: "\u8CA1\u5E03"
+    meaning: "\uC9C0\uAC11"
+    reading: "\u3055\u3044\u3075"
+    jlpt: 5
+  - id: 254
+    kanji: "\u9B5A"
+    meaning: "\uBB3C\uACE0\uAE30"
+    reading: "\u3055\u304B\u306A"
+    jlpt: 5
+  - id: 255
+    kanji: "\u5148"
+    meaning: "\uC55E"
+    reading: "\u3055\u304D"
+    jlpt: 5
+  - id: 256
+    kanji: "\u54B2\u304F"
+    meaning: "\uD53C\uB2E4"
+    reading: "\u3055\u304F"
+    jlpt: 5
+  - id: 257
+    kanji: "\u4F5C\u6587"
+    meaning: "\uC791\uBB38"
+    reading: "\u3055\u304F\u3076\u3093"
+    jlpt: 5
+  - id: 258
+    kanji: "\u5DEE\u3059"
+    meaning: "\uAC00\uB9AC\uB2E4"
+    reading: "\u3055\u3059"
+    jlpt: 5
+  - id: 259
+    kanji: "\u96D1\u8A8C"
+    meaning: "\uC7A1\uC9C0"
+    reading: "\u3056\u3063\u3057"
+    jlpt: 5
+  - id: 260
+    kanji: "\u7802\u7CD6"
+    meaning: "\uC124\uD0D5"
+    reading: "\u3055\u3068\u3046"
+    jlpt: 5
+  - id: 261
+    kanji: "\u5BD2\u3044"
+    meaning: "\uCDA5\uB2E4"
+    reading: "\u3055\u3080\u3044"
+    jlpt: 5
+  - id: 262
+    kanji: "\u3055\u6765\u5E74"
+    meaning: "\uB2E4\uC74C \uD574"
+    reading: "\u3055\u3089\u3044\u306D\u3093"
+    jlpt: 5
+  - id: 263
+    kanji: "\u4E09"
+    meaning: "\uC14B"
+    reading: "\u3055\u3093"
+    jlpt: 5
+  - id: 264
+    kanji: "\u6563\u6B69\u3059\u308B"
+    meaning: "\uC0B0\uCC45"
+    reading: "\u3055\u3093\u307D\u3059\u308B"
+    jlpt: 5
+  - id: 265
+    kanji: "\u56DB"
+    meaning: "\uB137"
+    reading: "\u3057"
+    jlpt: 5
+  - id: 266
+    kanji: "\u5869"
+    meaning: "\uC18C\uAE08"
+    reading: "\u3057\u304A"
+    jlpt: 5
+  - id: 267
+    kanji: "\u3057\u304B\u3057"
+    meaning: "\uADF8\uB7EC\uB098"
+    reading: "\u3057\u304B\u3057"
+    jlpt: 5
+  - id: 268
+    kanji: "\u6642\u9593"
+    meaning: "\uC2DC\uAC04"
+    reading: "\u3058\u304B\u3093"
+    jlpt: 5
+  - id: 269
+    kanji: "\u4ED5\u4E8B"
+    meaning: "\uC77C"
+    reading: "\u3057\u3054\u3068"
+    jlpt: 5
+  - id: 270
+    kanji: "\u8F9E\u66F8"
+    meaning: "\uC0AC\uC804"
+    reading: "\u3058\u3057\u3087"
+    jlpt: 5
+  - id: 271
+    kanji: "\u9759\u304B"
+    meaning: "\uC870\uC6A9"
+    reading: "\u3057\u305A\u304B"
+    jlpt: 5
+  - id: 272
+    kanji: "\u4E0B"
+    meaning: "\uC544\uB798"
+    reading: "\u3057\u305F"
+    jlpt: 5
+  - id: 273
+    kanji: "\u4E03"
+    meaning: "\uCE60"
+    reading: "\u3057\u3061"
+    jlpt: 5
+  - id: 274
+    kanji: "\u8CEA\u554F"
+    meaning: "\uC9C8\uBB38"
+    reading: "\u3057\u3064\u3082\u3093"
+    jlpt: 5
+  - id: 275
+    kanji: "\u81EA\u8EE2\u8ECA"
+    meaning: "\uC790\uC804\uAC70"
+    reading: "\u3058\u3066\u3093\u3057\u3083"
+    jlpt: 5
+  - id: 276
+    kanji: "\u81EA\u52D5\u8ECA"
+    meaning: "\uC790\uB3D9\uCC28"
+    reading: "\u3058\u3069\u3046\u3057\u3083"
+    jlpt: 5
+  - id: 277
+    kanji: "\u6B7B\u306C"
+    meaning: "\uC8FD\uB2E4"
+    reading: "\u3057\u306C"
+    jlpt: 5
+  - id: 278
+    kanji: "\u5B57\u5F15"
+    meaning: "\uC0AC\uC804"
+    reading: "\u3058\u3073\u304D"
+    jlpt: 5
+  - id: 279
+    kanji: "\u81EA\u5206"
+    meaning: "\uC790\uC2E0"
+    reading: "\u3058\u3076\u3093"
+    jlpt: 5
+  - id: 280
+    kanji: "\u9589\u307E\u308B"
+    meaning: "\uAF2D \uB2EB\uD788\uB2E4"
+    reading: "\u3057\u307E\u308B"
+    jlpt: 5
+  - id: 281
+    kanji: "\u9589\u3081\u308B"
+    meaning: "\uB2EB\uB2E4"
+    reading: "\u3057\u3081\u308B"
+    jlpt: 5
+  - id: 282
+    kanji: "\u7DE0\u3081\u308B"
+    meaning: "\uB2EB\uB2E4"
+    reading: "\u3057\u3081\u308B"
+    jlpt: 5
+  - id: 283
+    kanji: "\u3058\u3083"
+    meaning: "\uADF8\uB7FC"
+    reading: "\u3058\u3083"
+    jlpt: 5
+  - id: 284
+    kanji: "\u5199\u771F"
+    meaning: "\uC0AC\uC9C4"
+    reading: "\u3057\u3083\u3057\u3093"
+    jlpt: 5
+  - id: 285
+    kanji: "\u30B7\u30E3\u30C4"
+    meaning: "\uC154\uCE20"
+    reading: "\u30B7\u30E3\u30C4"
+    jlpt: 5
+  - id: 286
+    kanji: "\u30B7\u30E3\u30EF\u30FC"
+    meaning: "\uC0E4\uC6CC"
+    reading: "\u30B7\u30E3\u30EF\u30FC"
+    jlpt: 5
+  - id: 287
+    kanji: "\u5341"
+    meaning: "\uC2ED"
+    reading: "\u3058\u3085\u3046"
+    jlpt: 5
+  - id: 288
+    kanji: "\u6388\u696D"
+    meaning: "\uC218\uC5C5"
+    reading: "\u3058\u3085\u304E\u3087\u3046"
+    jlpt: 5
+  - id: 289
+    kanji: "\u5BBF\u984C"
+    meaning: "\uC219\uC81C"
+    reading: "\u3057\u3085\u304F\u3060\u3044"
+    jlpt: 5
+  - id: 290
+    kanji: "\u4E0A\u624B"
+    meaning: "\uC798"
+    reading: "\u3058\u3087\u3046\u305A"
+    jlpt: 5
+  - id: 291
+    kanji: "\u4E08\u592B"
+    meaning: "\uAC74\uAC15\uD568"
+    reading: "\u3058\u3087\u3046\u3076"
+    jlpt: 5
+  - id: 292
+    kanji: "\u3057\u3087\u3046\u3086"
+    meaning: "\uAC04\uC7A5"
+    reading: "\u3057\u3087\u3046\u3086"
+    jlpt: 5
+  - id: 293
+    kanji: "\u98DF\u5802"
+    meaning: "\uC2DD\uB2F9"
+    reading: "\u3057\u3087\u304F\u3069\u3046"
+    jlpt: 5
+  - id: 294
+    kanji: "\u77E5\u308B"
+    meaning: "\uC54C\uB2E4"
+    reading: "\u3057\u308B"
+    jlpt: 5
+  - id: 295
+    kanji: "\u767D\u3044"
+    meaning: "\uD558\uC580"
+    reading: "\u3057\u308D\u3044"
+    jlpt: 5
+  - id: 296
+    kanji: "\u65B0\u805E"
+    meaning: "\uC2E0\uBB38"
+    reading: "\u3057\u3093\u3076\u3093"
+    jlpt: 5
+  - id: 297
+    kanji: "\u6C34\u66DC\u65E5"
+    meaning: "\uC218\uC694\uC77C"
+    reading: "\u3059\u3044\u3088\u3046\u3073"
+    jlpt: 5
+  - id: 298
+    kanji: "\u5438\u3046"
+    meaning: "\uB4E4\uC774\uB9C8\uC2DC\uB2E4"
+    reading: "\u3059\u3046"
+    jlpt: 5
+  - id: 299
+    kanji: "\u30B9\u30AB\u30FC\u30C8"
+    meaning: "\uC2A4\uCEE4\uD2B8"
+    reading: "\u30B9\u30AB\u30FC\u30C8"
+    jlpt: 5
+  - id: 300
+    kanji: "\u597D\u304D"
+    meaning: "\uC88B\uC544\uD568"
+    reading: "\u3059\u304D"
+    jlpt: 5
+  - id: 301
+    kanji: "\u5C11\u306A\u3044"
+    meaning: "\uC801\uB2E4"
+    reading: "\u3059\u304F\u306A\u3044"
+    jlpt: 5
+  - id: 302
+    kanji: "\u3059\u3050\u306B"
+    meaning: "\uC989\uC2DC"
+    reading: "\u3059\u3050\u306B"
+    jlpt: 5
+  - id: 303
+    kanji: "\u5C11\u3057"
+    meaning: "\uC870\uAE08"
+    reading: "\u3059\u3053\u3057"
+    jlpt: 5
+  - id: 304
+    kanji: "\u6DBC\u3057\u3044"
+    meaning: "\uCC28\uAC00\uC6B4"
+    reading: "\u3059\u305A\u3057\u3044"
+    jlpt: 5
+  - id: 305
+    kanji: "\u30B9\u30C8\u30FC\u30D6"
+    meaning: "\uC2A4\uD1A0\uBE0C"
+    reading: "\u30B9\u30C8\u30FC\u30D6"
+    jlpt: 5
+  - id: 306
+    kanji: "\u30B9\u30D7\u30FC\u30F3"
+    meaning: "\uC21F\uAC00\uB77D"
+    reading: "\u30B9\u30D7\u30FC\u30F3"
+    jlpt: 5
+  - id: 307
+    kanji: "\u30B9\u30DD\u30FC\u30C4"
+    meaning: "\uC2A4\uD3EC\uCE20"
+    reading: "\u30B9\u30DD\u30FC\u30C4"
+    jlpt: 5
+  - id: 308
+    kanji: "\u30BA\u30DC\u30F3"
+    meaning: "\uBC14\uC9C0"
+    reading: "\u30BA\u30DC\u30F3"
+    jlpt: 5
+  - id: 309
+    kanji: "\u4F4F\u3080"
+    meaning: "\uC0B4\uB2E4"
+    reading: "\u3059\u3080"
+    jlpt: 5
+  - id: 310
+    kanji: "\u30B9\u30EA\u30C3\u30D1"
+    meaning: "\uC2AC\uB9AC\uD37C"
+    reading: "\u30B9\u30EA\u30C3\u30D1"
+    jlpt: 5
+  - id: 311
+    kanji: "\u3059\u308B"
+    meaning: "\uD558\uB2E4"
+    reading: "\u3059\u308B"
+    jlpt: 5
+  - id: 312
+    kanji: "\u5EA7\u308B"
+    meaning: "\uC549\uB2E4"
+    reading: "\u3059\u308F\u308B"
+    jlpt: 5
+  - id: 313
+    kanji: "\u80CC"
+    meaning: "\uD0A4"
+    reading: "\u305B"
+    jlpt: 5
+  - id: 314
+    kanji: "\u751F\u5F92"
+    meaning: "\uD559\uC0DD"
+    reading: "\u305B\u3044\u3068"
+    jlpt: 5
+  - id: 315
+    kanji: "\u30BB\u30FC\u30BF\u30FC"
+    meaning: "\uC2A4\uC6E8\uD130"
+    reading: "\u30BB\u30FC\u30BF\u30FC"
+    jlpt: 5
+  - id: 316
+    kanji: "\u305B\u3063\u3051\u3093"
+    meaning: "\uACBD\uC81C"
+    reading: "\u305B\u3063\u3051\u3093"
+    jlpt: 5
+  - id: 317
+    kanji: "\u80CC\u5E83"
+    meaning: "\uC815\uC7A5"
+    reading: "\u305B\u3073\u308D"
+    jlpt: 5
+  - id: 318
+    kanji: "\u72ED\u3044"
+    meaning: "\uC881\uB2E4"
+    reading: "\u305B\u307E\u3044"
+    jlpt: 5
+  - id: 319
+    kanji: "\u30BC\u30ED"
+    meaning: "\uC81C\uB85C"
+    reading: "\u30BC\u30ED"
+    jlpt: 5
+  - id: 320
+    kanji: "\u5343"
+    meaning: "\uCC9C"
+    reading: "\u305B\u3093"
+    jlpt: 5
+  - id: 321
+    kanji: "\u5148\u6708"
+    meaning: "\uC9C0\uB09C \uB2EC"
+    reading: "\u305B\u3093\u3052\u3064"
+    jlpt: 5
+  - id: 322
+    kanji: "\u5148\u9031"
+    meaning: "\uC9C0\uB09C"
+    reading: "\u305B\u3093\u3057\u3085\u3046"
+    jlpt: 5
+  - id: 323
+    kanji: "\u5148\u751F"
+    meaning: "\uC120\uC0DD\uB2D8"
+    reading: "\u305B\u3093\u305B\u3044"
+    jlpt: 5
+  - id: 324
+    kanji: "\u6D17\u6FEF"
+    meaning: "\uC138\uD0C1"
+    reading: "\u305B\u3093\u305F\u304F"
+    jlpt: 5
+  - id: 325
+    kanji: "\u5168\u90E8"
+    meaning: "\uC804\uCCB4"
+    reading: "\u305C\u3093\u3076"
+    jlpt: 5
+  - id: 326
+    kanji: "\u6383\u9664\u3059\u308B"
+    meaning: "\uCCAD\uC18C\uD558\uB2E4"
+    reading: "\u305D\u3046\u3058\u3059\u308B"
+    jlpt: 5
+  - id: 327
+    kanji: "\u305D\u3046\u3057\u3066"
+    meaning: "\uADF8\uB9AC\uACE0"
+    reading: "\u305D\u3046\u3057\u3066"
+    jlpt: 5
+  - id: 328
+    kanji: "\u305D\u3053"
+    meaning: "\uAC70\uAE30"
+    reading: "\u305D\u3053"
+    jlpt: 5
+  - id: 329
+    kanji: "\u305D\u3061\u3089"
+    meaning: "\uADF8 \uCABD"
+    reading: "\u305D\u3061\u3089"
+    jlpt: 5
+  - id: 330
+    kanji: "\u305D\u3063\u3061"
+    meaning: "\uADF8\uCABD"
+    reading: "\u305D\u3063\u3061"
+    jlpt: 5
+  - id: 331
+    kanji: "\u5916"
+    meaning: "\uC678\uBD80"
+    reading: "\u305D\u3068"
+    jlpt: 5
+  - id: 332
+    kanji: "\u305D\u306E"
+    meaning: "\uADF8"
+    reading: "\u305D\u306E"
+    jlpt: 5
+  - id: 333
+    kanji: "\u305D\u3070"
+    meaning: "\uC606"
+    reading: "\u305D\u3070"
+    jlpt: 5
+  - id: 334
+    kanji: "\u7A7A"
+    meaning: "\uD558\uB298"
+    reading: "\u305D\u3089"
+    jlpt: 5
+  - id: 335
+    kanji: "\u305D\u308C"
+    meaning: "\uADF8\uAC83"
+    reading: "\u305D\u308C"
+    jlpt: 5
+  - id: 336
+    kanji: "\u305D\u308C\u304B\u3089"
+    meaning: "\uADF8 \uB2E4\uC74C\uC5D0"
+    reading: "\u305D\u308C\u304B\u3089"
+    jlpt: 5
+  - id: 337
+    kanji: "\u305D\u308C\u3067\u306F"
+    meaning: "\uADF8\uB7EC\uBA74"
+    reading: "\u305D\u308C\u3067\u306F"
+    jlpt: 5
+  - id: 338
+    kanji: "\u5927\u5B66"
+    meaning: "\uB300\uD559"
+    reading: "\u3060\u3044\u304C\u304F"
+    jlpt: 5
+  - id: 339
+    kanji: "\u5927\u4F7F\u9928"
+    meaning: "\uB300\uC0AC\uAD00"
+    reading: "\u305F\u3044\u3057\u304B\u3093"
+    jlpt: 5
+  - id: 340
+    kanji: "\u5927\u4E08\u592B"
+    meaning: "\uAD1C\uCC2E\uC544"
+    reading: "\u3060\u3044\u3058\u3087\u3046\u3076"
+    jlpt: 5
+  - id: 341
+    kanji: "\u5927\u597D\u304D"
+    meaning: "\uB9E4\uC6B0 \uC88B\uC74C"
+    reading: "\u3060\u3044\u3059\u304D"
+    jlpt: 5
+  - id: 342
+    kanji: "\u5927\u5207"
+    meaning: "\uC911\uC694"
+    reading: "\u305F\u3044\u305B\u3064"
+    jlpt: 5
+  - id: 343
+    kanji: "\u53F0\u6240"
+    meaning: "\uBD80\uC5CC"
+    reading: "\u3060\u3044\u3069\u3053\u308D"
+    jlpt: 5
+  - id: 344
+    kanji: "\u305F\u3044\u3078\u3093"
+    meaning: "\uBAB9\uC2DC"
+    reading: "\u305F\u3044\u3078\u3093"
+    jlpt: 5
+  - id: 345
+    kanji: "\u305F\u3044\u3078\u3093"
+    meaning: "\uD070\uC77C"
+    reading: "\u305F\u3044\u3078\u3093"
+    jlpt: 5
+  - id: 346
+    kanji: "\u9AD8\u3044"
+    meaning: "\uB192\uB2E4"
+    reading: "\u305F\u304B\u3044"
+    jlpt: 5
+  - id: 347
+    kanji: "\u305F\u304F\u3055\u3093"
+    meaning: "\uB9CE\uC74C"
+    reading: "\u305F\u304F\u3055\u3093"
+    jlpt: 5
+  - id: 348
+    kanji: "\u30BF\u30AF\u30B7\u30FC"
+    meaning: "\uD0DD\uC2DC"
+    reading: "\u30BF\u30AF\u30B7\u30FC"
+    jlpt: 5
+  - id: 349
+    kanji: "\u51FA\u3059"
+    meaning: "\uB0B4\uB2E4"
+    reading: "\u3060\u3059"
+    jlpt: 5
+  - id: 350
+    kanji: "\u7ACB\u3064"
+    meaning: "\uC77C\uC5B4\uC11C\uB2E4"
+    reading: "\u305F\u3064"
+    jlpt: 5
+  - id: 351
+    kanji: "\u305F\u3066"
+    meaning: "\uC138\uB85C"
+    reading: "\u305F\u3066"
+    jlpt: 5
+  - id: 352
+    kanji: "\u5EFA\u7269"
+    meaning: "\uAC74\uBB3C"
+    reading: "\u305F\u3066\u3082\u306E"
+    jlpt: 5
+  - id: 353
+    kanji: "\u697D\u3057\u3044"
+    meaning: "\uC7AC\uBBF8"
+    reading: "\u305F\u306E\u3057\u3044"
+    jlpt: 5
+  - id: 354
+    kanji: "\u983C\u3080"
+    meaning: "\uBD80\uD0C1\uD558\uB2E4"
+    reading: "\u305F\u306E\u3080"
+    jlpt: 5
+  - id: 355
+    kanji: "\u305F\u3070\u3053"
+    meaning: "\uB2F4\uBC30"
+    reading: "\u305F\u3070\u3053"
+    jlpt: 5
+  - id: 356
+    kanji: "\u305F\u3076\u3093"
+    meaning: "\uC544\uB9C8"
+    reading: "\u305F\u3076\u3093"
+    jlpt: 5
+  - id: 357
+    kanji: "\u98DF\u3079\u7269"
+    meaning: "\uC74C\uC2DD"
+    reading: "\u305F\u3079\u3082\u306E"
+    jlpt: 5
+  - id: 358
+    kanji: "\u98DF\u3079\u308B"
+    meaning: "\uBA39\uB2E4"
+    reading: "\u305F\u3079\u308B"
+    jlpt: 5
+  - id: 359
+    kanji: "\u5375"
+    meaning: "\uACC4\uB780"
+    reading: "\u305F\u307E\u3054"
+    jlpt: 5
+  - id: 360
+    kanji: "\u8AB0"
+    meaning: "\uB204\uAD6C"
+    reading: "\u3060\u308C"
+    jlpt: 5
+  - id: 361
+    kanji: "\u8AB0\u304B"
+    meaning: "\uB204\uAD70\uAC00"
+    reading: "\u3060\u308C\u304B"
+    jlpt: 5
+  - id: 362
+    kanji: "\u8A95\u751F\u65E5"
+    meaning: "\uC0DD\uC77C"
+    reading: "\u305F\u3093\u3058\u3087\u3046\u3073"
+    jlpt: 5
+  - id: 363
+    kanji: "\u3060\u3093\u3060\u3093"
+    meaning: "\uCC28\uCC28"
+    reading: "\u3060\u3093\u3060\u3093"
+    jlpt: 5
+  - id: 364
+    kanji: "\u5C0F\u3055\u3044"
+    meaning: "\uC791\uC740"
+    reading: "\u3061\u3044\u3055\u3044"
+    jlpt: 5
+  - id: 365
+    kanji: "\u5C0F\u3055\u306A"
+    meaning: "\uC791\uC740"
+    reading: "\u3061\u3044\u3055\u306A"
+    jlpt: 5
+  - id: 366
+    kanji: "\u8FD1\u3044"
+    meaning: "\uAC00\uAE5D\uB2E4"
+    reading: "\u3061\u304B\u3044"
+    jlpt: 5
+  - id: 367
+    kanji: "\u9055\u3046"
+    meaning: "\uB2E4\uB978"
+    reading: "\u3061\u304C\u3046"
+    jlpt: 5
+  - id: 368
+    kanji: "\u8FD1\u304F"
+    meaning: "\uADFC\uCC98"
+    reading: "\u3061\u304B\u304F"
+    jlpt: 5
+  - id: 369
+    kanji: "\u5730\u4E0B\u9244"
+    meaning: "\uC9C0\uD558\uCCA0"
+    reading: "\u3061\u304B\u3066\u3064"
+    jlpt: 5
+  - id: 370
+    kanji: "\u5730\u56F3"
+    meaning: "\uC9C0\uB3C4"
+    reading: "\u3061\u305A"
+    jlpt: 5
+  - id: 371
+    kanji: "\u8336\u8272"
+    meaning: "\uAC08\uC0C9"
+    reading: "\u3061\u3083\u3044\u308D"
+    jlpt: 5
+  - id: 372
+    kanji: "\u3061\u3083\u308F\u3093"
+    meaning: "\uADF8\uB987"
+    reading: "\u3061\u3083\u308F\u3093"
+    jlpt: 5
+  - id: 373
+    kanji: "\u3061\u3087\u3046\u3069"
+    meaning: "\uAF2D"
+    reading: "\u3061\u3087\u3046\u3069"
+    jlpt: 5
+  - id: 374
+    kanji: "\u3061\u3087\u3063\u3068"
+    meaning: "\uC870\uAE08"
+    reading: "\u3061\u3087\u3063\u3068"
+    jlpt: 5
+  - id: 375
+    kanji: "\u4E00\u65E5"
+    meaning: "\uCD08\uD558\uB8E8"
+    reading: "\u3064\u3044\u305F\u3061"
+    jlpt: 5
+  - id: 376
+    kanji: "\u4F7F\u3046"
+    meaning: "\uC4F0\uB2E4"
+    reading: "\u3064\u304B\u3046"
+    jlpt: 5
+  - id: 377
+    kanji: "\u75B2\u308C\u308B"
+    meaning: "\uD53C\uACE4"
+    reading: "\u3064\u304B\u308C\u308B"
+    jlpt: 5
+  - id: 378
+    kanji: "\u6B21"
+    meaning: "\uB2E4\uC74C"
+    reading: "\u3064\u304E"
+    jlpt: 5
+  - id: 379
+    kanji: "\u7740\u304F"
+    meaning: "\uB3C4\uCC29"
+    reading: "\u3064\u304F"
+    jlpt: 5
+  - id: 380
+    kanji: "\u673A"
+    meaning: "\uCC45\uC0C1"
+    reading: "\u3064\u304F\u3048"
+    jlpt: 5
+  - id: 381
+    kanji: "\u4F5C\u308B"
+    meaning: "\uB9CC\uB4E4\uB2E4"
+    reading: "\u3064\u304F\u308B"
+    jlpt: 5
+  - id: 382
+    kanji: "\u3064\u3051\u308B"
+    meaning: "\uBD99\uC774\uB2E4"
+    reading: "\u3064\u3051\u308B"
+    jlpt: 5
+  - id: 383
+    kanji: "\u52E4\u3081\u308B"
+    meaning: "\uADFC\uBB34\uD558\uB2E4"
+    reading: "\u3064\u3068\u3081\u308B"
+    jlpt: 5
+  - id: 384
+    kanji: "\u3064\u307E\u3089\u306A\u3044"
+    meaning: "\uC2DC\uC2DC\uD558\uB2E4"
+    reading: "\u3064\u307E\u3089\u306A\u3044"
+    jlpt: 5
+  - id: 385
+    kanji: "\u51B7\u305F\u3044"
+    meaning: "\uCC28\uAC11\uB2E4"
+    reading: "\u3064\u3081\u305F\u3044"
+    jlpt: 5
+  - id: 386
+    kanji: "\u5F37\u3044"
+    meaning: "\uAC15\uD55C"
+    reading: "\u3064\u3088\u3044"
+    jlpt: 5
+  - id: 387
+    kanji: "\u624B"
+    meaning: "\uC190"
+    reading: "\u3066"
+    jlpt: 5
+  - id: 388
+    kanji: "\u30C6\u30FC\u30D7"
+    meaning: "\uD14C\uC774\uD504"
+    reading: "\u30C6\u30FC\u30D7"
+    jlpt: 5
+  - id: 389
+    kanji: "\u30C6\u30FC\u30D6\u30EB"
+    meaning: "\uD14C\uC774\uBE14"
+    reading: "\u30C6\u30FC\u30D6\u30EB"
+    jlpt: 5
+  - id: 390
+    kanji: "\u30C6\u30FC\u30D7\u30EC\u30B3\u30FC\u30C0\u30FC"
+    meaning: "\uD14C\uC774\uD504 \uB808\uCF54\uB354"
+    reading: "\u30C6\u30FC\u30D7\u30EC\u30B3\u30FC\u30C0\u30FC"
+    jlpt: 5
+  - id: 391
+    kanji: "\u51FA\u304B\u3051\u308B"
+    meaning: "\uC678\uCD9C"
+    reading: "\u3067\u304B\u3051\u308B"
+    jlpt: 5
+  - id: 392
+    kanji: "\u624B\u7D19"
+    meaning: "\uD3B8\uC9C0"
+    reading: "\u3066\u304C\u307F"
+    jlpt: 5
+  - id: 393
+    kanji: "\u3067\u304D\u308B"
+    meaning: "\uD560 \uC218 \uC788\uB2E4"
+    reading: "\u3067\u304D\u308B"
+    jlpt: 5
+  - id: 394
+    kanji: "\u51FA\u53E3"
+    meaning: "\uCD9C\uAD6C"
+    reading: "\u3067\u3050\u3061"
+    jlpt: 5
+  - id: 395
+    kanji: "\u30C6\u30B9\u30C8"
+    meaning: "\uD14C\uC2A4\uD2B8"
+    reading: "\u30C6\u30B9\u30C8"
+    jlpt: 5
+  - id: 396
+    kanji: "\u3067\u306F"
+    meaning: "\uADF8\uB7EC\uBA74"
+    reading: "\u3067\u306F"
+    jlpt: 5
+  - id: 397
+    kanji: "\u30C7\u30D1\u30FC\u30C8"
+    meaning: "\uBC31\uD654\uC810"
+    reading: "\u30C7\u30D1\u30FC\u30C8"
+    jlpt: 5
+  - id: 398
+    kanji: "\u3067\u3082"
+    meaning: "\uADF8\uB7EC\uB098"
+    reading: "\u3067\u3082"
+    jlpt: 5
+  - id: 399
+    kanji: "\u51FA\u308B"
+    meaning: "\uB098\uAC00\uB2E4"
+    reading: "\u3067\u308B"
+    jlpt: 5
+  - id: 400
+    kanji: "\u30C6\u30EC\u30D3"
+    meaning: "\uD154\uB808\uBE44\uC804"
+    reading: "\u30C6\u30EC\u30D3"
+    jlpt: 5
+  - id: 401
+    kanji: "\u5929\u6C17"
+    meaning: "\uB0A0\uC528"
+    reading: "\u3066\u3093\u304D"
+    jlpt: 5
+  - id: 402
+    kanji: "\u96FB\u6C17"
+    meaning: "\uC804\uAE30"
+    reading: "\u3067\u3093\u304D"
+    jlpt: 5
+  - id: 403
+    kanji: "\u96FB\u8ECA"
+    meaning: "\uC804\uCC28"
+    reading: "\u3067\u3093\u3057\u3083"
+    jlpt: 5
+  - id: 404
+    kanji: "\u96FB\u8A71"
+    meaning: "\uC804\uD654"
+    reading: "\u3067\u3093\u308F"
+    jlpt: 5
+  - id: 405
+    kanji: "\u6238"
+    meaning: "\uBB38"
+    reading: "\u3068"
+    jlpt: 5
+  - id: 406
+    kanji: "\u30C9\u30A2"
+    meaning: "\uBB38"
+    reading: "\u30C9\u30A2"
+    jlpt: 5
+  - id: 407
+    kanji: "\u30C8\u30A4\u30EC"
+    meaning: "\uD654\uC7A5\uC2E4"
+    reading: "\u30C8\u30A4\u30EC"
+    jlpt: 5
+  - id: 408
+    kanji: "\u3069\u3046"
+    meaning: "\uC5B4\uB5BB\uAC8C"
+    reading: "\u3069\u3046"
+    jlpt: 5
+  - id: 409
+    kanji: "\u3069\u3046\u3057\u3066"
+    meaning: "\uC5B4\uB5BB\uAC8C"
+    reading: "\u3069\u3046\u3057\u3066"
+    jlpt: 5
+  - id: 410
+    kanji: "\u3069\u3046\u305E"
+    meaning: "\uC544\uBB34\uCABC\uB85D"
+    reading: "\u3069\u3046\u305E"
+    jlpt: 5
+  - id: 411
+    kanji: "\u52D5\u7269"
+    meaning: "\uB3D9\uBB3C"
+    reading: "\u3069\u3046\u3076\u3064"
+    jlpt: 5
+  - id: 412
+    kanji: "\u3069\u3046\u3082"
+    meaning: "\uAC10\uC0AC\uD569\uB2C8\uB2E4"
+    reading: "\u3069\u3046\u3082"
+    jlpt: 5
+  - id: 413
+    kanji: "\u9060\u3044"
+    meaning: "\uBA40\uB2E4"
+    reading: "\u3068\u304A\u3044"
+    jlpt: 5
+  - id: 414
+    kanji: "\u5341\u65E5"
+    meaning: "\uC5F4\uD758"
+    reading: "\u3068\u304A\u304B"
+    jlpt: 5
+  - id: 415
+    kanji: "\u6642\u3005"
+    meaning: "\uB54C\uB54C\uB85C"
+    reading: "\u3068\u304D\u3069\u304D"
+    jlpt: 5
+  - id: 416
+    kanji: "\u6642\u8A08"
+    meaning: "\uC2DC\uACC4"
+    reading: "\u3068\u3051\u3044"
+    jlpt: 5
+  - id: 417
+    kanji: "\u3069\u3053"
+    meaning: "\uC5B4\uB514"
+    reading: "\u3069\u3053"
+    jlpt: 5
+  - id: 418
+    kanji: "\u6240"
+    meaning: "\uACF3"
+    reading: "\u3068\u3053\u308D"
+    jlpt: 5
+  - id: 419
+    kanji: "\u5E74"
+    meaning: "\uB144"
+    reading: "\u3068\u3057"
+    jlpt: 5
+  - id: 420
+    kanji: "\u56F3\u66F8\u9928"
+    meaning: "\uB3C4\uC11C\uAD00"
+    reading: "\u3068\u3057\u3087\u304B\u3093"
+    jlpt: 5
+  - id: 421
+    kanji: "\u3069\u3061\u3089"
+    meaning: "\uC5B4\uB290 \uCABD"
+    reading: "\u3069\u3061\u3089"
+    jlpt: 5
+  - id: 422
+    kanji: "\u3069\u3063\u3061"
+    meaning: "\uC5B4\uB290 \uCABD"
+    reading: "\u3069\u3063\u3061"
+    jlpt: 5
+  - id: 423
+    kanji: "\u3068\u3066\u3082"
+    meaning: "\uC544\uBB34\uB9AC \uD574\uB3C4"
+    reading: "\u3068\u3066\u3082"
+    jlpt: 5
+  - id: 424
+    kanji: "\u3069\u306A\u305F"
+    meaning: "\uB204\uAD6C"
+    reading: "\u3069\u306A\u305F"
+    jlpt: 5
+  - id: 425
+    kanji: "\u96A3"
+    meaning: "\uC774\uC6C3"
+    reading: "\u3068\u306A\u308A"
+    jlpt: 5
+  - id: 426
+    kanji: "\u3069\u306E"
+    meaning: "\uC5B4\uB290"
+    reading: "\u3069\u306E"
+    jlpt: 5
+  - id: 427
+    kanji: "\u98DB\u3076"
+    meaning: "\uB0A0\uB2E4"
+    reading: "\u3068\u3076"
+    jlpt: 5
+  - id: 428
+    kanji: "\u6B62\u307E\u308B"
+    meaning: "\uBA48\uCD94\uB2E4"
+    reading: "\u3068\u307E\u308B"
+    jlpt: 5
+  - id: 429
+    kanji: "\u53CB\u9054"
+    meaning: "\uCE5C\uAD6C"
+    reading: "\u3068\u3082\u3060\u3061"
+    jlpt: 5
+  - id: 430
+    kanji: "\u571F\u66DC\u65E5"
+    meaning: "\uD1A0\uC694\uC77C"
+    reading: "\u3069\u3088\u3046\u3073"
+    jlpt: 5
+  - id: 431
+    kanji: "\u9CE5"
+    meaning: "\uC0C8"
+    reading: "\u3068\u308A"
+    jlpt: 5
+  - id: 432
+    kanji: "\u3068\u308A\u8089"
+    meaning: "\uB2ED\uACE0\uAE30"
+    reading: "\u3068\u308A\u306B\u304F"
+    jlpt: 5
+  - id: 433
+    kanji: "\u53D6\u308B"
+    meaning: "\uAC00\uC9C0\uACE0"
+    reading: "\u3068\u308B"
+    jlpt: 5
+  - id: 434
+    kanji: "\u64AE\u308B"
+    meaning: "\uCC0D\uB2E4"
+    reading: "\u3068\u308B"
+    jlpt: 5
+  - id: 435
+    kanji: "\u3069\u308C"
+    meaning: "\uC5B4\uB290"
+    reading: "\u3069\u308C"
+    jlpt: 5
+  - id: 436
+    kanji: "\u30CA\u30A4\u30D5"
+    meaning: "\uCE7C"
+    reading: "\u30CA\u30A4\u30D5"
+    jlpt: 5
+  - id: 437
+    kanji: "\u4E2D"
+    meaning: "\uAC00\uC6B4\uB370"
+    reading: "\u306A\u304B"
+    jlpt: 5
+  - id: 438
+    kanji: "\u9577\u3044"
+    meaning: "\uAE34"
+    reading: "\u306A\u304C\u3044"
+    jlpt: 5
+  - id: 439
+    kanji: "\u9CF4\u304F"
+    meaning: "\uC6B8\uB2E4"
+    reading: "\u306A\u304F"
+    jlpt: 5
+  - id: 440
+    kanji: "\u7121\u304F\u3059"
+    meaning: "\uC5C6\uC560\uB2E4"
+    reading: "\u306A\u304F\u3059"
+    jlpt: 5
+  - id: 441
+    kanji: "\u306A\u305C"
+    meaning: "\uC65C"
+    reading: "\u306A\u305C"
+    jlpt: 5
+  - id: 442
+    kanji: "\u590F"
+    meaning: "\uC5EC\uB984"
+    reading: "\u306A\u3064"
+    jlpt: 5
+  - id: 443
+    kanji: "\u590F\u4F11\u307F"
+    meaning: "\uC5EC\uB984 \uBC29\uD559"
+    reading: "\u306A\u3064\u3084\u3059\u307F"
+    jlpt: 5
+  - id: 444
+    kanji: "\u306A\u3069"
+    meaning: "\uB4F1"
+    reading: "\u306A\u3069"
+    jlpt: 5
+  - id: 445
+    kanji: "\u4E03\u3064"
+    meaning: "\uC77C\uACF1"
+    reading: "\u306A\u306A\u3064"
+    jlpt: 5
+  - id: 446
+    kanji: "\u4E03\u65E5"
+    meaning: "\uC77C\uACF1\uC9F8 \uB0A0"
+    reading: "\u306A\u306E\u304B"
+    jlpt: 5
+  - id: 447
+    kanji: "\u540D\u524D"
+    meaning: "\uC774\uB984"
+    reading: "\u306A\u307E\u3048"
+    jlpt: 5
+  - id: 448
+    kanji: "\u7FD2\u3046"
+    meaning: "\uBC30\uC6B0"
+    reading: "\u306A\u3089\u3046"
+    jlpt: 5
+  - id: 449
+    kanji: "\u4E26\u3076"
+    meaning: "\uB298\uC5B4\uC120"
+    reading: "\u306A\u3089\u3076"
+    jlpt: 5
+  - id: 450
+    kanji: "\u4E26\u3079\u308B"
+    meaning: "\uB098\uB780\uD788"
+    reading: "\u306A\u3089\u3079\u308B"
+    jlpt: 5
+  - id: 451
+    kanji: "\u306A\u308B"
+    meaning: "\uB418\uB2E4"
+    reading: "\u306A\u308B"
+    jlpt: 5
+  - id: 452
+    kanji: "\u4F55"
+    meaning: "\uBB34\uC5C7"
+    reading: "\u306A\u3093"
+    jlpt: 5
+  - id: 453
+    kanji: "\u4E8C"
+    meaning: "\uB458"
+    reading: "\u306B"
+    jlpt: 5
+  - id: 454
+    kanji: "\u8CD1\u3084\u304B"
+    meaning: "\uBD84\uC8FC"
+    reading: "\u306B\u304E\u3084\u304B"
+    jlpt: 5
+  - id: 455
+    kanji: "\u8089"
+    meaning: "\uACE0\uAE30"
+    reading: "\u306B\u304F"
+    jlpt: 5
+  - id: 456
+    kanji: "\u897F"
+    meaning: "\uC11C\uCABD"
+    reading: "\u306B\u3057"
+    jlpt: 5
+  - id: 457
+    kanji: "\u65E5\u66DC\u65E5"
+    meaning: "\uC77C\uC694\uC77C"
+    reading: "\u306B\u3061\u3088\u3046\u3073"
+    jlpt: 5
+  - id: 458
+    kanji: "\u8377\u7269"
+    meaning: "\uC9D0"
+    reading: "\u306B\u3082\u3064"
+    jlpt: 5
+  - id: 459
+    kanji: "\u30CB\u30E5\u30FC\u30B9"
+    meaning: "\uB274\uC2A4"
+    reading: "\u30CB\u30E5\u30FC\u30B9"
+    jlpt: 5
+  - id: 460
+    kanji: "\u5EAD"
+    meaning: "\uC815\uC6D0"
+    reading: "\u306B\u308F"
+    jlpt: 5
+  - id: 461
+    kanji: "\u8131\u3050"
+    meaning: "\uC637\uC744 \uBC97\uB2E4"
+    reading: "\u306C\u3050"
+    jlpt: 5
+  - id: 462
+    kanji: "\u6E29\u3044"
+    meaning: "\uBBF8\uC9C0\uADFC\uD55C"
+    reading: "\u306C\u308B\u3044"
+    jlpt: 5
+  - id: 463
+    kanji: "\u30CD\u30AF\u30BF\u30A4"
+    meaning: "\uB125\uD0C0\uC774"
+    reading: "\u30CD\u30AF\u30BF\u30A4"
+    jlpt: 5
+  - id: 464
+    kanji: "\u732B"
+    meaning: "\uACE0\uC591\uC774"
+    reading: "\u306D\u3053"
+    jlpt: 5
+  - id: 465
+    kanji: "\u5BDD\u308B"
+    meaning: "\uC790\uB2E4"
+    reading: "\u306D\u308B"
+    jlpt: 5
+  - id: 466
+    kanji: "\u30CE\u30FC\u30C8"
+    meaning: "\uB178\uD2B8"
+    reading: "\u30CE\u30FC\u30C8"
+    jlpt: 5
+  - id: 467
+    kanji: "\u767B\u308B"
+    meaning: "\uB4F1\uBC18"
+    reading: "\u306E\u307C\u308B"
+    jlpt: 5
+  - id: 468
+    kanji: "\u98F2\u307F\u7269"
+    meaning: "\uC74C\uB8CC"
+    reading: "\u306E\u307F\u3082\u306E"
+    jlpt: 5
+  - id: 469
+    kanji: "\u98F2\u3080"
+    meaning: "\uB9C8\uC2DC\uB2E4"
+    reading: "\u306E\u3080"
+    jlpt: 5
+  - id: 470
+    kanji: "\u4E57\u308B"
+    meaning: "\uD0C0\uB2E4"
+    reading: "\u306E\u308B"
+    jlpt: 5
+  - id: 471
+    kanji: "\u6B6F"
+    meaning: "\uCE58\uC544"
+    reading: "\u306F"
+    jlpt: 5
+  - id: 472
+    kanji: "\u30D1\u30FC\u30C6\u30A3\u30FC"
+    meaning: "\uD30C\uD2F0"
+    reading: "\u30D1\u30FC\u30C6\u30A3\u30FC"
+    jlpt: 5
+  - id: 473
+    kanji: "\u306F\u3044"
+    meaning: "\uC608"
+    reading: "\u306F\u3044"
+    jlpt: 5
+  - id: 474
+    kanji: "\u7070\u76BF"
+    meaning: "\uC7AC\uB5A8\uC774"
+    reading: "\u306F\u3044\u3056\u3089"
+    jlpt: 5
+  - id: 475
+    kanji: "\u5165\u308B"
+    meaning: "\uB4E4\uC5B4\uAC00\uB2E4"
+    reading: "\u306F\u3044\u308B"
+    jlpt: 5
+  - id: 476
+    kanji: "\u8449\u66F8"
+    meaning: "\uC5FD\uC11C"
+    reading: "\u306F\u304C\u304D"
+    jlpt: 5
+  - id: 477
+    kanji: "\u306F\u304F"
+    meaning: "\uC785\uB2E4"
+    reading: "\u306F\u304F"
+    jlpt: 5
+  - id: 478
+    kanji: "\u7BB1"
+    meaning: "\uC0C1\uC790"
+    reading: "\u306F\u3053"
+    jlpt: 5
+  - id: 479
+    kanji: "\u6A4B"
+    meaning: "\uB2E4\uB9AC"
+    reading: "\u306F\u3057"
+    jlpt: 5
+  - id: 480
+    kanji: "\u306F\u3057"
+    meaning: "\uC813\uAC00\uB77D"
+    reading: "\u306F\u3057"
+    jlpt: 5
+  - id: 481
+    kanji: "\u59CB\u307E\u308B"
+    meaning: "\uC2DC\uC791"
+    reading: "\u306F\u3058\u307E\u308B"
+    jlpt: 5
+  - id: 482
+    kanji: "\u521D\u3081"
+    meaning: "\uCC98\uC74C"
+    reading: "\u306F\u3058\u3081"
+    jlpt: 5
+  - id: 483
+    kanji: "\u521D\u3081\u3066"
+    meaning: "\uCC98\uC74C"
+    reading: "\u306F\u3058\u3081\u3066"
+    jlpt: 5
+  - id: 484
+    kanji: "\u8D70\u308B"
+    meaning: "\uB2EC\uB9AC\uB2E4"
+    reading: "\u306F\u3057\u308B"
+    jlpt: 5
+  - id: 485
+    kanji: "\u30D0\u30B9"
+    meaning: "\uBC84\uC2A4"
+    reading: "\u30D0\u30B9"
+    jlpt: 5
+  - id: 486
+    kanji: "\u30D0\u30BF\u30FC"
+    meaning: "\uBC84\uD130"
+    reading: "\u30D0\u30BF\u30FC"
+    jlpt: 5
+  - id: 487
+    kanji: "\u4E8C\u5341\u6B73"
+    meaning: "\uC2A4\uBB34 \uC0B4"
+    reading: "\u306F\u305F\u3061"
+    jlpt: 5
+  - id: 488
+    kanji: "\u50CD\u304F"
+    meaning: "\uC77C\uD558\uB2E4"
+    reading: "\u306F\u305F\u3089\u304F"
+    jlpt: 5
+  - id: 489
+    kanji: "\u516B"
+    meaning: "\uC5EC\uB35F"
+    reading: "\u306F\u3061"
+    jlpt: 5
+  - id: 490
+    kanji: "\u4E8C\u5341\u65E5"
+    meaning: "20\uC77C"
+    reading: "\u306F\u3064\u304B"
+    jlpt: 5
+  - id: 491
+    kanji: "\u82B1"
+    meaning: "\uAF43"
+    reading: "\u306F\u306A"
+    jlpt: 5
+  - id: 492
+    kanji: "\u9F3B"
+    meaning: "\uCF54"
+    reading: "\u306F\u306A"
+    jlpt: 5
+  - id: 493
+    kanji: "\u8A71"
+    meaning: "\uC774\uC57C\uAE30"
+    reading: "\u306F\u306A\u3057"
+    jlpt: 5
+  - id: 494
+    kanji: "\u8A71\u3059"
+    meaning: "\uC774\uC57C\uAE30\uD558\uB2E4"
+    reading: "\u306F\u306A\u3059"
+    jlpt: 5
+  - id: 495
+    kanji: "\u65E9\u3044"
+    meaning: "\uC774\uB974\uB2E4"
+    reading: "\u306F\u3084\u3044"
+    jlpt: 5
+  - id: 496
+    kanji: "\u901F\u3044"
+    meaning: "\uBE60\uB974\uB2E4"
+    reading: "\u306F\u3084\u3044"
+    jlpt: 5
+  - id: 497
+    kanji: "\u6625"
+    meaning: "\uBD04"
+    reading: "\u306F\u308B"
+    jlpt: 5
+  - id: 498
+    kanji: "\u8CBC\u308B"
+    meaning: "\uBD99\uC774\uB2E4"
+    reading: "\u306F\u308B"
+    jlpt: 5
+  - id: 499
+    kanji: "\u6674\u308C"
+    meaning: "\uB9D1\uC74C"
+    reading: "\u306F\u308C"
+    jlpt: 5
+  - id: 500
+    kanji: "\u6674\u308C\u308B"
+    meaning: "\uB9D1\uC740"
+    reading: "\u306F\u308C\u308B"
+    jlpt: 5
+  - id: 501
+    kanji: "\u534A"
+    meaning: "\uBC18"
+    reading: "\u306F\u3093"
+    jlpt: 5
+  - id: 502
+    kanji: "\u6669"
+    meaning: "\uC800\uB141"
+    reading: "\u3070\u3093"
+    jlpt: 5
+  - id: 503
+    kanji: "\u30D1\u30F3"
+    meaning: "\uBE75"
+    reading: "\u30D1\u30F3"
+    jlpt: 5
+  - id: 504
+    kanji: "\u30CF\u30F3\u30AB\u30C1"
+    meaning: "\uC190\uC218\uAC74"
+    reading: "\u30CF\u30F3\u30AB\u30C1"
+    jlpt: 5
+  - id: 505
+    kanji: "\u756A\u53F7"
+    meaning: "\uBC88\uD638"
+    reading: "\u3070\u3093\u3054\u3046"
+    jlpt: 5
+  - id: 506
+    kanji: "\u6669\u5FA1\u98EF"
+    meaning: "\uC800\uB141 \uC2DD\uC0AC"
+    reading: "\u3070\u3093\u3054\u306F\u3093"
+    jlpt: 5
+  - id: 507
+    kanji: "\u534A\u5206"
+    meaning: "\uBC18"
+    reading: "\u306F\u3093\u3076\u3093"
+    jlpt: 5
+  - id: 508
+    kanji: "\u6771"
+    meaning: "\uB3D9\uCABD"
+    reading: "\u3072\u304C\u3057"
+    jlpt: 5
+  - id: 509
+    kanji: "\u5F15\u304F"
+    meaning: "\uB04C\uB2E4"
+    reading: "\u3072\u304F"
+    jlpt: 5
+  - id: 510
+    kanji: "\u5F3E\u304F"
+    meaning: "\uC5F0\uC8FC\uD558\uB2E4"
+    reading: "\u3072\u304F"
+    jlpt: 5
+  - id: 511
+    kanji: "\u4F4E\u3044"
+    meaning: "\uB0AE\uB2E4"
+    reading: "\u3072\u304F\u3044"
+    jlpt: 5
+  - id: 512
+    kanji: "\u98DB\u884C\u6A5F"
+    meaning: "\uBE44\uD589\uAE30"
+    reading: "\u3072\u3053\u3046\u304D"
+    jlpt: 5
+  - id: 513
+    kanji: "\u5DE6"
+    meaning: "\uC67C\uCABD"
+    reading: "\u3072\u3060\u308A"
+    jlpt: 5
+  - id: 514
+    kanji: "\u4EBA"
+    meaning: "\uC0AC\uB78C"
+    reading: "\u3072\u3068"
+    jlpt: 5
+  - id: 515
+    kanji: "\u4E00\u3064"
+    meaning: "\uD558\uB098"
+    reading: "\u3072\u3068\u3064"
+    jlpt: 5
+  - id: 516
+    kanji: "\u4E00\u6708"
+    meaning: "\uD55C\uB2EC"
+    reading: "\u3072\u3068\u3064\u304D"
+    jlpt: 5
+  - id: 517
+    kanji: "\u4E00\u4EBA"
+    meaning: "\uD55C \uC0AC\uB78C"
+    reading: "\u3072\u3068\u308A"
+    jlpt: 5
+  - id: 518
+    kanji: "\u6687"
+    meaning: "\uC790\uC720 \uC2DC\uAC04"
+    reading: "\u3072\u307E"
+    jlpt: 5
+  - id: 519
+    kanji: "\u767E"
+    meaning: "\uBC31"
+    reading: "\u3072\u3083\u304F"
+    jlpt: 5
+  - id: 520
+    kanji: "\u75C5\u9662"
+    meaning: "\uBCD1\uC6D0"
+    reading: "\u3073\u3087\u3046\u3044\u3093"
+    jlpt: 5
+  - id: 521
+    kanji: "\u75C5\u6C17"
+    meaning: "\uC9C8\uBCD1"
+    reading: "\u3073\u3087\u3046\u304D"
+    jlpt: 5
+  - id: 522
+    kanji: "\u663C"
+    meaning: "\uB0AE"
+    reading: "\u3072\u308B"
+    jlpt: 5
+  - id: 523
+    kanji: "\u663C\u5FA1\u98EF"
+    meaning: "\uC810\uC2EC"
+    reading: "\u3072\u308B\u3054\u306F\u3093"
+    jlpt: 5
+  - id: 524
+    kanji: "\u5E83\u3044"
+    meaning: "\uB113\uC740"
+    reading: "\u3072\u308D\u3044"
+    jlpt: 5
+  - id: 525
+    kanji: "\u30D5\u30A3\u30EB\u30E0"
+    meaning: "\uD544\uB984"
+    reading: "\u30D5\u30A3\u30EB\u30E0"
+    jlpt: 5
+  - id: 526
+    kanji: "\u5C01\u7B52"
+    meaning: "\uBD09\uD22C"
+    reading: "\u3075\u3046\u3068\u3046"
+    jlpt: 5
+  - id: 527
+    kanji: "\u30D7\u30FC\u30EB"
+    meaning: "\uC218\uC601\uC7A5"
+    reading: "\u30D7\u30FC\u30EB"
+    jlpt: 5
+  - id: 528
+    kanji: "\u30D5\u30A9\u30FC\u30AF"
+    meaning: "\uD3EC\uD06C"
+    reading: "\u30D5\u30A9\u30FC\u30AF"
+    jlpt: 5
+  - id: 529
+    kanji: "\u5439\u304F"
+    meaning: "\uBD88\uB2E4"
+    reading: "\u3075\u304F"
+    jlpt: 5
+  - id: 530
+    kanji: "\u670D"
+    meaning: "\uC637"
+    reading: "\u3075\u304F"
+    jlpt: 5
+  - id: 531
+    kanji: "\u4E8C\u3064"
+    meaning: "\uB458"
+    reading: "\u3075\u305F\u3064"
+    jlpt: 5
+  - id: 532
+    kanji: "\u8C5A\u8089"
+    meaning: "\uB3FC\uC9C0 \uACE0\uAE30"
+    reading: "\u3076\u305F\u306B\u304F"
+    jlpt: 5
+  - id: 533
+    kanji: "\u4E8C\u4EBA"
+    meaning: "\uB450 \uC0AC\uB78C"
+    reading: "\u3075\u305F\u308A"
+    jlpt: 5
+  - id: 534
+    kanji: "\u4E8C\u65E5"
+    meaning: "\uC774\uD2C0"
+    reading: "\u3075\u3064\u304B"
+    jlpt: 5
+  - id: 535
+    kanji: "\u592A\u3044"
+    meaning: "\uAD75\uB2E4"
+    reading: "\u3075\u3068\u3044"
+    jlpt: 5
+  - id: 536
+    kanji: "\u51AC"
+    meaning: "\uACA8\uC6B8"
+    reading: "\u3075\u3086"
+    jlpt: 5
+  - id: 537
+    kanji: "\u964D\u308B"
+    meaning: "\uB0B4\uB9AC\uB2E4"
+    reading: "\u3075\u308B"
+    jlpt: 5
+  - id: 538
+    kanji: "\u53E4\u3044"
+    meaning: "\uC624\uB798\uB418\uB2E4"
+    reading: "\u3075\u308B\u3044"
+    jlpt: 5
+  - id: 539
+    kanji: "\u3075\u308D"
+    meaning: "\uC695\uC870"
+    reading: "\u3075\u308D"
+    jlpt: 5
+  - id: 540
+    kanji: "\u6587\u7AE0"
+    meaning: "\uBB38\uC7A5"
+    reading: "\u3076\u3093\u3057\u3087\u3046"
+    jlpt: 5
+  - id: 541
+    kanji: "\u30DA\u30FC\u30B8"
+    meaning: "\uD398\uC774\uC9C0"
+    reading: "\u30DA\u30FC\u30B8"
+    jlpt: 5
+  - id: 542
+    kanji: "\u4E0B\u624B"
+    meaning: "\uC5B4\uC124\uD514"
+    reading: "\u3078\u305F"
+    jlpt: 5
+  - id: 543
+    kanji: "\u30D9\u30C3\u30C9"
+    meaning: "\uCE68\uB300"
+    reading: "\u30D9\u30C3\u30C9"
+    jlpt: 5
+  - id: 544
+    kanji: "\u30DA\u30C3\u30C8"
+    meaning: "\uC560\uC644 \uB3D9\uBB3C"
+    reading: "\u30DA\u30C3\u30C8"
+    jlpt: 5
+  - id: 545
+    kanji: "\u90E8\u5C4B"
+    meaning: "\uBC29"
+    reading: "\u3078\u3084"
+    jlpt: 5
+  - id: 546
+    kanji: "\u8FBA"
+    meaning: "\uC9C0\uC5ED"
+    reading: "\u3078\u3093"
+    jlpt: 5
+  - id: 547
+    kanji: "\u30DA\u30F3"
+    meaning: "\uD39C"
+    reading: "\u30DA\u30F3"
+    jlpt: 5
+  - id: 548
+    kanji: "\u52C9\u5F37\u3059\u308B"
+    meaning: "\uACF5\uBD80"
+    reading: "\u3079\u3093\u304D\u3087\u3046\u3059\u308B"
+    jlpt: 5
+  - id: 549
+    kanji: "\u4FBF\u5229"
+    meaning: "\uD3B8\uB9AC"
+    reading: "\u3079\u3093\u308A"
+    jlpt: 5
+  - id: 550
+    kanji: "\u5E3D\u5B50"
+    meaning: "\uBAA8\uC790"
+    reading: "\u307C\u3046\u3057"
+    jlpt: 5
+  - id: 551
+    kanji: "\u30DC\u30FC\u30EB\u30DA\u30F3"
+    meaning: "\uBCFC\uD39C"
+    reading: "\u30DC\u30FC\u30EB\u30DA\u30F3"
+    jlpt: 5
+  - id: 552
+    kanji: "\u307B\u304B"
+    meaning: "\uB2E4\uB978 \uAC83"
+    reading: "\u307B\u304B"
+    jlpt: 5
+  - id: 553
+    kanji: "\u30DD\u30B1\u30C3\u30C8"
+    meaning: "\uD3EC\uCF13"
+    reading: "\u30DD\u30B1\u30C3\u30C8"
+    jlpt: 5
+  - id: 554
+    kanji: "\u6B32\u3057\u3044"
+    meaning: "\uBC14\uB77C\uB2E4"
+    reading: "\u307B\u3057\u3044"
+    jlpt: 5
+  - id: 555
+    kanji: "\u30DD\u30B9\u30C8"
+    meaning: "\uC6B0\uD3B8"
+    reading: "\u30DD\u30B9\u30C8"
+    jlpt: 5
+  - id: 556
+    kanji: "\u7D30\u3044"
+    meaning: "\uC587\uC740"
+    reading: "\u307B\u305D\u3044"
+    jlpt: 5
+  - id: 557
+    kanji: "\u30DC\u30BF\u30F3"
+    meaning: "\uBC84\uD2BC"
+    reading: "\u30DC\u30BF\u30F3"
+    jlpt: 5
+  - id: 558
+    kanji: "\u30DB\u30C6\u30EB"
+    meaning: "\uD638\uD154"
+    reading: "\u30DB\u30C6\u30EB"
+    jlpt: 5
+  - id: 559
+    kanji: "\u672C"
+    meaning: "\uCC45"
+    reading: "\u307B\u3093"
+    jlpt: 5
+  - id: 560
+    kanji: "\u672C\u68DA"
+    meaning: "\uCC45\uC7A5"
+    reading: "\u307B\u3093\u3060\u306A"
+    jlpt: 5
+  - id: 561
+    kanji: "\u307B\u3093\u3068\u3046"
+    meaning: "\uC9C4\uC2E4"
+    reading: "\u307B\u3093\u3068\u3046"
+    jlpt: 5
+  - id: 562
+    kanji: "\u6BCE\u671D"
+    meaning: "\uB9E4\uC77C \uC544\uCE68"
+    reading: "\u307E\u3044\u3042\u3055"
+    jlpt: 5
+  - id: 563
+    kanji: "\u6BCE\u6708"
+    meaning: "\uB9E4\uC6D4"
+    reading: "\u307E\u3044\u3052\u3064"
+    jlpt: 5
+  - id: 564
+    kanji: "\u6BCE\u9031"
+    meaning: "\uB9E4\uC8FC"
+    reading: "\u307E\u3044\u3057\u3085\u3046"
+    jlpt: 5
+  - id: 565
+    kanji: "\u6BCE\u65E5"
+    meaning: "\uB9E4\uC77C"
+    reading: "\u307E\u3044\u306B\u3061"
+    jlpt: 5
+  - id: 566
+    kanji: "\u6BCE\u5E74"
+    meaning: "\uB9E4\uB144"
+    reading: "\u307E\u3044\u306D\u3093"
+    jlpt: 5
+  - id: 567
+    kanji: "\u6BCE\u6669"
+    meaning: "\uB9E4\uC77C \uBC24"
+    reading: "\u307E\u3044\u3070\u3093"
+    jlpt: 5
+  - id: 568
+    kanji: "\u524D"
+    meaning: "\uC804"
+    reading: "\u307E\u3048"
+    jlpt: 5
+  - id: 569
+    kanji: "\u66F2\u308B"
+    meaning: "\uAD6C\uBD80\uB9AC"
+    reading: "\u307E\u304C\u308B"
+    jlpt: 5
+  - id: 570
+    kanji: "\u307E\u305A\u3044"
+    meaning: "\uB9DB\uC774 \uC5C6\uB2E4"
+    reading: "\u307E\u305A\u3044"
+    jlpt: 5
+  - id: 571
+    kanji: "\u307E\u305F"
+    meaning: "\uB2E4\uB978 \uB54C"
+    reading: "\u307E\u305F"
+    jlpt: 5
+  - id: 572
+    kanji: "\u307E\u3060"
+    meaning: "\uC544\uC9C1"
+    reading: "\u307E\u3060"
+    jlpt: 5
+  - id: 573
+    kanji: "\u753A"
+    meaning: "\uB9C8\uC744"
+    reading: "\u307E\u3061"
+    jlpt: 5
+  - id: 574
+    kanji: "\u5F85\u3064"
+    meaning: "\uAE30\uB2E4\uB9AC\uB2E4"
+    reading: "\u307E\u3064"
+    jlpt: 5
+  - id: 575
+    kanji: "\u307E\u3063\u3059\u3050"
+    meaning: "\uB611\uBC14\uB85C"
+    reading: "\u307E\u3063\u3059\u3050"
+    jlpt: 5
+  - id: 576
+    kanji: "\u30DE\u30C3\u30C1"
+    meaning: "\uACBD\uAE30"
+    reading: "\u30DE\u30C3\u30C1"
+    jlpt: 5
+  - id: 577
+    kanji: "\u7A93"
+    meaning: "\uCC3D\uBB38"
+    reading: "\u307E\u3069"
+    jlpt: 5
+  - id: 578
+    kanji: "\u4E38\u3044"
+    meaning: "\uB465\uAE00\uB2E4"
+    reading: "\u307E\u308B\u3044"
+    jlpt: 5
+  - id: 579
+    kanji: "\u4E07"
+    meaning: "\uB9CC"
+    reading: "\u307E\u3093"
+    jlpt: 5
+  - id: 580
+    kanji: "\u4E07\u5E74\u7B46"
+    meaning: "\uB9CC\uB144\uD544"
+    reading: "\u307E\u3093\u306D\u3093\u3072\u3064"
+    jlpt: 5
+  - id: 581
+    kanji: "\u78E8\u304F"
+    meaning: "\uC5F0\uB9C8"
+    reading: "\u307F\u304C\u304F"
+    jlpt: 5
+  - id: 582
+    kanji: "\u53F3"
+    meaning: "\uC624\uB978\uCABD"
+    reading: "\u307F\u304E"
+    jlpt: 5
+  - id: 583
+    kanji: "\u77ED\u3044"
+    meaning: "\uC9E7\uB2E4"
+    reading: "\u307F\u3058\u304B\u3044"
+    jlpt: 5
+  - id: 584
+    kanji: "\u6C34"
+    meaning: "\uBB3C"
+    reading: "\u307F\u305A"
+    jlpt: 5
+  - id: 585
+    kanji: "\u5E97"
+    meaning: "\uAC00\uAC8C"
+    reading: "\u307F\u305B"
+    jlpt: 5
+  - id: 586
+    kanji: "\u898B\u305B\u308B"
+    meaning: "\uBCF4\uC774\uB2E4"
+    reading: "\u307F\u305B\u308B"
+    jlpt: 5
+  - id: 587
+    kanji: "\u9053"
+    meaning: "\uAE38"
+    reading: "\u307F\u3061"
+    jlpt: 5
+  - id: 588
+    kanji: "\u4E09\u65E5"
+    meaning: "\uC0BC\uC77C"
+    reading: "\u307F\u3063\u304B"
+    jlpt: 5
+  - id: 589
+    kanji: "\u4E09\u3064"
+    meaning: "\uC138"
+    reading: "\u307F\u3063\u3064"
+    jlpt: 5
+  - id: 590
+    kanji: "\u7DD1"
+    meaning: "\uB179\uC0C9"
+    reading: "\u307F\u3069\u308A"
+    jlpt: 5
+  - id: 591
+    kanji: "\u7686\u3055\u3093"
+    meaning: "\uC5EC\uB7EC\uBD84"
+    reading: "\u307F\u306A\u3055\u3093"
+    jlpt: 5
+  - id: 592
+    kanji: "\u5357"
+    meaning: "\uB0A8"
+    reading: "\u307F\u306A\u307F"
+    jlpt: 5
+  - id: 593
+    kanji: "\u8033"
+    meaning: "\uADC0"
+    reading: "\u307F\u307F"
+    jlpt: 5
+  - id: 594
+    kanji: "\u898B\u308B"
+    meaning: "\uBCF4\uB2E4"
+    reading: "\u307F\u308B"
+    jlpt: 5
+  - id: 595
+    kanji: "\u307F\u3093\u306A"
+    meaning: "\uBAA8\uB450"
+    reading: "\u307F\u3093\u306A"
+    jlpt: 5
+  - id: 596
+    kanji: "\u516D\u65E5"
+    meaning: "6\uC77C"
+    reading: "\u3080\u3044\u304B"
+    jlpt: 5
+  - id: 597
+    kanji: "\u5411\u3053\u3046"
+    meaning: "\uC800\uCABD"
+    reading: "\u3080\u3053\u3046"
+    jlpt: 5
+  - id: 598
+    kanji: "\u96E3\u3057\u3044"
+    meaning: "\uC5B4\uB835\uB2E4"
+    reading: "\u3080\u305A\u304B\u3057\u3044"
+    jlpt: 5
+  - id: 599
+    kanji: "\u516D\u3064"
+    meaning: "\uC5EC\uC12F"
+    reading: "\u3080\u3063\u3064"
+    jlpt: 5
+  - id: 600
+    kanji: "\u6751"
+    meaning: "\uB9C8\uC744"
+    reading: "\u3080\u3089"
+    jlpt: 5
+  - id: 601
+    kanji: "\u76EE"
+    meaning: "\uB208"
+    reading: "\u3081"
+    jlpt: 5
+  - id: 602
+    kanji: "\u30E1\u30FC\u30C8\u30EB"
+    meaning: "\uBBF8\uD130"
+    reading: "\u30E1\u30FC\u30C8\u30EB"
+    jlpt: 5
+  - id: 603
+    kanji: "\u773C\u93E1"
+    meaning: "\uC548\uACBD"
+    reading: "\u3081\u304C\u306D"
+    jlpt: 5
+  - id: 604
+    kanji: "\u3082\u3046"
+    meaning: "\uBC8C\uC368"
+    reading: "\u3082\u3046"
+    jlpt: 5
+  - id: 605
+    kanji: "\u3082\u3046\u4E00\u5EA6"
+    meaning: "\uB2E4\uC2DC"
+    reading: "\u3082\u3046\u3044\u3061\u3069"
+    jlpt: 5
+  - id: 606
+    kanji: "\u6728\u66DC\u65E5"
+    meaning: "\uBAA9\uC694\uC77C"
+    reading: "\u3082\u304F\u3088\u3046\u3073"
+    jlpt: 5
+  - id: 607
+    kanji: "\u6301\u3064"
+    meaning: "\uC950\uB2E4"
+    reading: "\u3082\u3064"
+    jlpt: 5
+  - id: 608
+    kanji: "\u3082\u3063\u3068"
+    meaning: "\uB354"
+    reading: "\u3082\u3063\u3068"
+    jlpt: 5
+  - id: 609
+    kanji: "\u7269"
+    meaning: "\uBB3C\uAC74"
+    reading: "\u3082\u306E"
+    jlpt: 5
+  - id: 610
+    kanji: "\u9580"
+    meaning: "\uBB38"
+    reading: "\u3082\u3093"
+    jlpt: 5
+  - id: 611
+    kanji: "\u554F\u984C"
+    meaning: "\uBB38\uC81C"
+    reading: "\u3082\u3093\u3060\u3044"
+    jlpt: 5
+  - id: 612
+    kanji: "\u516B\u767E\u5C4B"
+    meaning: "\uCCAD\uACFC\uBB3C"
+    reading: "\u3084\u304A\u3084"
+    jlpt: 5
+  - id: 613
+    kanji: "\u91CE\u83DC"
+    meaning: "\uC57C\uCC44"
+    reading: "\u3084\u3055\u3044"
+    jlpt: 5
+  - id: 614
+    kanji: "\u6613\u3057\u3044"
+    meaning: "\uC27D\uB2E4"
+    reading: "\u3084\u3055\u3057\u3044"
+    jlpt: 5
+  - id: 615
+    kanji: "\u5B89\u3044"
+    meaning: "\uC2F8\uB2E4"
+    reading: "\u3084\u3059\u3044"
+    jlpt: 5
+  - id: 616
+    kanji: "\u4F11\u307F"
+    meaning: "\uD734\uAC00"
+    reading: "\u3084\u3059\u307F"
+    jlpt: 5
+  - id: 617
+    kanji: "\u4F11\u3080"
+    meaning: "\uC26C\uB2E4"
+    reading: "\u3084\u3059\u3080"
+    jlpt: 5
+  - id: 618
+    kanji: "\u516B\u3064"
+    meaning: "\uC5EC\uB35F"
+    reading: "\u3084\u3063\u3064"
+    jlpt: 5
+  - id: 619
+    kanji: "\u5C71"
+    meaning: "\uC0B0"
+    reading: "\u3084\u307E"
+    jlpt: 5
+  - id: 620
+    kanji: "\u3084\u308B"
+    meaning: "\uD558\uB2E4"
+    reading: "\u3084\u308B"
+    jlpt: 5
+  - id: 621
+    kanji: "\u5915\u65B9"
+    meaning: "\uC800\uB141"
+    reading: "\u3086\u3046\u304C\u305F"
+    jlpt: 5
+  - id: 622
+    kanji: "\u5915\u98EF"
+    meaning: "\uC800\uB141\uBC25"
+    reading: "\u3086\u3046\u306F\u3093"
+    jlpt: 5
+  - id: 623
+    kanji: "\u90F5\u4FBF\u5C40"
+    meaning: "\uC6B0\uCCB4\uAD6D"
+    reading: "\u3086\u3046\u3073\u3093\u304D\u3087\u304F"
+    jlpt: 5
+  - id: 624
+    kanji: "\u6628\u591C"
+    meaning: "\uC9C0\uB09C \uBC24"
+    reading: "\u3086\u3046\u3079"
+    jlpt: 5
+  - id: 625
+    kanji: "\u6709\u540D"
+    meaning: "\uC720\uBA85"
+    reading: "\u3086\u3046\u3081\u3044"
+    jlpt: 5
+  - id: 626
+    kanji: "\u96EA"
+    meaning: "\uB208"
+    reading: "\u3086\u304D"
+    jlpt: 5
+  - id: 627
+    kanji: "\u884C\u304F"
+    meaning: "\uAC00\uB2E4"
+    reading: "\u3086\u304F"
+    jlpt: 5
+  - id: 628
+    kanji: "\u3086\u3063\u304F\u308A\u3068"
+    meaning: "\uCC9C\uCC9C\uD788"
+    reading: "\u3086\u3063\u304F\u308A\u3068"
+    jlpt: 5
+  - id: 629
+    kanji: "\u516B\u65E5"
+    meaning: "8\uC77C"
+    reading: "\u3088\u3046\u304B"
+    jlpt: 5
+  - id: 630
+    kanji: "\u6D0B\u670D"
+    meaning: "\uC637"
+    reading: "\u3088\u3046\u3075\u304F"
+    jlpt: 5
+  - id: 631
+    kanji: "\u3088\u304F"
+    meaning: "\uC798"
+    reading: "\u3088\u304F"
+    jlpt: 5
+  - id: 632
+    kanji: "\u6A2A"
+    meaning: "\uC606"
+    reading: "\u3088\u3053"
+    jlpt: 5
+  - id: 633
+    kanji: "\u56DB\u65E5"
+    meaning: "4\uC77C"
+    reading: "\u3088\u3063\u304B"
+    jlpt: 5
+  - id: 634
+    kanji: "\u56DB\u3064"
+    meaning: "\uB137"
+    reading: "\u3088\u3063\u3064"
+    jlpt: 5
+  - id: 635
+    kanji: "\u547C\u3076"
+    meaning: "\uBD80\uB974\uB2E4"
+    reading: "\u3088\u3076"
+    jlpt: 5
+  - id: 636
+    kanji: "\u8AAD\u3080"
+    meaning: "\uC77D\uB2E4"
+    reading: "\u3088\u3080"
+    jlpt: 5
+  - id: 637
+    kanji: "\u591C"
+    meaning: "\uBC24"
+    reading: "\u3088\u308B"
+    jlpt: 5
+  - id: 638
+    kanji: "\u5F31\u3044"
+    meaning: "\uC57D\uD55C"
+    reading: "\u3088\u308F\u3044"
+    jlpt: 5
+  - id: 639
+    kanji: "\u6765\u6708"
+    meaning: "\uB2E4\uC74C\uB2EC"
+    reading: "\u3089\u3044\u3052\u3064"
+    jlpt: 5
+  - id: 640
+    kanji: "\u6765\u9031"
+    meaning: "\uB2E4\uC74C\uC8FC"
+    reading: "\u3089\u3044\u3057\u3085\u3046"
+    jlpt: 5
+  - id: 641
+    kanji: "\u6765\u5E74"
+    meaning: "\uB0B4\uB144"
+    reading: "\u3089\u3044\u306D\u3093"
+    jlpt: 5
+  - id: 642
+    kanji: "\u30E9\u30B8\u30AA"
+    meaning: "\uB77C\uB514\uC624"
+    reading: "\u30E9\u30B8\u30AA"
+    jlpt: 5
+  - id: 643
+    kanji: "\u30E9\u30B8\u30AB\u30BB"
+    meaning: "\uCE74\uC138\uD2B8"
+    reading: "\u30E9\u30B8\u30AB\u30BB"
+    jlpt: 5
+  - id: 644
+    kanji: "\u308A\u3063\u3071"
+    meaning: "\uD6CC\uB96D\uD568"
+    reading: "\u308A\u3063\u3071"
+    jlpt: 5
+  - id: 645
+    kanji: "\u7559\u5B66\u751F"
+    meaning: "\uC720\uD559\uC0DD"
+    reading: "\u308A\u3085\u3046\u304C\u304F\u305B\u3044"
+    jlpt: 5
+  - id: 646
+    kanji: "\u4E21\u89AA"
+    meaning: "\uBD80\uBAA8"
+    reading: "\u308A\u3087\u3046\u3057\u3093"
+    jlpt: 5
+  - id: 647
+    kanji: "\u6599\u7406"
+    meaning: "\uC694\uB9AC"
+    reading: "\u308A\u3087\u3046\u308A"
+    jlpt: 5
+  - id: 648
+    kanji: "\u65C5\u884C"
+    meaning: "\uC5EC\uD589"
+    reading: "\u308A\u3087\u3053\u3046"
+    jlpt: 5
+  - id: 649
+    kanji: "\u96F6"
+    meaning: "\uC601"
+    reading: "\u308C\u3044"
+    jlpt: 5
+  - id: 650
+    kanji: "\u51B7\u8535\u5EAB"
+    meaning: "\uB0C9\uC7A5\uACE0"
+    reading: "\u308C\u3044\u305E\u3046\u3053"
+    jlpt: 5
+  - id: 651
+    kanji: "\u30EC\u30B3\u30FC\u30C9"
+    meaning: "\uAE30\uB85D"
+    reading: "\u30EC\u30B3\u30FC\u30C9"
+    jlpt: 5
+  - id: 652
+    kanji: "\u30EC\u30B9\u30C8\u30E9\u30F3"
+    meaning: "\uB808\uC2A4\uD1A0\uB791"
+    reading: "\u30EC\u30B9\u30C8\u30E9\u30F3"
+    jlpt: 5
+  - id: 653
+    kanji: "\u7DF4\u7FD2\u3059\u308B"
+    meaning: "\uC5F0\uC2B5"
+    reading: "\u308C\u3093\u3057\u3085\u3046\u3059\u308B"
+    jlpt: 5
+  - id: 654
+    kanji: "\u5ECA\u4E0B"
+    meaning: "\uBCF5\uB3C4"
+    reading: "\u308D\u3046\u304B"
+    jlpt: 5
+  - id: 655
+    kanji: "\u516D"
+    meaning: "\uC721"
+    reading: "\u308D\u304F"
+    jlpt: 5
+  - id: 656
+    kanji: "\u30EF\u30A4\u30B7\u30E3\u30C4"
+    meaning: "\uC154\uCE20"
+    reading: "\u30EF\u30A4\u30B7\u30E3\u30C4"
+    jlpt: 5
+  - id: 657
+    kanji: "\u82E5\u3044"
+    meaning: "\uC80A\uC740"
+    reading: "\u308F\u304B\u3044"
+    jlpt: 5
+  - id: 658
+    kanji: "\u5206\u304B\u308B"
+    meaning: "\uC54C\uB2E4"
+    reading: "\u308F\u304B\u308B"
+    jlpt: 5
+  - id: 659
+    kanji: "\u5FD8\u308C\u308B"
+    meaning: "\uC78A\uC5B4 \uBC84\uB9AC\uB2E4"
+    reading: "\u308F\u3059\u308C\u308B"
+    jlpt: 5
+  - id: 660
+    kanji: "\u79C1"
+    meaning: "\uB098"
+    reading: "\u308F\u305F\u304F\u3057"
+    jlpt: 5
+  - id: 661
+    kanji: "\u79C1"
+    meaning: "\uB098"
+    reading: "\u308F\u305F\u3057"
+    jlpt: 5
+  - id: 662
+    kanji: "\u6E21\u3059"
+    meaning: "\uAC74\uB124\uC8FC\uB2E4"
+    reading: "\u308F\u305F\u3059"
+    jlpt: 5
+  - id: 663
+    kanji: "\u6E21\u308B"
+    meaning: "\uAC74\uB108\uB2E4"
+    reading: "\u308F\u305F\u308B"
+    jlpt: 5
+  - id: 664
+    kanji: "\u60AA\u3044"
+    meaning: "\uB098\uC058\uB2E4"
+    reading: "\u308F\u308B\u3044"
+    jlpt: 5

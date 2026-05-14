@@ -3,28 +3,43 @@ using UnityEngine;
 
 public class WordListFlowManager : MonoBehaviour
 {
-    public GameObject WordLoader;
-    public GameObject RandomWordTable;
-    public GameObject EnemyGenerator;
+    public EnemyGenerator enemyGenerator;
+    public LobbySettingSO lobbySetting;
+    public SwordRecordSO swordRecord;
+    public WordDataBaseSO wordDataBaseSO;
 
-    List<Word> allWordList, selectedWordList;
+    List<int> selectedWordIndex = new List<int>();
+    List<Word> selectedWordList = new List<Word>();
 
-    public int selectAmount = 10;
+    void OnEnable()
+    {
+    }
+
+    void OnDisable()
+    {
+    }
 
     void Start()
     {
-        allWordList= WordLoader.GetComponent<WordLoader>().GetAllWordList();
+        selectedWordIndex.Clear();
 
-        RandomWordTable RandomCompo = RandomWordTable.GetComponent<RandomWordTable>();
-        selectedWordList = RandomCompo.GetSelectWordList(allWordList, selectAmount);
+        selectedWordList.Clear();
 
-        EnemyGenerator.GetComponent<EnemyGenerator>().SetSelectedWordList(selectedWordList);
+        int selectAmount = (int)lobbySetting.settingValue.GetValue(SettingList.WordCount);
 
-        RandomCompo.ShowList();
-    }
-    
-    void Update()
-    {
-        
+        this.selectedWordIndex = swordRecord.GetRandomId(selectAmount);
+
+        foreach (int item in this.selectedWordIndex)
+        {
+            this.selectedWordList.Add(wordDataBaseSO.GetWordDataBase()[item]);
+        }
+
+        foreach(var item in this.selectedWordList )
+        {
+            Debug.Log($"{item.id} = {item.kanji}, {item.meaning}");
+        } //test
+
+        enemyGenerator.SetSelectedWordList(this.selectedWordList);
+
     }
 }
