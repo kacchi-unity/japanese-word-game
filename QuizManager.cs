@@ -1,9 +1,6 @@
-using NUnit.Framework.Internal;
 using System;
-using System.Collections;  
-using System.Collections.Generic;
+using System.Collections;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class QuizManager : MonoBehaviour
@@ -11,7 +8,23 @@ public class QuizManager : MonoBehaviour
     public static event Action<Vector3> OnAnswerCorrect;
 
     public EnemyListSO enemyListSO;
-    public GameObject resultText;
+    public TextMeshProUGUI result;
+    public SwordRecordSO swordRecordSO;
+
+    float textDuration = 1.0f;
+    float fadeOutTime = 1.0f;
+    private Coroutine effectCoroutine;
+
+
+    private void OnEnable()
+    {
+        EnemyController.OnPlayerDamaged += RecordFail;
+    }
+
+    private void OnDisable()
+    {
+        EnemyController.OnPlayerDamaged -= RecordFail;
+    }
 
     //check and comparing answer
     public void CheckAnswer(string playerInput)
@@ -43,15 +56,49 @@ public class QuizManager : MonoBehaviour
         //remove element from list
         if (removeTarget != null)
         {
+            swordRecordSO.RecordCorrectResult(removeTarget.GetId(), true);
+
             enemyListSO.RemoveEnemyData(removeTarget);
-            //Debug.Log("정답!");
-            resultText.GetComponent<TextMeshProUGUI>().text = "정답!";
+            ShowAnswerEffect("정답!");
         }
 
         else //removeTarget is null
         {
-            //Debug.Log("오답!");
-            resultText.GetComponent<TextMeshProUGUI>().text = "정답이 없습니다!!";
+            ShowAnswerEffect("정답이 없습니다!!");
         }
     }//CheckAsnwer(s)
+
+    private void RecordFail(int wordId, float fadeIn_unused, float fadeOut_unused2, float damage_unused3)
+    {
+        swordRecordSO.RecordCorrectResult(wordId, false);
+    }
+
+    void ShowAnswerEffect(string text)
+    {
+        if (this.effectCoroutine != null)
+        {
+            StopCoroutine(this.effectCoroutine);
+        }
+
+        this.effectCoroutine = StartCoroutine(ShowAndFadeRoutine(text));
+    }
+
+    IEnumerator ShowAndFadeRoutine(string text)
+    {
+        result.text = text;
+        result.alpha = 1.0f;
+        yield return new WaitForSeconds(this.textDuration);
+
+        float elapsed = 0f;
+        while (elapsed  < this.fadeOutTime)
+        {
+            elapsed += Time.deltaTime;
+            result.alpha = Mathf.Lerp(1f, 0f, elapsed / fadeOutTime);
+            yield return null;
+        }
+
+        result.alpha = 0f;
+        this.effectCoroutine = null;
+
+    }
 }

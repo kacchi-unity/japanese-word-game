@@ -12,22 +12,30 @@ public class SwordRecordSO : ScriptableObject
     [Header("--- Backup data (Unity saves) ---")]
     [SerializeField] private List<int> swordRecordList = new List<int>();
     [SerializeField] private List<int> unusedList = new List<int>();
+    [SerializeField] private List<WordCorrectRate> correctRateList = new List<WordCorrectRate>();
+    [SerializeField] private List<int> lastChangedIds = new List<int>(); //to in game -> lobby backup
 
     [Header("--- Runtime data (Speed tools) ---")]
     private HashSet<int> swordRecordHash = new HashSet<int>();
     private HashSet<int> unusedHash = new HashSet<int>();
+    private Dictionary<int, WordCorrectRate> correctRateDic = new Dictionary<int, WordCorrectRate>();
 
-    [SerializeField] private List<int> lastChangedIds = new List<int>(); //to in game -> lobby backup
-
-    private void ValidateHash()
+    
+    private void ValidateDataSet()
     {
         if (unusedHash.Count == 0 && unusedList.Count > 0)
         {
-            this.unusedHash = new HashSet<int>(unusedList);
+            this.unusedHash = unusedList.ToHashSet();
         }
+
         if (swordRecordHash.Count == 0 && swordRecordList.Count > 0)
         {
-            swordRecordHash = new HashSet<int>(swordRecordList);
+            swordRecordHash = swordRecordList.ToHashSet();
+        }
+
+        if (correctRateDic.Count == 0 && correctRateList.Count > 0)
+        {
+            correctRateDic = correctRateList.ToDictionary(x => x.GetId(), x => x);
         }
     }
 
@@ -35,27 +43,30 @@ public class SwordRecordSO : ScriptableObject
     {
         this.unusedList = this.unusedHash.ToList();
         this.swordRecordList = this.swordRecordHash.ToList();
+        this.correctRateList = this.correctRateDic.Values.ToList();
 
 #if UNITY_EDITOR
         EditorUtility.SetDirty(this);
 #endif
     }
 
-    public void SetUnusedHash(int count)
+    public void InitializeDataset(int count)
     {
-        ResetUnusedHash();
+        ResetUnused();
+        ResetCorrectRate();
         for (int i = 1; i <= count; i++)
         {
             this.unusedHash.Add(i);
+            this.correctRateDic.Add(i, new WordCorrectRate(i));
         }
-        ResetSwordRecordHash();
+        ResetSwordRecord();
 
         SyncList();
     }
 
     public List<int> GetRandomId(int amount)
     {
-        ValidateHash();
+        ValidateDataSet();
 
         List<int> unusedPool = this.unusedHash.ToList<int>();
         List<int> randomResult= new List<int>();
@@ -87,7 +98,7 @@ public class SwordRecordSO : ScriptableObject
                 this.lastChangedIds.Add(item);
             }
 
-            ResetUnusedHash();
+            ResetUnused();
         }
         else
         {
@@ -112,7 +123,7 @@ public class SwordRecordSO : ScriptableObject
 
     public void Rollback()
     {
-        ValidateHash();
+        ValidateDataSet();
 
         if (this.lastChangedIds.Count == 0) return;
 
@@ -120,49 +131,95 @@ public class SwordRecordSO : ScriptableObject
         {
             this.swordRecordHash.Remove(item);
             this.unusedHash.Add(item);
+
+            if (this.correctRateDic.ContainsKey(item))
+            {
+                this.correctRateDic[item].ResetCount();
+            }
         }
         Debug.Log($"데이터 복구완료, 사전에 {lastChangedIds.Count}개의 단어를 넣는 것을 취소합니다.");
+        Debug.Log($"데이터 복구완료, 사전에 {lastChangedIds.Count}개 단어 정답률을 초기화합니다.");
         this.lastChangedIds.Clear();
 
         SyncList();
     }
 
+    //to build test
     public void ShowSwordRecordList()
     {
-        ValidateHash();
+        ValidateDataSet();
 
         if (this.swordRecordHash != null)
         {
             foreach (var item in this.swordRecordHash)
             {
-                Debug.Log($"검심 일단 id만 호출: {item}");
+                Debug.Log($"검심 id: {item}, 정답률: {this.GetCorrectRate(item)}");
             }
         }
         Debug.Log($"Sword Record해시 내 총 개수: {this.swordRecordHash.Count}");
         Debug.Log($"Unused 해시 내 총 개수: {this.unusedHash.Count}");
     }
 
+    public void RecordCorrectResult(int wordId, bool isSuccess)
+    {
+        ValidateDataSet();
+        if (!correctRateDic.ContainsKey(wordId))
+        {
+            correctRateDic.Add(wordId, new WordCorrectRate(wordId));
+            Debug.Log($"예외처리: Id {wordId} 단어 정답률 리스트를 새로 만듭니다.");
+        }
+
+        correctRateDic[wordId].IncreaseCount(isSuccess);
+        SyncList();
+    }
+
+    public float GetCorrectRate(int wordId)
+    {
+        ValidateDataSet();
+        if (this.correctRateDic.ContainsKey(wordId))
+        {
+            return this.correctRateDic[wordId].correctRate;
+        }
+        else
+        {
+            Debug.LogWarning($"ID {wordId}의 정답률 데이터가 없어 새로 생성합니다.");
+            WordCorrectRate newRateData = new WordCorrectRate(wordId);
+
+            this.correctRateDic.Add(wordId, newRateData);
+
+            SyncList();
+
+            return this.correctRateDic[wordId].correctRate;
+        }
+    }
+
     public HashSet<int> GetSwordRecordHash()
     {
-        ValidateHash();
+        ValidateDataSet();
         return this.swordRecordHash;
     }
 
     public HashSet<int> GetUnusedHash()
     {
-        ValidateHash();
+        ValidateDataSet();
         return this.unusedHash;
     }
 
-    public void ResetSwordRecordHash()
+    public void ResetSwordRecord()
     {
         this.swordRecordHash.Clear();
         this.swordRecordList.Clear();
     }
 
-    public void ResetUnusedHash()
+    public void ResetUnused()
     {
         this.unusedHash.Clear();
         this.unusedList.Clear();
+    }
+
+    public void ResetCorrectRate()
+    {
+        this.correctRateDic.Clear();
+        this.correctRateList.Clear();
     }
 }
