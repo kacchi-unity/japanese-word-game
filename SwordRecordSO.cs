@@ -193,16 +193,9 @@ public class SwordRecordSO : ScriptableObject
         }
     }
 
-    public HashSet<int> GetSwordRecordHash()
+    public List<int> GetSwordRecordList()
     {
-        ValidateDataSet();
-        return this.swordRecordHash;
-    }
-
-    public HashSet<int> GetUnusedHash()
-    {
-        ValidateDataSet();
-        return this.unusedHash;
+        return this.swordRecordList;
     }
 
     public void ResetSwordRecord()
