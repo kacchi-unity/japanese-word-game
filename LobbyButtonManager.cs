@@ -25,6 +25,10 @@ public class LobbyButtonManager : MonoBehaviour
     {
         OnStartButtonClick?.Invoke();
         yield return new WaitForSeconds(0.5f);
-        ModalManager.Instance.ShowConfirmModal("게임을 시작하시겠습니까?",()=>SceneManager.LoadScene(inGameSceneName), null);
+        ModalManager.Instance.ShowConfirmModal("게임을 시작하시겠습니까?",
+            () =>
+            { SceneTracker.previousScene = SceneTracker.SceneType.Lobby;
+                SceneManager.LoadScene(inGameSceneName);
+            } , null);
     }
 }
