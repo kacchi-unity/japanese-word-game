@@ -1,0 +1,67 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SelectWordProcessManager : MonoBehaviour, IWordSelectHandler
+{
+    HashSet<int> selectedWordIdHash = new HashSet<int>();
+    //To cancel subscription
+    List<WordCardSetting> activeCards = new List<WordCardSetting>();
+
+    private void OnEnable()
+    {
+        WordCardSetting.OnCardSpawned += RegisterSpawnedCard;
+    }
+
+    private void OnDisable()
+    {
+        WordCardSetting.OnCardSpawned -= RegisterSpawnedCard;
+
+        foreach (var card in activeCards)
+        {
+            if (card != null)
+            {
+                card.OnToggleChanged -= HandleWordSelected;
+            }
+        }
+        activeCards.Clear();
+    }
+
+    private void RegisterSpawnedCard(WordCardSetting targetCard, int wordId)
+    {
+        targetCard.OnToggleChanged += HandleWordSelected;
+
+        activeCards.Add(targetCard);
+    }
+
+    public void HandleWordSelected(int wordId, bool isSelected)
+    {
+        if (isSelected)
+        {
+            this.selectedWordIdHash.Add(wordId);
+            Debug.Log($"해쉬 삽입 ID{wordId}, 불린 여부 {isSelected} ");
+        }
+
+        else
+        {
+            this.selectedWordIdHash.Remove(wordId);
+            Debug.Log($"해쉬 제거 ID{wordId}, 불린 여부 {isSelected} ");
+        }
+    }
+
+    public void OnStartButtonClick()
+    {
+        if (selectedWordIdHash.Count == 0)
+        {
+            Debug.Log("선택 단어x");
+            return;
+        }
+
+        SceneTracker.selectorSwordRecordWordList = new List<int>(this.selectedWordIdHash);
+        SceneTracker.previousScene = SceneTracker.SceneType.SwordRecord;
+        //화면이동
+        foreach(var target in this.selectedWordIdHash)
+        {
+            Debug.Log(target);
+        }
+    }
+}
