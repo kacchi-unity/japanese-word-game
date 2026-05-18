@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class SelectWordProcessManager : MonoBehaviour, IWordSelectHandler
+public class SelectWordProcessManager : MonoBehaviour
 {
     HashSet<int> selectedWordIdHash = new HashSet<int>();
     //To cancel subscription
@@ -58,10 +59,8 @@ public class SelectWordProcessManager : MonoBehaviour, IWordSelectHandler
 
         SceneTracker.selectorSwordRecordWordList = new List<int>(this.selectedWordIdHash);
         SceneTracker.previousScene = SceneTracker.SceneType.SwordRecord;
-        //화면이동
-        foreach(var target in this.selectedWordIdHash)
-        {
-            Debug.Log(target);
-        }
+
+        SceneManager.LoadScene("Scene_Lobby");
+        
     }
 }

@@ -30,6 +30,9 @@ public class WordListFlowManager : MonoBehaviour
             }
 
             this.selectedWordIndex = new List<int>(SceneTracker.selectorSwordRecordWordList);
+
+            //Correction for reward calculation
+            lobbySetting.settingValue.SetValue(SettingList.WordCount, SceneTracker.selectorSwordRecordWordList.Count);
         }
 
         else
