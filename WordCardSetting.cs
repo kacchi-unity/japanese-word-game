@@ -5,16 +5,28 @@ using UnityEngine.UI;
 
 public class WordCardSetting : MonoBehaviour
 {
-    public TextMeshProUGUI kanjiTMP;
-    public TextMeshProUGUI meaningTMP;
-    public TextMeshProUGUI correctRateTMP;
-    public TextMeshProUGUI idTMP;
-    public Toggle selectToggle;
+    [SerializeField] private TextMeshProUGUI kanjiTMP;
+    [SerializeField] private TextMeshProUGUI meaningTMP;
+    [SerializeField] private TextMeshProUGUI correctRateTMP;
+    [SerializeField] private TextMeshProUGUI idTMP;
+    [SerializeField] private Toggle selectToggle;
+    [SerializeField] private RectTransform rectTransform;
 
-    public int wordId;
+    //Get
+    public TextMeshProUGUI KanjiTMP => kanjiTMP;
+    public TextMeshProUGUI MeaningTMP => meaningTMP;
+    public TextMeshProUGUI CorrectRateTMP => correctRateTMP;
+    public TextMeshProUGUI IdTMP => idTMP;
+    public Toggle SelectToggle => selectToggle;
+    public RectTransform RectTransform => rectTransform;
+
+    //Value
+    [SerializeField] private int wordId;
+    public int WordId => wordId;
 
     //To find this object, only one
     public static event Action<WordCardSetting, int> OnCardSpawned;
+
     //To personal approach, number of word card
     public event Action<int, bool> OnToggleChanged;
 

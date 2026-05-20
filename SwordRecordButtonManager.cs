@@ -1,16 +1,44 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SwordRecordButtonManager : MonoBehaviour
 {
     public TextMeshProUGUI noneMessageText;
     public SelectWordProcessManager selectWordProcessManager;
+    public Button LobbyButton;
 
-    public void ClickStartButton()
+    private void OnEnable()
     {
-        ModalManager.Instance.ShowConfirmModal("선택한 단어로\n게임을 시작하시겠습니까?",
-            ()=> selectWordProcessManager.OnStartButtonClick(), null);
+        SelectWordProcessManager.isClickStartButton += ProcessStartButton;
+    }
+    private void OnDisable()
+    {
+        SelectWordProcessManager.isClickStartButton -= ProcessStartButton;
+    }
+    private void Awake()
+    {
+        LobbyButton.onClick.AddListener(ClickLobbyButton);
+    }
+
+    private void OnDestroy()
+    {
+        LobbyButton.onClick.RemoveListener(ClickLobbyButton);
+    }
+
+    public void ProcessStartButton(int selectSwordRecordHashCount)
+    {
+        if (selectSwordRecordHashCount <= 0)
+        {
+            ModalManager.Instance.ShowAlertModal("단어를 1개 이상 선택해야합니다." , null);
+        }
+        else
+        {
+            ModalManager.Instance.ShowConfirmModal($"선택한 {selectSwordRecordHashCount}개 단어로\n복습 게임을 시작하시겠습니까?\n(*리워드 획득 가능)",
+            () => SceneManager.LoadScene("Scene_Lobby"), null);
+        }
+        
     }
 
     public void ClickLobbyButton()

@@ -1,12 +1,15 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using System;
+using UnityEngine.UI;
 
 public class SelectWordProcessManager : MonoBehaviour
 {
     HashSet<int> selectedWordIdHash = new HashSet<int>();
     //To cancel subscription
     List<WordCardSetting> activeCards = new List<WordCardSetting>();
+    public static event Action<int> isClickStartButton;
+    public Button startButton;
 
     private void OnEnable()
     {
@@ -25,6 +28,17 @@ public class SelectWordProcessManager : MonoBehaviour
             }
         }
         activeCards.Clear();
+    }
+
+    //Button connection
+    void Awake()
+    {
+        startButton.onClick.AddListener(this.OnStartButtonClick);
+    }
+
+    void OnDestroy()
+    {
+        startButton.onClick.RemoveListener(this.OnStartButtonClick);
     }
 
     private void RegisterSpawnedCard(WordCardSetting targetCard, int wordId)
@@ -49,18 +63,13 @@ public class SelectWordProcessManager : MonoBehaviour
         }
     }
 
-    public void OnStartButtonClick()
+    public void OnStartButtonClick() 
     {
-        if (selectedWordIdHash.Count == 0)
-        {
-            Debug.Log("선택 단어x");
-            return;
+        if (selectedWordIdHash.Count > 0)
+        {SceneTracker.selectorSwordRecordWordList = new List<int>(this.selectedWordIdHash);
+            SceneTracker.previousScene = SceneTracker.SceneType.SwordRecord;
         }
 
-        SceneTracker.selectorSwordRecordWordList = new List<int>(this.selectedWordIdHash);
-        SceneTracker.previousScene = SceneTracker.SceneType.SwordRecord;
-
-        SceneManager.LoadScene("Scene_Lobby");
-        
+    isClickStartButton?.Invoke(selectedWordIdHash.Count);
     }
 }
