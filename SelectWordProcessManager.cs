@@ -3,7 +3,7 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 
-public class SelectWordProcessManager : MonoBehaviour
+public class SelectWordProcessManager : MonoBehaviour, ICheckable
 {
     HashSet<int> selectedWordIdHash = new HashSet<int>();
     //To cancel subscription
@@ -71,5 +71,10 @@ public class SelectWordProcessManager : MonoBehaviour
         }
 
     isClickStartButton?.Invoke(selectedWordIdHash.Count);
+    }
+
+    public bool IsWordSelected(int wordId)
+    {
+        return this.selectedWordIdHash.Contains(wordId);
     }
 }

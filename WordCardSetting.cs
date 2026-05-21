@@ -30,7 +30,7 @@ public class WordCardSetting : MonoBehaviour
     //To personal approach, number of word card
     public event Action<int, bool> OnToggleChanged;
 
-    private void Awake()
+    private void OnEnable()
     {
         if (selectToggle != null)
         {
@@ -38,7 +38,7 @@ public class WordCardSetting : MonoBehaviour
         }
     }
 
-    public void SetData(string kanji, string meaning, float correctRate, int id)
+    public void SetData(string kanji, string meaning, float correctRate, int id, bool isSelect)
     {
         this.kanjiTMP.text = $"【{kanji}】";
         this.meaningTMP.text = meaning;
@@ -46,7 +46,11 @@ public class WordCardSetting : MonoBehaviour
         this.idTMP.text = $"ID-{id:D3}";
         this.wordId = id;
 
-        selectToggle.isOn = false;
+        selectToggle.onValueChanged.RemoveListener(OnToggleValueChanged);
+
+        selectToggle.isOn = isSelect;
+
+        selectToggle.onValueChanged.AddListener(OnToggleValueChanged);
 
         OnCardSpawned?.Invoke(this, id);
     }
@@ -56,7 +60,7 @@ public class WordCardSetting : MonoBehaviour
         OnToggleChanged?.Invoke(wordId, isOn);
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
         if (selectToggle != null)
         {
