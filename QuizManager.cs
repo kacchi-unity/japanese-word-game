@@ -29,19 +29,18 @@ public class QuizManager : MonoBehaviour
     //check and comparing answer
     public void CheckAnswer(string playerInput)
     {
-        string trimedPlayerInput = playerInput.Trim();
+        string replacedPlayerInput = playerInput.Replace(" ", "").ToLower();
 
         EnemyData removeTarget = null;
 
         //check answer in enemy field
         foreach (EnemyData data in enemyListSO.GetEnemyList())
         {
-            if (trimedPlayerInput.Equals(data.GetMeaning()))
+            if (replacedPlayerInput.Equals(data.GetMeaning().Replace(" ","").ToLower()))
             {
                 //give enemy position info
                 Vector3 enemyPos = data.GetEnemyGameObject().transform.position;
                 OnAnswerCorrect?.Invoke(enemyPos);
-
 
                 //destroy only "first correct object" with EnemyController.cs
                 EnemyController controller = data.GetEnemyGameObject().GetComponent<EnemyController>();

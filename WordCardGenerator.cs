@@ -31,6 +31,8 @@ public class WordCardGenerator : MonoBehaviour
 
     private int prevStartColumn = -1;
 
+    private List<int> currentTargetWordIdList = null;
+
     [Header("[ 인터페이스 설정 ]")]
     [Tooltip("ICheckable 인터페이스를 상속받은 오브젝트를 넣어주세요.")]
     [SerializeField] private GameObject wordcheckerObject;
@@ -56,6 +58,16 @@ public class WordCardGenerator : MonoBehaviour
     private void OnDestroy()
     {
         scrollRect.onValueChanged.RemoveListener(OnScrollMoving);
+    }
+
+    private void OnEnable()
+    {
+        WordSearchManager.OnUserSearched += PrintVisibleWordCards;
+    }
+
+    private void OnDisable()
+    {
+        WordSearchManager.OnUserSearched -= PrintVisibleWordCards;
     }
 
     void Start()
@@ -88,9 +100,10 @@ public class WordCardGenerator : MonoBehaviour
 
         //Value init setting
         this.wordCardWidth = wordCardPrefab.RectTransform.rect.width;
-        
 
         InitSetting();
+
+        PrintVisibleWordCards(this.swordRecordList);
 
         //Safety button interacte logic
         startButton.interactable = true;
@@ -103,8 +116,6 @@ public class WordCardGenerator : MonoBehaviour
             GameObject.Destroy(child.gameObject);
         }
 
-        SetContentSize();
-
         for (int i = 0; i < visibleHorizontalCount * verticalSlots; i++)
         {
             WordCardSetting prefab = Instantiate(this.wordCardPrefab, this.content);
@@ -112,28 +123,34 @@ public class WordCardGenerator : MonoBehaviour
 
             wordCardPool.Add(prefab);
         }
-
-        PrintVisibleWordCards();
     }
 
-    void SetContentSize()
+    void PrintVisibleWordCards(List<int> targetWordIdList)
     {
-        int totalColumn = (this.swordRecordList.Count + verticalSlots - 1) / verticalSlots;
-        float contentWidth = ((totalColumn * wordCardWidth) + ((totalColumn - 1) * horizontalSpacing));
-        if(contentWidth < 0)
+        if (targetWordIdList == null || targetWordIdList.Count == 0)
         {
-            contentWidth = 0;
+            this.currentTargetWordIdList = targetWordIdList;
+
+            SetContentSize(0);
+
+            for (int i = 0; i < wordCardPool.Count; i++)
+            {
+                if (wordCardPool[i] != null)
+                {
+                    wordCardPool[i].gameObject.SetActive(false);
+                }
+            }
         }
-        content.sizeDelta = new Vector2(contentWidth, content.sizeDelta.y); ;
-    }
 
-    void OnScrollMoving(Vector2 unused)
-    {
-        PrintVisibleWordCards();
-    }
+        if (this.currentTargetWordIdList != targetWordIdList)
+        {
+            prevStartColumn = -1;
+        }
 
-    void PrintVisibleWordCards()
-    {
+        this.currentTargetWordIdList = targetWordIdList;
+
+        SetContentSize(targetWordIdList.Count);
+
         float scrollX = Mathf.Abs(content.anchoredPosition.x);
         int startColumn = Mathf.FloorToInt(scrollX / (wordCardWidth + horizontalSpacing));
 
@@ -149,11 +166,11 @@ public class WordCardGenerator : MonoBehaviour
             int dataIndex = (startColumn * verticalSlots) + i;
             WordCardSetting visibleWordCard = wordCardPool[i];
 
-            if (dataIndex >= 0 && dataIndex < this.swordRecordList.Count)
+            if (dataIndex >= 0 && dataIndex < targetWordIdList.Count)
             {
                 visibleWordCard.gameObject.SetActive(true);
 
-                int targetWordId = this.swordRecordList[dataIndex];
+                int targetWordId = targetWordIdList[dataIndex];
                 visibleWordCard.SetData(
                     wordDataBase[targetWordId].kanji,
                     wordDataBase[targetWordId].meaning,
@@ -178,5 +195,44 @@ public class WordCardGenerator : MonoBehaviour
                 visibleWordCard.gameObject.SetActive(false);
             }
         }
+    } //PrintVisibleWordCards(List<int>)
+
+
+    //Method overloading
+    void PrintVisibleWordCards()
+    {
+        //First processing
+        if (this.currentTargetWordIdList != null && this.currentTargetWordIdList.Count > 0)
+        {
+            PrintVisibleWordCards(this.currentTargetWordIdList);
+            return;
+        }
+
+        //Second processing
+        if (this.swordRecordList != null && this.swordRecordList.Count > 0)
+        {
+            PrintVisibleWordCards(this.swordRecordList);
+        }
+    }
+
+    void SetContentSize(int listCount)
+    {
+        if (listCount == 0)
+        {
+            content.sizeDelta = new Vector2(0, content.sizeDelta.y);
+        }
+
+        int totalColumn = (listCount + verticalSlots - 1) / verticalSlots; //Ceiling process
+        float contentWidth = ((totalColumn * wordCardWidth) + ((totalColumn - 1) * horizontalSpacing));
+        if (contentWidth < 0)
+        {
+            contentWidth = 0;
+        }
+        content.sizeDelta = new Vector2(contentWidth, content.sizeDelta.y);
+    }
+
+    void OnScrollMoving(Vector2 unused)
+    {
+        PrintVisibleWordCards();
     }
 }
