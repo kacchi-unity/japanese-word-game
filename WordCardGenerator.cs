@@ -140,6 +140,7 @@ public class WordCardGenerator : MonoBehaviour
                     wordCardPool[i].gameObject.SetActive(false);
                 }
             }
+            return;
         }
 
         if (this.currentTargetWordIdList != targetWordIdList)
@@ -202,13 +203,19 @@ public class WordCardGenerator : MonoBehaviour
     void PrintVisibleWordCards()
     {
         //First processing
+        if (this.currentTargetWordIdList == null || this.currentTargetWordIdList.Count == 0)
+        {
+            return;
+        }
+
+        //Second processing
         if (this.currentTargetWordIdList != null && this.currentTargetWordIdList.Count > 0)
         {
             PrintVisibleWordCards(this.currentTargetWordIdList);
             return;
         }
 
-        //Second processing
+        //Thrid processing
         if (this.swordRecordList != null && this.swordRecordList.Count > 0)
         {
             PrintVisibleWordCards(this.swordRecordList);

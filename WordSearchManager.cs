@@ -135,6 +135,7 @@ public class WordSearchManager : MonoBehaviour
             return;
         }
 
+        searchResultLabel.text = "";
         OnUserSearched?.Invoke(sendTargetList);
     }
 
@@ -142,6 +143,7 @@ public class WordSearchManager : MonoBehaviour
     {
         OnUserSearched?.Invoke(this.swordRecordSO.GetSwordRecordList());
         inputSearch.text = "";
+        searchResultLabel.text = "";
     }
 
     IEnumerator FocusInputAndUnlock()
