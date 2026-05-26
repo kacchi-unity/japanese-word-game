@@ -290,6 +290,9 @@ Unity를 이용해 일본어를 최대한 쉽고 재미있게 배울 수 있도�
 
 - SO 구조 : 해당 보너스 배율은 Scriptable Object로 관리하여 UI에 실시간으로 안전하게 연결 및 연동 가능
 
+## 시스템 흐름도 (System Flowchart)
+![System.Flowchart](./Images/flowchart.png)
+
 ## 추후 개선 사항
 - JSON을 활용해 실제 JLPT 단어 호출
 
