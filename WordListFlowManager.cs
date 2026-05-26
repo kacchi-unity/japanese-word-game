@@ -1,23 +1,26 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class WordListFlowManager : MonoBehaviour
 {
     public EnemyGenerator enemyGenerator;
-    public LobbySettingSO lobbySetting;
-    public SwordRecordSO swordRecord;
+    public LobbySettingSO lobbySettingSO;
+    public SwordRecordSO swordRecordSO;
     public WordDataBaseSO wordDataBaseSO;
 
     List<int> selectedWordIndex = new List<int>();
     List<Word> selectedWordList = new List<Word>();
 
+    public static event Action<List<int>> OnSelectedWordListGenerated;
+
     void Start()
     {
         if (SceneTracker.previousScene.Equals(SceneTracker.SceneType.Lobby))
         {
-            int selectAmount = (int)lobbySetting.settingValue.GetValue(SettingList.WordCount);
+            int selectAmount = (int)lobbySettingSO.settingValue.GetValue(SettingList.WordCount);
 
-            this.selectedWordIndex = swordRecord.GetRandomId(selectAmount);
+            this.selectedWordIndex = swordRecordSO.GetRandomId(selectAmount);
 
         }
 
@@ -32,7 +35,7 @@ public class WordListFlowManager : MonoBehaviour
             this.selectedWordIndex = new List<int>(SceneTracker.selectorSwordRecordWordList);
 
             //Correction for reward calculation
-            lobbySetting.settingValue.SetValue(SettingList.WordCount, SceneTracker.selectorSwordRecordWordList.Count);
+            lobbySettingSO.settingValue.SetValue(SettingList.WordCount, SceneTracker.selectorSwordRecordWordList.Count);
         }
 
         else
@@ -41,18 +44,40 @@ public class WordListFlowManager : MonoBehaviour
             return;
         }
 
+        //Check index list (word id)
+        if (selectedWordIndex != null && selectedWordIndex.Count > 0)
+        {
+            OnSelectedWordListGenerated?.Invoke(selectedWordIndex);
+        }
+
+        else
+        {
+            Debug.LogError("에러: 리스트 selectedWordIndex 확인 불가. 로직을 종료합니다.");
+            return;
+        }
+
+        //Generate word list with word id list
         foreach (int item in this.selectedWordIndex)
         {
             this.selectedWordList.Add(wordDataBaseSO.GetWordDataBase()[item]);
         }
 
-        //Generate enemy prefab and log test
-        enemyGenerator.SetSelectedWordList(this.selectedWordList);
-
-        foreach (var item in this.selectedWordList )
+        //Check word list
+        if (selectedWordList != null && selectedWordList.Count > 0)
         {
-            Debug.Log($"{item.id} = {item.kanji}, {item.meaning}");
+            //Generate enemy prefab and log test
+            enemyGenerator.SetSelectedWordList(this.selectedWordList);
+
+            foreach (var item in this.selectedWordList)
+            {
+                Debug.Log($"{item.id} = {item.kanji}, {item.meaning}");
+            }
         }
 
+        else
+        {
+            Debug.LogError("에러: 리스트 selectedWordList 확인 불가. 로직을 종료합니다.");
+            return;
+        }
     }
 }
