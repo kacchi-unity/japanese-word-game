@@ -35,8 +35,11 @@ public class SwordRecordButtonManager : MonoBehaviour
         }
         else
         {
-            ModalManager.Instance.ShowConfirmModal($"선택한 {selectSwordRecordHashCount}개 단어로\n복습 게임을 시작하시겠습니까?\n(*리워드 획득 가능)",
-            () => SceneManager.LoadScene("Scene_Lobby"), null);
+            ModalManager.Instance.ShowConfirmModal(
+                $"선택한 {selectSwordRecordHashCount}개 단어로\n복습 게임을 시작하시겠습니까?\n(*리워드 획득 가능)",
+                () => BaseSceneManager.Instance.ChangeScene(CoreSceneType.Scene_Lobby),
+                null
+                );
         }
         
     }
@@ -47,7 +50,8 @@ public class SwordRecordButtonManager : MonoBehaviour
         {
             noneMessageText.alpha = 0f;
         }
-        ModalManager.Instance.ShowConfirmModal("로비로 돌아가시겠습니까?", () => SceneManager.LoadScene("Scene_Lobby"),
+        ModalManager.Instance.ShowConfirmModal("로비로 돌아가시겠습니까?",
+            () => BaseSceneManager.Instance.ChangeScene(CoreSceneType.Scene_Lobby),
             () => noneMessageText.alpha = 1f);
     }
 }

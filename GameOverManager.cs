@@ -51,7 +51,7 @@ public class GameOverManager : MonoBehaviour
 
         yield return new WaitForSeconds(3f);
 
-        SceneManager.LoadScene("Scene_Result");
+        BaseSceneManager.Instance.ChangeScene(CoreSceneType.Scene_Result);
     }
 
     void Start()

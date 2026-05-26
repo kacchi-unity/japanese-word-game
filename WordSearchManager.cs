@@ -28,11 +28,13 @@ public class WordSearchManager : MonoBehaviour
     private void OnEnable()
     {
         searchRemoveButton.onClick.AddListener(ClickRemoveButton);
+        searchEnterButton.onClick.AddListener(ClickSearchEnterButton);
     }
 
     private void OnDisable()
     {
         searchRemoveButton.onClick.RemoveListener(ClickRemoveButton);
+        searchEnterButton.onClick.RemoveListener(ClickSearchEnterButton);
     }
 
     void Awake()
@@ -157,5 +159,10 @@ public class WordSearchManager : MonoBehaviour
         }
 
         isProcessing = false;
+    }
+
+    void ClickSearchEnterButton()
+    {
+        SearchWord(this.inputSearch.text);
     }
 }

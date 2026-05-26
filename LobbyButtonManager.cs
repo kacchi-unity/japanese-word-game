@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LobbyButtonManager : MonoBehaviour
 {
@@ -9,16 +10,22 @@ public class LobbyButtonManager : MonoBehaviour
     public string inGameSceneName = "Scene_InGame";
     private SceneTracker.SceneType nextScene;
 
-    public LobbySettingSO lobbySetting; //test!
+    [SerializeField] private Button toInGameButton;
+    [SerializeField] private Button toSwordRecordButton;
+
 
     void OnEnable()
     {
         SwordRecordSliderBarManager.isSwordRecordSliderActive += SetNextScene;
+        toInGameButton.onClick.AddListener(ClickToInGameButton);
+        toSwordRecordButton.onClick.AddListener(ClickToSwordRecordButton);
     }
 
     void OnDisable()
     {
         SwordRecordSliderBarManager.isSwordRecordSliderActive -= SetNextScene;
+        toInGameButton.onClick.RemoveListener(ClickToInGameButton);
+        toSwordRecordButton.onClick.RemoveListener(ClickToSwordRecordButton);
     }
 
     void SetNextScene(bool isswordRecordSliderActive)
@@ -26,25 +33,30 @@ public class LobbyButtonManager : MonoBehaviour
         nextScene = isswordRecordSliderActive ? SceneTracker.SceneType.SwordRecord : SceneTracker.SceneType.Lobby;
     }
 
-    public void ClickStartButton()
+    public void ClickToInGameButton()
     {
         StartCoroutine(StartProcess());
         
     }
 
-    public void ClickSwordRecordButton()
+    public void ClickToSwordRecordButton()
     {
-        SceneManager.LoadScene("Scene_SwordRecord");
+        BaseSceneManager.Instance.ChangeScene(CoreSceneType.Scene_SwordRecord);
     }
 
     IEnumerator StartProcess()
     {
         OnStartButtonClick?.Invoke();
-        yield return new WaitForSeconds(0.5f);
-        ModalManager.Instance.ShowConfirmModal("게임을 시작하시겠습니까?",
-            () =>
-            { SceneTracker.previousScene = nextScene;
-                SceneManager.LoadScene(inGameSceneName);
-            } , null);
+
+        ModalManager.Instance.ShowConfirmModal(
+            "게임을 시작하시겠습니까?",
+            () => {
+                SceneTracker.previousScene = nextScene;
+                BaseSceneManager.Instance.ChangeSceneWithLoading(CoreSceneType.Scene_InGame);
+            },
+            null
+            );
+
+        yield return null;
     }
 }
