@@ -1,8 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem.Controls;
-using UnityEngine.InputSystem.XR;
 
 public class EnemyGenerator : MonoBehaviour
 {
@@ -12,13 +9,42 @@ public class EnemyGenerator : MonoBehaviour
     List<Word> selectedWordList;
     public LobbySettingSO lobbySetting;
 
-    public bool isSpawn = true;
-    [SerializeField] float spawnDelay = 0f;
+    private bool isSpawn = false;
+    public bool IsSpawn => isSpawn;
+
+    //Set IsSpawn (Encapsulation)
+    public void SetSpawnState(bool state)
+    {
+        if (this.isSpawn == state)
+        {
+            return;
+        }
+
+        this.isSpawn = state;
+        Debug.Log($"Enemy 스폰 상태가 {state}로 변경되었습니다.");
+    }
+
+    float spawnDelay = 0f;
     float delta = 0;
     
     float enemyMaxSpeed = 0.06f;
     float enemyMinSpeed = 0.01f;
-    [SerializeField] float moveSpeed = 0f;
+    float moveSpeed = 0f;
+
+    private void OnEnable()
+    {
+        WordBoardButtonManager.OnBattleStartButtonClick += BattleStartEventHandling;
+    }
+
+    private void OnDisable()
+    {
+        WordBoardButtonManager.OnBattleStartButtonClick -= BattleStartEventHandling;
+    }
+
+    void BattleStartEventHandling()
+    {
+        this.SetSpawnState(true);
+    }
 
     public void SetSelectedWordList(List<Word> selectedWordList)
     {
@@ -68,6 +94,7 @@ public class EnemyGenerator : MonoBehaviour
         //setting spawn delay with lobby setting SO
         this.spawnDelay = this.lobbySetting.settingValue.GetValue(SettingList.EnemySpawnDelay);
 
+        this.SetSpawnState(false);
     }
 
     void Update()

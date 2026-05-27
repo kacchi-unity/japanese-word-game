@@ -17,10 +17,24 @@ public class TypingController : MonoBehaviour
         FocusInput();
     }
 
-    void Start()
+    private void OnEnable()
     {
-        FocusInput();
+        WordBoardButtonManager.OnBattleStartButtonClick += FocusInput;
+    }
+
+    private void OnDisable()
+    {
+        WordBoardButtonManager.OnBattleStartButtonClick -= FocusInput;
+    }
+
+    void Awake()
+    {
         whiteInput.onSubmit.AddListener(BringAnswer);
+    }
+
+    void OnDestroy()
+    {
+        whiteInput.onSubmit.RemoveListener(BringAnswer);
     }
 
     void FocusInput()

@@ -1,28 +1,26 @@
-using NUnit.Framework;
 using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
-using static UnityEngine.Rendering.DebugUI;
-using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 public class EnemyController : MonoBehaviour
 {
     public EnemyData enemyData; //received from generator
     public EnemyListSO enemyListSO;
-    GameObject ScoreManager, PlayerObject;
+    GameObject ScoreManager;
     ScoreManager ScoreManagerScript;
     public TextMeshProUGUI hintText;
-
-    public static event Action<int, float, float> OnPlayerDamaged;
+    public static event Action<int, float, float, float> OnPlayerDamaged;
 
     public bool isKilledbyPlayer = false;
     bool isMove = true;
     int scoreAmount = 1;
-    float moveSpeed = 0.02f;
-    float damageToPlayer = 20f;
+    float damageToPlayer = 1f;
     float fadeInDuration = 0.5f;
     float fadeOutDuration = 0.5f;
+
+    float moveSpeed = 0f;
+
 
     private void OnEnable()
     {
@@ -40,19 +38,16 @@ public class EnemyController : MonoBehaviour
         //isKilledbyPlayer becomes true by EnemyListManager
         if (isKilledbyPlayer)
         {
+            ScoreManagerScript.IncreaseScore(scoreAmount);
             Destroy(gameObject);
-            ScoreManagerScript.increaseScore(scoreAmount);
         }
 
         //case of enemy collider with player
         else
         {
             Destroy(gameObject);
-            PlayerObject.GetComponent<PlayerHpManager>().DecreaseHp(damageToPlayer);
         }
     }
-
-    
 
     //to collide with player
     void OnTriggerEnter2D(Collider2D other)
@@ -62,7 +57,8 @@ public class EnemyController : MonoBehaviour
             isKilledbyPlayer = false;
             //Debug.Log("플레이어 충돌!");
             int enemyId = this.enemyData.GetId();
-            OnPlayerDamaged?.Invoke(enemyId, this.fadeInDuration, this.fadeOutDuration); //HintManager, etc...
+
+            OnPlayerDamaged?.Invoke(enemyId, this.fadeInDuration, this.fadeOutDuration, damageToPlayer); //HintManager, PlayerHpManager
             enemyListSO.RemoveEnemyData(enemyData);
             Die();
         }
@@ -92,7 +88,6 @@ public class EnemyController : MonoBehaviour
                 else if (mode == HintManager.HintRenderMode.Blink)
                 {
                     hintText.alpha = 1f;
-                    hintText.gameObject.SetActive(true);
                 }
                 
             }
@@ -101,13 +96,11 @@ public class EnemyController : MonoBehaviour
             {
                 if (mode == HintManager.HintRenderMode.Fade)
                 {
-                    Debug.Log("Fade 여기실행");
                     StartCoroutine(FadeOut());
                 }
                 else if (mode == HintManager.HintRenderMode.Blink)
                 {
                     hintText.alpha = 0f;
-                    hintText.gameObject.SetActive(false);
                 }
             }
         }
@@ -120,7 +113,7 @@ public class EnemyController : MonoBehaviour
             fadeInDuration = 0.1f;
         }
 
-        hintText.gameObject.SetActive(true);
+        hintText.alpha = 0f;
         float elapsed = 0f;
         while (elapsed < fadeInDuration)
         {
@@ -147,7 +140,6 @@ public class EnemyController : MonoBehaviour
             yield return null;
         }
         hintText.alpha = 0f;
-        hintText.gameObject.SetActive(false);
     }
 
 
@@ -156,17 +148,21 @@ public class EnemyController : MonoBehaviour
     {
         ScoreManager = GameObject.Find("ScoreManager");
         ScoreManagerScript = ScoreManager.GetComponent<ScoreManager>();
-        PlayerObject = GameObject.Find("Player");
 
-
+        
     }
 
     void Update()
     {
-        if (isMove)
+        if (isMove && moveSpeed != 0f)
         {
             transform.Translate(new Vector3(-moveSpeed, 0f, 0f));
         }
+    }
+
+    public void SetMoveSpeed(float speed)
+    {
+        this.moveSpeed = speed;
     }
 
     
