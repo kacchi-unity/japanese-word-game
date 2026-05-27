@@ -1,9 +1,9 @@
-using NUnit.Framework;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
+using System.Linq;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
 
 public class WordCardGenerator : MonoBehaviour
 {
@@ -29,15 +29,18 @@ public class WordCardGenerator : MonoBehaviour
     private Dictionary<int, Word> wordDataBase = null;
     private List<WordCardSetting> wordCardPool = new List<WordCardSetting>();
 
-    private int prevStartColumn = -1;
-
-    private List<int> currentTargetWordIdList = null;
-
     [Header("[ 인터페이스 설정 ]")]
     [Tooltip("ICheckable 인터페이스를 상속받은 오브젝트를 넣어주세요.")]
     [SerializeField] private GameObject wordcheckerObject;
 
     private ICheckable wordCheckerInterface; //Interface
+
+    private int prevStartColumn = -1;
+
+    private List<int> currentTargetWordIdList = null;
+
+    private string searchKeyWord = null;
+
 
     private void Awake()
     {
@@ -62,12 +65,18 @@ public class WordCardGenerator : MonoBehaviour
 
     private void OnEnable()
     {
-        WordSearchManager.OnUserSearched += PrintVisibleWordCards;
+        WordSearchManager.OnUserSearched += HandleUserSearchEvent;
     }
 
     private void OnDisable()
     {
-        WordSearchManager.OnUserSearched -= PrintVisibleWordCards;
+        WordSearchManager.OnUserSearched -= HandleUserSearchEvent;
+    }
+
+    void HandleUserSearchEvent(List<int> searchedWordId, string keyWord)
+    {
+        this.searchKeyWord = keyWord;
+        PrintVisibleWordCards(searchedWordId);
     }
 
     void Start()
@@ -172,9 +181,18 @@ public class WordCardGenerator : MonoBehaviour
                 visibleWordCard.gameObject.SetActive(true);
 
                 int targetWordId = targetWordIdList[dataIndex];
+
+                //Highlight meaning text with search text if searchKeyWord is exist
+                string wordMeaning = wordDataBase[targetWordId].meaning;
+
+                if (this.searchKeyWord != null)
+                {
+                    wordMeaning = GetHighlightedText(wordMeaning, this.searchKeyWord);
+                }
+
                 visibleWordCard.SetData(
                     wordDataBase[targetWordId].kanji,
-                    wordDataBase[targetWordId].meaning,
+                    wordMeaning,
                     swordRecordSO.GetCorrectRate(targetWordId),
                     targetWordId,
                     this.wordCheckerInterface.IsWordSelected(targetWordId)
@@ -241,5 +259,23 @@ public class WordCardGenerator : MonoBehaviour
     void OnScrollMoving(Vector2 unused)
     {
         PrintVisibleWordCards();
+    }
+    
+    //Highlight text handling
+    private string GetHighlightedText(string originalText, string searchKeyWord)
+    {
+        searchKeyWord = searchKeyWord.Replace(" ", "").ToLower();
+
+        string pattern = string.Join(@"\s*", searchKeyWord.Select(c => Regex.Escape(c.ToString())));
+
+        try
+        {
+            return Regex.Replace(originalText, pattern, $"<mark=#FFFF00AA>$&</mark>", RegexOptions.IgnoreCase);
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogWarning($"강조 로직 에러: {e.Message}");
+            return originalText;
+        }
     }
 }

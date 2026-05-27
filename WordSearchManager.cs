@@ -23,7 +23,7 @@ public class WordSearchManager : MonoBehaviour
     private Dictionary<string, List<int>> swordRecordDic = null;
     private List<int> userSearchWordIdList = null;
 
-    public static event Action<List<int>> OnUserSearched;
+    public static event Action<List<int>, string> OnUserSearched;
 
     private void OnEnable()
     {
@@ -97,7 +97,7 @@ public class WordSearchManager : MonoBehaviour
 
         MakeMatchingList(text);
 
-        SendMachingList(this.userSearchWordIdList);
+        SendMachingList(this.userSearchWordIdList, text);
 
         StartCoroutine(FocusInputAndUnlock());
     }
@@ -128,22 +128,22 @@ public class WordSearchManager : MonoBehaviour
         }
     }
 
-    void SendMachingList(List<int> sendTargetList)
+    void SendMachingList(List<int> sendTargetList, string keyWord)
     {
         if (sendTargetList == null || sendTargetList.Count == 0)
         {
             searchResultLabel.text = "검색 결과가 없습니다.";
-            OnUserSearched?.Invoke(null);
+            OnUserSearched?.Invoke(null, null);
             return;
         }
 
         searchResultLabel.text = "";
-        OnUserSearched?.Invoke(sendTargetList);
+        OnUserSearched?.Invoke(sendTargetList, keyWord.Replace(" ", "").ToLower());
     }
 
     void ClickRemoveButton()
     {
-        OnUserSearched?.Invoke(this.swordRecordSO.GetSwordRecordList());
+        OnUserSearched?.Invoke(this.swordRecordSO.GetSwordRecordList(), null);
         inputSearch.text = "";
         searchResultLabel.text = "";
     }
