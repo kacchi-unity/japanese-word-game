@@ -1,10 +1,6 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel.Design;
-using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 
 public class HintManager : MonoBehaviour
 {
@@ -22,7 +18,11 @@ public class HintManager : MonoBehaviour
 
     private void OnEnable()
     {
-        EnemyController.OnPlayerDamaged += ManagementHint;
+        if (this.lobbySetting.settingValue.GetValue(SettingList.HintActiveTime) > 0f)
+        {
+            EnemyController.OnPlayerDamaged += ManagementHint;
+        }
+        
     }
 
     private void OnDisable()
