@@ -11,6 +11,8 @@ public class SelectWordProcessManager : MonoBehaviour, ICheckable
     public static event Action<int> isClickStartButton;
     public Button startButton;
 
+    [SerializeField] private SelectCountFeedbackManager feedbackManager;
+
     private void OnEnable()
     {
         WordCardSetting.OnCardSpawned += RegisterSpawnedCard;
@@ -61,6 +63,12 @@ public class SelectWordProcessManager : MonoBehaviour, ICheckable
             this.selectedWordIdHash.Remove(wordId);
             Debug.Log($"해쉬 제거 ID{wordId}, 불린 여부 {isSelected} ");
         }
+
+        if (feedbackManager != null)
+        {
+            feedbackManager.PrintWordCountText(selectedWordIdHash.Count);
+        }
+        
     }
 
     public void OnStartButtonClick() 

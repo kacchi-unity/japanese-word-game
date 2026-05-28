@@ -5,9 +5,13 @@ using UnityEngine.UI;
 
 public class SwordRecordButtonManager : MonoBehaviour
 {
-    public TextMeshProUGUI noneMessageText;
-    public SelectWordProcessManager selectWordProcessManager;
-    public Button LobbyButton;
+    [SerializeField] private TextMeshProUGUI noneMessageText;
+    [SerializeField] private SelectWordProcessManager selectWordProcessManager;
+    [SerializeField] private Button LobbyButton;
+    [SerializeField] private GameSessionSO gameSessionSO;
+
+    private int minSelectCount = 1;
+    private int maxSelectCount;
 
     private void OnEnable()
     {
@@ -27,21 +31,29 @@ public class SwordRecordButtonManager : MonoBehaviour
         LobbyButton.onClick.RemoveListener(ClickLobbyButton);
     }
 
+    public void Start()
+    {
+        this.maxSelectCount = gameSessionSO.SystemPlayWordLimitCount;
+    }
+
     public void ProcessStartButton(int selectSwordRecordHashCount)
     {
-        if (selectSwordRecordHashCount <= 0)
+        if (selectSwordRecordHashCount < minSelectCount)
         {
-            ModalManager.Instance.ShowAlertModal("단어를 1개 이상 선택해야합니다." , null);
+            ModalManager.Instance.ShowAlertModal($"단어를 {minSelectCount}개 이상 선택해야 합니다.", null);
         }
-        else
+        else if (selectSwordRecordHashCount <= maxSelectCount)
         {
             ModalManager.Instance.ShowConfirmModal(
                 $"선택한 {selectSwordRecordHashCount}개 단어로\n복습 게임을 시작하시겠습니까?\n(*리워드 획득 가능)",
                 () => BaseSceneManager.Instance.ChangeScene(CoreSceneType.Scene_Lobby),
                 null
-                );
+            );
         }
-        
+        else
+        {
+            ModalManager.Instance.ShowAlertModal($"단어는 최대 {maxSelectCount}개 까지\n선택 가능합니다.", null);
+        }
     }
 
     public void ClickLobbyButton()

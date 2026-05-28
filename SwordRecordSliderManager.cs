@@ -17,6 +17,9 @@ public class SwordRecordSliderBarManager : MonoBehaviour
     public RectTransform wordSliderPos, swordRecordSliderPos;
     public Button cancel;
 
+    [Header("SO Data")]
+    [SerializeField] private GameSessionSO gameSessionSO;
+
     void OnEnable()
     {
         cancel.onClick.AddListener(Deactivate);
@@ -37,7 +40,16 @@ public class SwordRecordSliderBarManager : MonoBehaviour
             Debug.Log(SceneTracker.previousScene);
             title_Text.text = this.title;
             min_Text.text = this.min.ToString();
-            max_Text.text = this.max.ToString();
+            this.slider.minValue = this.min;
+
+            if (gameSessionSO != null)
+            {
+                float fixedMax = Mathf.Min(this.max, gameSessionSO.SystemPlayWordLimitCount);
+                this.slider.maxValue = fixedMax;
+                max_Text.text = fixedMax.ToString();
+            }
+            
+            
             unit_Text.text = this.unit;
 
             wordSlider.SetActive(false);
