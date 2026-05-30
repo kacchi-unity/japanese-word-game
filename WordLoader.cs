@@ -29,18 +29,16 @@ public class WordLoader : MonoBehaviour
         ResetEverything();
         LoadJsonAndFillPool();
         return;
-
-#else
-        if (PlayerPrefs.GetInt("FirstRun", 0) == 0)
+#endif
+        if (PlayerPrefs.GetInt("FirstWordLoad", 0) == 0)
         {
             Debug.Log("이 기기에서 처음 실행됨! 데이터를 새로 로드합니다.");
             ResetEverything();
             LoadJsonAndFillPool();
 
-            PlayerPrefs.SetInt("FirstRun", 1);
+            PlayerPrefs.SetInt("FirstWordLoad", 1);
             PlayerPrefs.Save();
         }
-#endif
     }
 
     void ResetEverything() //Only build
@@ -78,5 +76,6 @@ public class WordLoader : MonoBehaviour
         ResetEverything();
         LoadJsonAndFillPool();
         ModalManager.Instance.ShowAlertModal("초기화 완료", null);
+        SOSaveManager.Instance.SaveAllData();
     }
 }
