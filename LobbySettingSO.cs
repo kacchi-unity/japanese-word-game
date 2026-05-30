@@ -2,7 +2,7 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 
-public enum SettingList { WordCount, PlayerHp, TimeLimit, EnemySpeedRate, HintActiveTime, EnemySpawnDelay }
+public enum SettingList { None, WordCount, PlayerHp, TimeLimit, EnemySpeedRate, HintActiveTime, EnemySpawnDelay }
 
 [CreateAssetMenu(fileName = "LobbySettingSO", menuName = "ScriptableObject/LobbySettingSO")]
 
