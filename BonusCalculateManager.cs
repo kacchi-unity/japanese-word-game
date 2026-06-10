@@ -78,7 +78,7 @@ public class BonusCalculateManager : MonoBehaviour
         }
         OnBonusCalculationComplete?.Invoke(this.bonusDictionary);
 
-        this.reward = Mathf.Round(this.playerScore * (1f + this.totalBonus));
+        this.reward = Mathf.Floor(this.playerScore * (1f + this.totalBonus) + 0.5f);
 
         resultDictionary[Result.Total] = this.totalBonus;
 

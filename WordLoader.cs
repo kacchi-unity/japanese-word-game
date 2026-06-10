@@ -4,12 +4,13 @@ using System.Collections.Generic;
 
 public class WordLoader : MonoBehaviour
 {
+    [Header("Setting SO")]
+    [SerializeField] private WordDataBaseSO wordDataBaseSO;
+    [SerializeField] private SwordRecordSO swordRecordSO;
+    [SerializeField] private GameSessionSO gameSessionSO;
+
     List<Word> allWordList;
     WordData data;
-    public WordDataBaseSO wordDataBaseSO;
-    public SwordRecordSO swordRecordSO;
-
-    string path, json;
 
     private void OnEnable()
     {
@@ -47,12 +48,17 @@ public class WordLoader : MonoBehaviour
         swordRecordSO.ResetSwordRecord();
         swordRecordSO.ResetCorrectRate();
         swordRecordSO.ResetUnused();
+
+        gameSessionSO.ResetEP();
+
         Debug.Log("ResetEverything(): 모든 데이터를 초기화했습니다.");
     }
 
     void LoadJsonAndFillPool()
     {
         //Creates path regardless of the OS to safely
+        string path, json;
+
         path = Path.Combine(Application.streamingAssetsPath, "words.json");
         if(File.Exists(path))
         {

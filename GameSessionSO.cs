@@ -26,4 +26,14 @@ public class GameSessionSO : ScriptableObject
     {
         this.score = 0;
     }
+
+    public void AddEP(int value)
+    {
+        this.enlightenmentPoint += value;
+    }
+
+    public void ResetEP()
+    {
+        this.enlightenmentPoint = 0;
+    }
 }
