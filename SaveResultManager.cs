@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -43,7 +42,7 @@ public class SaveResultManager : MonoBehaviour
         {
             gameSessionSO.AddEP((int)rewardValue);
 
-            SOSaveManager.Instance.SaveAllData();
+            GameDataManager.Instance.SaveData();
 
             if (saveAlertTMP != null)
             {

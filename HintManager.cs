@@ -8,8 +8,6 @@ public class HintManager : MonoBehaviour
 
     public static event Action<int, HintRenderMode> OnHintStatusCheck;
 
-    public LobbySettingSO lobbySetting;
-
     public enum HintRenderMode
     {
         Blink,
@@ -18,7 +16,7 @@ public class HintManager : MonoBehaviour
 
     private void OnEnable()
     {
-        if (this.lobbySetting.settingValue.GetValue(SettingList.HintActiveTime) > 0f)
+        if (GameDataManager.Instance.RuntimeLobbySetting.GetValue(SettingList.HintActiveTime) > 0f)
         {
             EnemyController.OnPlayerDamaged += ManagementHint;
         }
@@ -32,7 +30,7 @@ public class HintManager : MonoBehaviour
 
     void Awake()
     {
-        this.hintDurationSeconds = this.lobbySetting.settingValue.GetValue(SettingList.HintActiveTime);
+        this.hintDurationSeconds = GameDataManager.Instance.RuntimeLobbySetting.GetValue(SettingList.HintActiveTime);
     }
 
     void ManagementHint(int targetId, float fadeInDuration, float fadeOutDuration, float unused)

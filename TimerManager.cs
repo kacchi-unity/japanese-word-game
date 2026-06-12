@@ -6,7 +6,6 @@ public class TimerManager : MonoBehaviour
 {
     public static event Action OnTimeZero;
     public TextMeshProUGUI timer;
-    public LobbySettingSO lobbySetting;
 
     float time_float;
     bool isTimerActive = false;
@@ -28,7 +27,7 @@ public class TimerManager : MonoBehaviour
 
     void Awake()
     {
-        time_float = lobbySetting.settingValue.GetValue(SettingList.TimeLimit);
+        time_float = GameDataManager.Instance.RuntimeLobbySetting.GetValue(SettingList.TimeLimit);
         isTimerActive = false;
     }
 

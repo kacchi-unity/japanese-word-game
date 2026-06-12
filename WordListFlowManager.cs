@@ -5,7 +5,6 @@ using UnityEngine;
 public class WordListFlowManager : MonoBehaviour
 {
     public EnemyGenerator enemyGenerator;
-    public LobbySettingSO lobbySettingSO;
     public SwordRecordSO swordRecordSO;
     public WordDataBaseSO wordDataBaseSO;
 
@@ -18,7 +17,7 @@ public class WordListFlowManager : MonoBehaviour
     {
         if (SceneTracker.previousScene.Equals(SceneTracker.SceneType.Lobby))
         {
-            int selectAmount = (int)lobbySettingSO.settingValue.GetValue(SettingList.WordCount);
+            int selectAmount = (int)GameDataManager.Instance.RuntimeLobbySetting.GetValue(SettingList.WordCount);
 
             this.selectedWordIndex = swordRecordSO.GetRandomId(selectAmount);
 
@@ -35,7 +34,7 @@ public class WordListFlowManager : MonoBehaviour
             this.selectedWordIndex = new List<int>(SceneTracker.selectorSwordRecordWordList);
 
             //Correction for reward calculation
-            lobbySettingSO.settingValue.SetValue(SettingList.WordCount, SceneTracker.selectorSwordRecordWordList.Count);
+            GameDataManager.Instance.RuntimeLobbySetting.SetValue(SettingList.WordCount, SceneTracker.selectorSwordRecordWordList.Count);
         }
 
         else

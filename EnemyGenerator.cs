@@ -7,7 +7,6 @@ public class EnemyGenerator : MonoBehaviour
     public GameObject enemyPrefab;
     GameObject enemy;
     List<Word> selectedWordList;
-    public LobbySettingSO lobbySetting;
 
     private bool isSpawn = false;
     public bool IsSpawn => isSpawn;
@@ -88,11 +87,11 @@ public class EnemyGenerator : MonoBehaviour
     void Awake()
     {
         //Set enemy move speed
-        float settingSO_SpeedRate = this.lobbySetting.settingValue.GetValue(SettingList.EnemySpeedRate);
+        float settingSO_SpeedRate = GameDataManager.Instance.RuntimeLobbySetting.GetValue(SettingList.EnemySpeedRate);
         this.moveSpeed = settingSO_SpeedRate * (enemyMaxSpeed - enemyMinSpeed) + enemyMinSpeed;
 
         //setting spawn delay with lobby setting SO
-        this.spawnDelay = this.lobbySetting.settingValue.GetValue(SettingList.EnemySpawnDelay);
+        this.spawnDelay = GameDataManager.Instance.RuntimeLobbySetting.GetValue(SettingList.EnemySpawnDelay);
 
         this.SetSpawnState(false);
     }

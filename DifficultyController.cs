@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
-using static UnityEngine.Rendering.DebugUI;
 
 public class DifficultyController : MonoBehaviour
 {
@@ -19,10 +17,10 @@ public class DifficultyController : MonoBehaviour
     {
         valueDic_Easy = new Dictionary<SettingList, float>
         {
-            [SettingList.WordCount] = 1,
-            [SettingList.PlayerHp] = 1,
-            [SettingList.TimeLimit] = 20,
-            [SettingList.EnemySpeed] = 1,
+            [SettingList.WordCount] = 3,
+            [SettingList.PlayerHp] = 30,
+            [SettingList.TimeLimit] = 60,
+            [SettingList.EnemySpeedRate] = 0,
             [SettingList.HintActiveTime] = 60,
             [SettingList.EnemySpawnDelay] = 3
         };
@@ -30,9 +28,9 @@ public class DifficultyController : MonoBehaviour
         valueDic_Normal = new Dictionary<SettingList, float>
         {
             [SettingList.WordCount] = 5,
-            [SettingList.PlayerHp] = 25,
+            [SettingList.PlayerHp] = 15,
             [SettingList.TimeLimit] = 175,
-            [SettingList.EnemySpeed] = 5,
+            [SettingList.EnemySpeedRate] = 0.5f,
             [SettingList.HintActiveTime] = 30,
             [SettingList.EnemySpawnDelay] = 2
         };
@@ -40,9 +38,9 @@ public class DifficultyController : MonoBehaviour
         valueDic_Hard = new Dictionary<SettingList, float>
         {
             [SettingList.WordCount] = 10,
-            [SettingList.PlayerHp] = 50,
+            [SettingList.PlayerHp] = 3,
             [SettingList.TimeLimit] = 300,
-            [SettingList.EnemySpeed] = 10,
+            [SettingList.EnemySpeedRate] = 1f,
             [SettingList.HintActiveTime] = 0,
             [SettingList.EnemySpawnDelay] = 1
         };
@@ -64,7 +62,7 @@ public class DifficultyController : MonoBehaviour
 
             foreach (SettingList key in targetDic.Keys)
             {
-                this.lobbySetting.settingValue.SetValue(key, targetDic[key]);
+                GameDataManager.Instance.RuntimeLobbySetting.SetValue(key, targetDic[key]);
             }
             
             OnDifficultyChanged?.Invoke();

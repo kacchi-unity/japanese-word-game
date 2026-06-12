@@ -6,8 +6,6 @@ public class PlayerHpManager : MonoBehaviour
 {
     public static event Action OnPlayerHpZero;
 
-    public LobbySettingSO lobbySetting;
-
     float maxHp, currentHp;
     
     Image hpGauge;
@@ -41,7 +39,7 @@ public class PlayerHpManager : MonoBehaviour
 
     void Awake()
     {
-        maxHp = lobbySetting.settingValue.GetValue(SettingList.PlayerHp);
+        maxHp = GameDataManager.Instance.RuntimeLobbySetting.GetValue(SettingList.PlayerHp);
         currentHp = maxHp;
     }
     

@@ -11,8 +11,6 @@ public class ScrollBarManager : MonoBehaviour
     public Slider slider;
     public SettingList targetSetting;
 
-    public LobbySettingSO lobbySetting;
-
     [Header ("Optional Data")]
     [Tooltip("SO 데이터가 필요한 특수 슬라이더만 넣어주세요. 없어도 작동합니다.")]
     [SerializeField] private GameSessionSO gameSessionSO;
@@ -69,13 +67,13 @@ public class ScrollBarManager : MonoBehaviour
         {
             if (this.isRateValue)
             {
-                float rateValue = lobbySetting.settingValue.GetValue(this.targetSetting);
+                float rateValue = GameDataManager.Instance.RuntimeLobbySetting.GetValue(this.targetSetting);
                 this.slider.value = Mathf.Lerp(this.min, this.max, rateValue);
                 input.text = $"{this.slider.value:F1}";
             }
             else
             {
-                this.slider.value = lobbySetting.settingValue.GetValue(this.targetSetting);
+                this.slider.value = GameDataManager.Instance.RuntimeLobbySetting.GetValue(this.targetSetting);
                 input.text = $"{this.slider.value:F1}";
             }
         }
@@ -129,7 +127,7 @@ public class ScrollBarManager : MonoBehaviour
     //Difficulty Button
     public void UpdateSliderValue() //GetValue(SettingList target)
     {
-        float value = lobbySetting.settingValue.GetValue(this.targetSetting);
+        float value = GameDataManager.Instance.RuntimeLobbySetting.GetValue(this.targetSetting);
 
         //If value is rate; rate -> whole number
         if (this.targetSetting == SettingList.EnemySpeedRate)
@@ -151,11 +149,11 @@ public class ScrollBarManager : MonoBehaviour
         if (this.targetSetting == SettingList.EnemySpeedRate)
         {
             float rate = (this.slider.value - this.slider.minValue) / (this.slider.maxValue - this.slider.minValue);
-            lobbySetting.settingValue.SetValue(this.targetSetting, rate);
+            GameDataManager.Instance.RuntimeLobbySetting.SetValue(this.targetSetting, rate);
         }
         else
         {
-            lobbySetting.settingValue.SetValue(this.targetSetting, this.slider.value);
+            GameDataManager.Instance.RuntimeLobbySetting.SetValue(this.targetSetting, this.slider.value);
         }
         
     }
