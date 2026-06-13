@@ -87,11 +87,11 @@ public class EnemyGenerator : MonoBehaviour
     void Awake()
     {
         //Set enemy move speed
-        float settingSO_SpeedRate = GameDataManager.Instance.RuntimeLobbySetting.GetValue(SettingList.EnemySpeedRate);
+        float settingSO_SpeedRate = GameDataManager.Instance.GetData<LobbySettingSO>().GetValue(SettingList.EnemySpeedRate);
         this.moveSpeed = settingSO_SpeedRate * (enemyMaxSpeed - enemyMinSpeed) + enemyMinSpeed;
 
         //setting spawn delay with lobby setting SO
-        this.spawnDelay = GameDataManager.Instance.RuntimeLobbySetting.GetValue(SettingList.EnemySpawnDelay);
+        this.spawnDelay = GameDataManager.Instance.GetData<LobbySettingSO>().GetValue(SettingList.EnemySpawnDelay);
 
         this.SetSpawnState(false);
     }

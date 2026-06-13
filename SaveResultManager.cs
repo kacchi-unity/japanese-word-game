@@ -9,9 +9,6 @@ public class SaveResultManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI saveAlertTMP;
     [SerializeField] private Button confirmButton;
 
-    [Header("Setting SO")]
-    [SerializeField] private GameSessionSO gameSessionSO;
-
     [Header("Setting Save Text")]
     [SerializeField] string beforeSaveDoneText;
     [SerializeField] string afterSaveDoneText;
@@ -40,9 +37,9 @@ public class SaveResultManager : MonoBehaviour
     {
         if (targetDictionary.TryGetValue(Result.Reward, out float rewardValue))
         {
-            gameSessionSO.AddEP((int)rewardValue);
+            GameDataManager.Instance.GetData<GameSessionSO>().AddEP((int)rewardValue);
 
-            GameDataManager.Instance.SaveData();
+            GameDataManager.Instance.SaveAllData();
 
             if (saveAlertTMP != null)
             {

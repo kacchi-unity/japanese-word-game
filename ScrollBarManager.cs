@@ -67,13 +67,13 @@ public class ScrollBarManager : MonoBehaviour
         {
             if (this.isRateValue)
             {
-                float rateValue = GameDataManager.Instance.RuntimeLobbySetting.GetValue(this.targetSetting);
+                float rateValue = GameDataManager.Instance.GetData<LobbySettingSO>().GetValue(this.targetSetting);
                 this.slider.value = Mathf.Lerp(this.min, this.max, rateValue);
                 input.text = $"{this.slider.value:F1}";
             }
             else
             {
-                this.slider.value = GameDataManager.Instance.RuntimeLobbySetting.GetValue(this.targetSetting);
+                this.slider.value = GameDataManager.Instance.GetData<LobbySettingSO>().GetValue(this.targetSetting);
                 input.text = $"{this.slider.value:F1}";
             }
         }
@@ -127,7 +127,7 @@ public class ScrollBarManager : MonoBehaviour
     //Difficulty Button
     public void UpdateSliderValue() //GetValue(SettingList target)
     {
-        float value = GameDataManager.Instance.RuntimeLobbySetting.GetValue(this.targetSetting);
+        float value = GameDataManager.Instance.GetData<LobbySettingSO>().GetValue(this.targetSetting);
 
         //If value is rate; rate -> whole number
         if (this.targetSetting == SettingList.EnemySpeedRate)
@@ -149,11 +149,11 @@ public class ScrollBarManager : MonoBehaviour
         if (this.targetSetting == SettingList.EnemySpeedRate)
         {
             float rate = (this.slider.value - this.slider.minValue) / (this.slider.maxValue - this.slider.minValue);
-            GameDataManager.Instance.RuntimeLobbySetting.SetValue(this.targetSetting, rate);
+            GameDataManager.Instance.GetData<LobbySettingSO>().SetValue(this.targetSetting, rate);
         }
         else
         {
-            GameDataManager.Instance.RuntimeLobbySetting.SetValue(this.targetSetting, this.slider.value);
+            GameDataManager.Instance.GetData<LobbySettingSO>().SetValue(this.targetSetting, this.slider.value);
         }
         
     }

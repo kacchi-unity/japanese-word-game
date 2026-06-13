@@ -7,7 +7,6 @@ public class WordLoader : MonoBehaviour
     [Header("Setting SO")]
     [SerializeField] private WordDataBaseSO wordDataBaseSO;
     [SerializeField] private SwordRecordSO swordRecordSO;
-    [SerializeField] private GameSessionSO gameSessionSO;
 
     List<Word> allWordList;
     WordData data;
@@ -49,8 +48,6 @@ public class WordLoader : MonoBehaviour
         swordRecordSO.ResetCorrectRate();
         swordRecordSO.ResetUnused();
 
-        gameSessionSO.ResetEP();
-
         Debug.Log("ResetEverything(): 모든 데이터를 초기화했습니다.");
     }
 
@@ -80,8 +77,9 @@ public class WordLoader : MonoBehaviour
     void ProcessResetButton()
     {
         ResetEverything();
+        GameDataManager.Instance.GetData<GameSessionSO>().ResetEP();
         LoadJsonAndFillPool();
         ModalManager.Instance.ShowAlertModal("초기화 완료", null);
-        SOSaveManager.Instance.SaveAllData();
+        //SOSaveManager.Instance.SaveAllData(); 수정 필수
     }
 }

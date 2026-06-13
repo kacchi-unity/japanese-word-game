@@ -39,7 +39,7 @@ public class BonusCalculateManager : MonoBehaviour
         bonusDictionary.Clear();
         resultDictionary.Clear();
 
-        RuntimeLobbySetting runtimeLobbySetting = GameDataManager.Instance.RuntimeLobbySetting;
+        LobbySettingSO runtimeLobbySetting = GameDataManager.Instance.GetData<LobbySettingSO>();
         BonusTableSO.RewardBonusTable bonusSO = bonusTable.rewardBonuse;
         this.playerScore = gameSession.GetScore();
 

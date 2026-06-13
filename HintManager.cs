@@ -16,7 +16,7 @@ public class HintManager : MonoBehaviour
 
     private void OnEnable()
     {
-        if (GameDataManager.Instance.RuntimeLobbySetting.GetValue(SettingList.HintActiveTime) > 0f)
+        if (GameDataManager.Instance.GetData<LobbySettingSO>().GetValue(SettingList.HintActiveTime) > 0f)
         {
             EnemyController.OnPlayerDamaged += ManagementHint;
         }
@@ -30,7 +30,7 @@ public class HintManager : MonoBehaviour
 
     void Awake()
     {
-        this.hintDurationSeconds = GameDataManager.Instance.RuntimeLobbySetting.GetValue(SettingList.HintActiveTime);
+        this.hintDurationSeconds = GameDataManager.Instance.GetData<LobbySettingSO>().GetValue(SettingList.HintActiveTime);
     }
 
     void ManagementHint(int targetId, float fadeInDuration, float fadeOutDuration, float unused)

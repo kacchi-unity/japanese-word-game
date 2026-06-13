@@ -39,7 +39,7 @@ public class PlayerHpManager : MonoBehaviour
 
     void Awake()
     {
-        maxHp = GameDataManager.Instance.RuntimeLobbySetting.GetValue(SettingList.PlayerHp);
+        maxHp = GameDataManager.Instance.GetData<LobbySettingSO>().GetValue(SettingList.PlayerHp);
         currentHp = maxHp;
     }
     

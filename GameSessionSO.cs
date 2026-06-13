@@ -1,16 +1,30 @@
+using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "GameSessionSO", menuName = "ScriptableObject/GameSessionSO")]
 
-public class GameSessionSO : ScriptableObject
+public class GameSessionSO : BaseSaveSO<GameSessionSO.RuntimeData>
 {
-    [SerializeField] private int enlightenmentPoint = 0;
-    public int EnlightenmentPoint => enlightenmentPoint;
-
-    private int systemPlayWordLimitCount = 10;
+    [Header ("기본 설정 값 (불변)")]
+    [Tooltip("값이 변하지 않는 기초 값 입니다.")]
+    [SerializeField] private int defaultEnlightenmentPoint = 0;
+    [SerializeField] private int score = 0;
+    [SerializeField] private int systemPlayWordLimitCount = 10;
     public int SystemPlayWordLimitCount => systemPlayWordLimitCount;
 
-    private int score = 0;
+    //Json local save class
+    [Serializable]
+    public class RuntimeData
+    {
+        public int enlightenmentPoint;
+    }
+
+    public override void Initialize()
+    {
+        runtimeData.enlightenmentPoint = this.defaultEnlightenmentPoint;
+    }
+
+    public int EnlightenmentPoint => runtimeData.enlightenmentPoint;
 
     public void AddScore(int amount)
     {
@@ -29,11 +43,11 @@ public class GameSessionSO : ScriptableObject
 
     public void AddEP(int value)
     {
-        this.enlightenmentPoint += value;
+        runtimeData.enlightenmentPoint += value;
     }
 
     public void ResetEP()
     {
-        this.enlightenmentPoint = 0;
+        runtimeData.enlightenmentPoint = 0;
     }
 }

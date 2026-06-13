@@ -27,7 +27,7 @@ public class TimerManager : MonoBehaviour
 
     void Awake()
     {
-        time_float = GameDataManager.Instance.RuntimeLobbySetting.GetValue(SettingList.TimeLimit);
+        time_float = GameDataManager.Instance.GetData<LobbySettingSO>().GetValue(SettingList.TimeLimit);
         isTimerActive = false;
     }
 

@@ -62,7 +62,7 @@ public class DifficultyController : MonoBehaviour
 
             foreach (SettingList key in targetDic.Keys)
             {
-                GameDataManager.Instance.RuntimeLobbySetting.SetValue(key, targetDic[key]);
+                GameDataManager.Instance.GetData<LobbySettingSO>().SetValue(key, targetDic[key]);
             }
             
             OnDifficultyChanged?.Invoke();

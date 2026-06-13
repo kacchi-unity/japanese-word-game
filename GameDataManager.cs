@@ -1,31 +1,42 @@
 using UnityEngine;
-using System.IO;
+using System;
+using System.Collections.Generic;
 
 public class GameDataManager : MonoBehaviour
 {
     public static GameDataManager Instance { get; private set; }
 
-    [Header("런타임 사용 SO 리스트")]
-    [Tooltip("런타임 가변 데이터 대상 SO를 넣어주세요")]
-    [SerializeField] private LobbySettingSO lobbySettingSO;
+    [Header("런타임 가변 데이터 대상 SO Dictionary")]
+    [Tooltip("해당 SO들을 인스펙터로 여기에 다 넣으세요")]
+    [SerializeField] private List<ScriptableObject> saveSOList = new List<ScriptableObject>();
 
-    [Header("현재 런타임 세팅 (디버그용)")]
-    [SerializeField] private RuntimeLobbySetting runtimeLobbySetting;
-    public RuntimeLobbySetting RuntimeLobbySetting => runtimeLobbySetting;
-
+    private Dictionary<Type, ISaveSO> saveSODictionary = new Dictionary<Type, ISaveSO>();
 
     private string path;
 
-    private void Awake()
+    private void Start()
     {
         if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
 
-            path = Path.Combine(Application.persistentDataPath, "GameDataManager" + ".json");
+            path = Application.persistentDataPath;
 
-            SetData();
+            foreach (var SO in saveSOList)
+            {
+                ISaveSO InterfaceSO = SO as ISaveSO;
+                if (InterfaceSO != null)
+                {
+                    saveSODictionary[SO.GetType()] = InterfaceSO;
+                }
+                else
+                {
+                    Debug.LogWarning($"{this.name}: [{SO.name}]의 가변 인테페이스 형 변환 실패");
+                }
+            }
+
+            LoadAllData();
         }
 
         else
@@ -34,37 +45,57 @@ public class GameDataManager : MonoBehaviour
         }
     }
 
-    private void SetData()
+    public T GetData<T>() where T : class, ISaveSO
     {
-        if (File.Exists(path))
+        if (saveSODictionary.TryGetValue(typeof(T), out var InterfaceSO))
         {
-            string json = File.ReadAllText(path);
-            runtimeLobbySetting = JsonUtility.FromJson<RuntimeLobbySetting>(json);
-            Debug.Log("GameDataManager: 기존 세이브 파일로부터 가변 데이터 로드 완료.");
+            return InterfaceSO as T;
         }
-
         else
         {
-            runtimeLobbySetting = new RuntimeLobbySetting();
-
-            LobbySettingSO.DefaultLobbySetting deafaultSetting = lobbySettingSO.defaultLobbySetting;
-
-            runtimeLobbySetting.SetValue(SettingList.WordCount, deafaultSetting.wordCount);
-            runtimeLobbySetting.SetValue(SettingList.PlayerHp, deafaultSetting.playerHp);
-            runtimeLobbySetting.SetValue(SettingList.TimeLimit, deafaultSetting.timeLimit);
-            runtimeLobbySetting.SetValue(SettingList.EnemySpeedRate, deafaultSetting.enemySpeedRate);
-            runtimeLobbySetting.SetValue(SettingList.HintActiveTime, deafaultSetting.hintActiveTime);
-            runtimeLobbySetting.SetValue(SettingList.EnemySpawnDelay, deafaultSetting.enemySpawnDelay);
-
-            Debug.Log("GameDataManager: 세이브 파일이 존재하지 않아 SO 원본 데이터로부터 초기값 생성.");
-            SaveData(); //test
+            Debug.LogError($"{typeof(T).Name}를 DataManager에서 찾을 수 없습니다");
+            return null;
         }
     }
 
-    public void SaveData()
+    public void SaveAllData()
     {
-        string json = JsonUtility.ToJson(RuntimeLobbySetting, true);
-        File.WriteAllText(path, json);
-        Debug.Log($"GameDataManager: 가변 데이터 저장 완료. 경로: {path}");
+        foreach (var InterfaceSO in saveSODictionary.Values)
+        {
+            if (InterfaceSO != null)
+            {
+                InterfaceSO.Save(path);
+                Debug.Log($"{this.name}: [{InterfaceSO.Name}] 저장 완료");
+            }
+        }
+        Debug.Log($"{this.name}: 모든 가변 데이터 저장 완료");
+    }
+
+    public void LoadAllData()
+    {
+        foreach (var InterfaceSO in saveSODictionary.Values)
+        {
+            if (InterfaceSO != null)
+            {
+                InterfaceSO.Load(path);
+            }
+        }
+        Debug.Log($"{this.name}: 모든 가변 데이터 로드 완료");
+    }
+
+    //인게임 Sword Record 도감, EP 보상 데이터 오염 방지를 위해 포커스 자동 저장 비활성화
+    // -> Scene_Result 정산 또는 상점 구매 완료 시점에 직접 호출 방식 대체
+    /*void OnApplicationQuit()
+    {
+        SaveAllData();
+    }*/
+
+    void OnApplicationFocus(bool focus)
+    {
+        // 모바일에서 홈 화면으로 나갈 때 안전하게 저장
+        if (!focus)
+        {
+            SaveAllData();
+        }
     }
 }

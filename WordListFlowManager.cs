@@ -17,7 +17,7 @@ public class WordListFlowManager : MonoBehaviour
     {
         if (SceneTracker.previousScene.Equals(SceneTracker.SceneType.Lobby))
         {
-            int selectAmount = (int)GameDataManager.Instance.RuntimeLobbySetting.GetValue(SettingList.WordCount);
+            int selectAmount = (int)GameDataManager.Instance.GetData<LobbySettingSO>().GetValue(SettingList.WordCount);
 
             this.selectedWordIndex = swordRecordSO.GetRandomId(selectAmount);
 
@@ -34,7 +34,7 @@ public class WordListFlowManager : MonoBehaviour
             this.selectedWordIndex = new List<int>(SceneTracker.selectorSwordRecordWordList);
 
             //Correction for reward calculation
-            GameDataManager.Instance.RuntimeLobbySetting.SetValue(SettingList.WordCount, SceneTracker.selectorSwordRecordWordList.Count);
+            GameDataManager.Instance.GetData<LobbySettingSO>().SetValue(SettingList.WordCount, SceneTracker.selectorSwordRecordWordList.Count);
         }
 
         else
