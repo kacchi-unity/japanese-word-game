@@ -14,14 +14,14 @@ public class GameDataManager : MonoBehaviour
 
     private string path;
 
-    private void Start()
+    private void Awake()
     {
+        path = Application.persistentDataPath;
+
         if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-
-            path = Application.persistentDataPath;
 
             foreach (var SO in saveSOList)
             {
@@ -83,19 +83,19 @@ public class GameDataManager : MonoBehaviour
         Debug.Log($"{this.name}: 모든 가변 데이터 로드 완료");
     }
 
-    //인게임 Sword Record 도감, EP 보상 데이터 오염 방지를 위해 포커스 자동 저장 비활성화
-    // -> Scene_Result 정산 또는 상점 구매 완료 시점에 직접 호출 방식 대체
-    /*void OnApplicationQuit()
+    void OnApplicationQuit()
     {
         SaveAllData();
-    }*/
+    }
 
-    void OnApplicationFocus(bool focus)
+    //인게임 Sword Record 도감, EP 보상 데이터 오염 방지를 위해 포커스 자동 저장 비활성화
+    // -> Scene_Result 정산 또는 상점 구매 완료 시점에 직접 호출 방식 대체
+    /*void OnApplicationFocus(bool focus)
     {
         // 모바일에서 홈 화면으로 나갈 때 안전하게 저장
         if (!focus)
         {
             SaveAllData();
         }
-    }
+    }*/
 }

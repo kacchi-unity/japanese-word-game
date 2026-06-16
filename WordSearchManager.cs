@@ -9,7 +9,6 @@ public class WordSearchManager : MonoBehaviour
 {
     [Header("Script Connect")]
     public SwordRecordSO swordRecordSO;
-    public WordDataBaseSO wordDataBaseSO;
 
     [Header("UI Connect")]
     public TMP_InputField inputSearch;
@@ -51,7 +50,7 @@ public class WordSearchManager : MonoBehaviour
     {
         List<int> swordRecordList = swordRecordSO.GetSwordRecordList();
         swordRecordDic = new Dictionary<string, List<int>>(swordRecordList.Count);
-        Dictionary<int,Word> wordDataBase = wordDataBaseSO.GetWordDataBase();
+        Dictionary<int,Word> wordDataBase = WordLoader.Instance.GetWordDataBase();
 
         foreach (int wordId in swordRecordList)
         {

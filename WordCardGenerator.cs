@@ -9,7 +9,6 @@ public class WordCardGenerator : MonoBehaviour
 {
     [Header("Script Connect")]
     public SwordRecordSO swordRecordSO;
-    public WordDataBaseSO wordDataBaseSO;
     public WordCardSetting wordCardPrefab;
     
     [Header("UI Connect")]
@@ -82,7 +81,7 @@ public class WordCardGenerator : MonoBehaviour
     void Start()
     {
         this.swordRecordList = swordRecordSO.GetSwordRecordList();
-        this.wordDataBase = wordDataBaseSO.GetWordDataBase();
+        this.wordDataBase = WordLoader.Instance.GetWordDataBase();
 
         //Safety button interacte logic
         startButton.interactable = false;

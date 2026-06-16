@@ -6,7 +6,6 @@ public class WordListFlowManager : MonoBehaviour
 {
     public EnemyGenerator enemyGenerator;
     public SwordRecordSO swordRecordSO;
-    public WordDataBaseSO wordDataBaseSO;
 
     List<int> selectedWordIndex = new List<int>();
     List<Word> selectedWordList = new List<Word>();
@@ -58,7 +57,7 @@ public class WordListFlowManager : MonoBehaviour
         //Generate word list with word id list
         foreach (int item in this.selectedWordIndex)
         {
-            this.selectedWordList.Add(wordDataBaseSO.GetWordDataBase()[item]);
+            this.selectedWordList.Add(WordLoader.Instance.GetWordDataBase()[item]);
         }
 
         //Check word list
