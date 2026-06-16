@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class WordCardGenerator : MonoBehaviour
 {
     [Header("Script Connect")]
-    public SwordRecordSO swordRecordSO;
     public WordCardSetting wordCardPrefab;
     
     [Header("UI Connect")]
@@ -80,7 +79,7 @@ public class WordCardGenerator : MonoBehaviour
 
     void Start()
     {
-        this.swordRecordList = swordRecordSO.GetSwordRecordList();
+        this.swordRecordList = GameDataManager.Instance.GetData<SwordRecordSO>().GetSwordRecordList();
         this.wordDataBase = WordLoader.Instance.GetWordDataBase();
 
         //Safety button interacte logic
@@ -192,7 +191,7 @@ public class WordCardGenerator : MonoBehaviour
                 visibleWordCard.SetData(
                     wordDataBase[targetWordId].kanji,
                     wordMeaning,
-                    swordRecordSO.GetCorrectRate(targetWordId),
+                    GameDataManager.Instance.GetData<SwordRecordSO>().GetCorrectRate(targetWordId),
                     targetWordId,
                     this.wordCheckerInterface.IsWordSelected(targetWordId)
                     );

@@ -3,9 +3,9 @@ using UnityEngine;
 [System.Serializable]
 public class WordCorrectRate
 {
-    private int wordId;
-    private int succesCount;
-    private int failCount;
+    [SerializeField] private int wordId;
+    [SerializeField] private int succesCount;
+    [SerializeField] private int failCount;
 
     public float correctRate
     {

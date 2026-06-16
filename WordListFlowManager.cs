@@ -5,7 +5,6 @@ using UnityEngine;
 public class WordListFlowManager : MonoBehaviour
 {
     public EnemyGenerator enemyGenerator;
-    public SwordRecordSO swordRecordSO;
 
     List<int> selectedWordIndex = new List<int>();
     List<Word> selectedWordList = new List<Word>();
@@ -18,7 +17,7 @@ public class WordListFlowManager : MonoBehaviour
         {
             int selectAmount = (int)GameDataManager.Instance.GetData<LobbySettingSO>().GetValue(SettingList.WordCount);
 
-            this.selectedWordIndex = swordRecordSO.GetRandomId(selectAmount);
+            this.selectedWordIndex = GameDataManager.Instance.GetData<SwordRecordSO>().GetRandomId(selectAmount);
 
         }
 

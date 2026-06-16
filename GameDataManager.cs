@@ -14,7 +14,7 @@ public class GameDataManager : MonoBehaviour
 
     private string path;
 
-    private void Awake()
+    private void Start()
     {
         path = Application.persistentDataPath;
 

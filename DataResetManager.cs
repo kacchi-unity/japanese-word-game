@@ -2,9 +2,6 @@ using UnityEngine;
 
 public class DataResetManager : MonoBehaviour
 {
-    [Header("Setting SO")]
-    [SerializeField] private SwordRecordSO swordRecordSO;
-
     private void OnEnable()
     {
         TitleButtonManager.OnResetButtonClick += ResetEveryData;
@@ -19,11 +16,9 @@ public class DataResetManager : MonoBehaviour
     {
         WordLoader.Instance.ResetWordDataBase();
 
-        swordRecordSO.ResetSwordRecord();
-        swordRecordSO.ResetCorrectRate();
-        swordRecordSO.ResetUnused();
-
         GameDataManager.Instance.GetData<GameSessionSO>().ResetEP();
+
+        GameDataManager.Instance.SaveAllData();
 
         ModalManager.Instance.ShowAlertModal("초기화 완료", null);
 

@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class WordLoader : MonoBehaviour
 {
-    [SerializeField] private SwordRecordSO swordRecordSO;
-
     public static WordLoader Instance { get; private set; }
     WordData data;
     private string savePath, sourcePath;
@@ -17,7 +15,7 @@ public class WordLoader : MonoBehaviour
     {
         public List<Word> wordDataBaseList = new List<Word>();
     }
-
+    
     public RuntimeData runtimeData = new RuntimeData();
 
     void Awake()
@@ -51,7 +49,7 @@ public class WordLoader : MonoBehaviour
         }
         else
         {
-            Load();
+            this.Load();
         }
     }
 
@@ -66,7 +64,7 @@ public class WordLoader : MonoBehaviour
             runtimeData.wordDataBaseList = data.words;
 
             //Initial setting in swordRecordSO
-            swordRecordSO.InitializeDataset(runtimeData.wordDataBaseList.Count);
+            GameDataManager.Instance.GetData<SwordRecordSO>().Initialize();
 
             //Fill Dicionary
             FillDictionaryFromList();

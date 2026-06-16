@@ -7,9 +7,6 @@ using UnityEngine.UI;
 
 public class WordSearchManager : MonoBehaviour
 {
-    [Header("Script Connect")]
-    public SwordRecordSO swordRecordSO;
-
     [Header("UI Connect")]
     public TMP_InputField inputSearch;
     public TextMeshProUGUI searchResultLabel;
@@ -48,7 +45,7 @@ public class WordSearchManager : MonoBehaviour
 
     void Start()
     {
-        List<int> swordRecordList = swordRecordSO.GetSwordRecordList();
+        List<int> swordRecordList = GameDataManager.Instance.GetData<SwordRecordSO>().GetSwordRecordList();
         swordRecordDic = new Dictionary<string, List<int>>(swordRecordList.Count);
         Dictionary<int,Word> wordDataBase = WordLoader.Instance.GetWordDataBase();
 
@@ -142,7 +139,7 @@ public class WordSearchManager : MonoBehaviour
 
     void ClickRemoveButton()
     {
-        OnUserSearched?.Invoke(this.swordRecordSO.GetSwordRecordList(), null);
+        OnUserSearched?.Invoke(GameDataManager.Instance.GetData<SwordRecordSO>().GetSwordRecordList(), null);
         inputSearch.text = "";
         searchResultLabel.text = "";
     }

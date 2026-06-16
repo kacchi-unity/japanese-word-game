@@ -9,7 +9,6 @@ public class QuizManager : MonoBehaviour
 
     public EnemyListSO enemyListSO;
     public TextMeshProUGUI result;
-    public SwordRecordSO swordRecordSO;
 
     float textDuration = 1.0f;
     float fadeOutTime = 1.0f;
@@ -55,7 +54,7 @@ public class QuizManager : MonoBehaviour
         //remove element from list
         if (removeTarget != null)
         {
-            swordRecordSO.RecordCorrectResult(removeTarget.GetId(), true);
+            GameDataManager.Instance.GetData<SwordRecordSO>().RecordCorrectResult(removeTarget.GetId(), true);
 
             enemyListSO.RemoveEnemyData(removeTarget);
             ShowAnswerEffect("정답!");
@@ -69,7 +68,7 @@ public class QuizManager : MonoBehaviour
 
     private void RecordFail(int wordId, float fadeIn_unused, float fadeOut_unused2, float damage_unused3)
     {
-        swordRecordSO.RecordCorrectResult(wordId, false);
+        GameDataManager.Instance.GetData<SwordRecordSO>().RecordCorrectResult(wordId, false);
     }
 
     void ShowAnswerEffect(string text)
