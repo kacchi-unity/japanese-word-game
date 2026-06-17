@@ -21,6 +21,7 @@ public class WordCardGenerator : MonoBehaviour
     [SerializeField] private float horizontalSpacing = 100;
     [SerializeField] private int verticalSlots = 3;
     [SerializeField] private int visibleHorizontalCount = 5;
+    [SerializeField] private float rightPadding = 300;
 
     [Header("Data Set")]
     private List<int> swordRecordList = null;
@@ -248,7 +249,7 @@ public class WordCardGenerator : MonoBehaviour
         }
 
         int totalColumn = (listCount + verticalSlots - 1) / verticalSlots; //Ceiling process
-        float contentWidth = ((totalColumn * wordCardWidth) + ((totalColumn - 1) * horizontalSpacing));
+        float contentWidth = ((totalColumn * wordCardWidth) + ((totalColumn - 1) * horizontalSpacing)) + rightPadding;
         if (contentWidth < 0)
         {
             contentWidth = 0;

@@ -24,11 +24,12 @@ public class ResultPrintManager : MonoBehaviour
             if (this.resultType == Result.Reward)
             {
                 float rewardPercent = 100f + targetDictionary[Result.Total] * 100f;
-                targetTMP.text = $"{targetDictionary[Result.Score]}점 × {rewardPercent.ToString("F0")}% = {targetDictionary[Result.Reward]}EP";
+                targetTMP.text = $"{targetDictionary[Result.Score]}점 × {rewardPercent:F0}% = " +
+                    $"<color=#E84A4A><b><size=120%>{targetDictionary[Result.Reward]}EP</size></b></color>";
             }
             else if(this.resultType == Result.Total)
             {
-                targetTMP.text = $"+ {targetDictionary[resultType].ToString("P0")}";
+                targetTMP.text = $"+ {targetDictionary[resultType]:P0}";
             }
         }
         else
