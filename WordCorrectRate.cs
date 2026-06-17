@@ -1,13 +1,22 @@
 using UnityEngine;
 
+public enum WordCorrectDataType
+{
+    WordId,
+    SuccessCount,
+    FailCount,
+}
+
 [System.Serializable]
 public class WordCorrectRate
 {
+    
+
     [SerializeField] private int wordId;
     [SerializeField] private int succesCount;
     [SerializeField] private int failCount;
 
-    public float correctRate
+    public float CorrectRate
     {
         get
         {
@@ -26,6 +35,10 @@ public class WordCorrectRate
         this.succesCount = 0;
         this.failCount = 0;
     }
+
+    public int WordId => wordId;
+    public int SuccessCount => succesCount;
+    public int FailCount => failCount;
 
     public int GetId()
     {

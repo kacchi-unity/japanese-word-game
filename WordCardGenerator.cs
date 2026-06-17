@@ -193,7 +193,9 @@ public class WordCardGenerator : MonoBehaviour
                     wordMeaning,
                     GameDataManager.Instance.GetData<SwordRecordSO>().GetCorrectRate(targetWordId),
                     targetWordId,
-                    this.wordCheckerInterface.IsWordSelected(targetWordId)
+                    this.wordCheckerInterface.IsWordSelected(targetWordId),
+                    GameDataManager.Instance.GetData<SwordRecordSO>().GetCorrectDetail(targetWordId, WordCorrectDataType.SuccessCount),
+                    GameDataManager.Instance.GetData<SwordRecordSO>().GetCorrectDetail(targetWordId, WordCorrectDataType.FailCount)
                     );
 
                 RectTransform wordCardRT = visibleWordCard.RectTransform;

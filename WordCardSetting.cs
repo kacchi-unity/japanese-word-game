@@ -9,8 +9,12 @@ public class WordCardSetting : MonoBehaviour
     [SerializeField] private TextMeshProUGUI meaningTMP;
     [SerializeField] private TextMeshProUGUI correctRateTMP;
     [SerializeField] private TextMeshProUGUI idTMP;
+    [SerializeField] private TextMeshProUGUI correctCountTMP;
+    [SerializeField] private TextMeshProUGUI incorrectCountTMP;
     [SerializeField] private Toggle selectToggle;
+    
     [SerializeField] private RectTransform rectTransform;
+
 
     //Get
     public TextMeshProUGUI KanjiTMP => kanjiTMP;
@@ -19,6 +23,9 @@ public class WordCardSetting : MonoBehaviour
     public TextMeshProUGUI IdTMP => idTMP;
     public Toggle SelectToggle => selectToggle;
     public RectTransform RectTransform => rectTransform;
+
+    public TextMeshProUGUI CorrectCountTMP => correctCountTMP;
+    public TextMeshProUGUI IncorrectCountTMP => incorrectCountTMP;
 
     //Value
     [SerializeField] private int wordId;
@@ -38,13 +45,15 @@ public class WordCardSetting : MonoBehaviour
         }
     }
 
-    public void SetData(string kanji, string meaning, float correctRate, int id, bool isSelect)
+    public void SetData(string kanji, string meaning, float correctRate, int id, bool isSelect, int correctCount, int incorrectCount)
     {
         this.kanjiTMP.text = $"【{kanji}】";
         this.meaningTMP.text = meaning;
-        this.correctRateTMP.text = $"[정답률 : {correctRate:F1}%]";
+        this.correctRateTMP.text = $"[정답률 : {correctRate:F1} %]";
         this.idTMP.text = $"ID-{id:D3}";
         this.wordId = id;
+        this.correctCountTMP.text = $"맞은 횟수: <color=#0055FF>{correctCount}번</color>";
+        this.incorrectCountTMP.text = $"틀린 횟수: <color=#FF3333>{incorrectCount}번</color>";
 
         selectToggle.onValueChanged.RemoveListener(OnToggleValueChanged);
 

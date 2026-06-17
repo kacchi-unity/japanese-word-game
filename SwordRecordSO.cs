@@ -179,22 +179,6 @@ public class SwordRecordSO : BaseSaveSO<SwordRecordSO.RuntimeData>
         SyncList();
     }
 
-    //to build test
-    public void ShowSwordRecordList()
-    {
-        ValidateDataSet();
-
-        if (this.swordRecordHash != null)
-        {
-            foreach (var item in this.swordRecordHash)
-            {
-                Debug.Log($"검심 id: {item}, 정답률: {this.GetCorrectRate(item)}");
-            }
-        }
-        Debug.Log($"Sword Record해시 내 총 개수: {this.swordRecordHash.Count}");
-        Debug.Log($"Unused 해시 내 총 개수: {this.unusedHash.Count}");
-    }
-
     public void RecordCorrectResult(int wordId, bool isSuccess)
     {
         ValidateDataSet();
@@ -213,7 +197,7 @@ public class SwordRecordSO : BaseSaveSO<SwordRecordSO.RuntimeData>
         ValidateDataSet();
         if (this.correctRateDic.ContainsKey(wordId))
         {
-            return this.correctRateDic[wordId].correctRate;
+            return this.correctRateDic[wordId].CorrectRate;
         }
         else
         {
@@ -224,7 +208,35 @@ public class SwordRecordSO : BaseSaveSO<SwordRecordSO.RuntimeData>
 
             SyncList();
 
-            return this.correctRateDic[wordId].correctRate;
+            return this.correctRateDic[wordId].CorrectRate;
+        }
+    }
+
+    public int GetCorrectDetail(int wordId, WordCorrectDataType dataType)
+    {
+        ValidateDataSet();
+
+        if (this.correctRateDic.ContainsKey(wordId))
+        {
+            switch (dataType)
+            {
+                case WordCorrectDataType.WordId:
+                    return this.correctRateDic[wordId].WordId;
+
+                case WordCorrectDataType.SuccessCount:
+                    return this.correctRateDic[wordId].SuccessCount;
+
+                case WordCorrectDataType.FailCount:
+                    return this.correctRateDic[wordId].FailCount;
+
+                default:
+                    return -404;
+            }
+        }
+        else
+        {
+            Debug.LogWarning($"ID {wordId}의 데이터가 존재하지 않습니다");
+            return -404;
         }
     }
 
