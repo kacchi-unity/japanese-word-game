@@ -26,6 +26,7 @@ public class HintManager : MonoBehaviour
     private void OnDisable()
     {
         EnemyController.OnPlayerDamaged -= ManagementHint;
+        HintStatus.Clear();
     }
 
     void Awake()
